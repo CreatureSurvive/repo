@@ -1,0 +1,35 @@
+{{ partial "header.html" . }}
+<ul id="about">
+    <li class="horizontal">
+        <a id="add-to-cydia" href="cydia://url/https://cydia.saurik.com/api/share#?source=https%3A%2F%2Fcreaturesurvive.github.io%2F"
+            role="button">
+            <img class="left" src="/{{ .Site.Params.avatar }}" width="56" height="56" alt="">
+            <div class="right">
+                <p>{{ .Site.Title }}'s Cydia repository.</p>
+                <p>
+                    <strong>Tap to add this repo to Cydia</strong>
+                </p>
+            </div>
+        </a>
+    </li>
+</ul>
+
+<br> {{ if .Content }}
+<div class="markdown">
+    {{ .Content }}
+</div>
+
+{{ end }} {{ $totalpostscount := len (where .Data.Pages "Section" "packages") }} {{ $latestpostscount := .Site.Params.latestpostscount | default $totalpostscount }}
+{{ if gt $latestpostscount 0 }}
+<div class="page-heading">{{ i18n "latestPosts" }}</div>
+<ul>
+    {{ range (first $latestpostscount (where .Data.Pages.ByPublishDate.Reverse "Section" "packages")) }} {{ partial "li.html" . }}
+    {{ end }} {{ if gt $totalpostscount $latestpostscount }} {{ range where .Site.Menus.main "Identifier" "packages" }}
+    <li class="post-item no-bullet">
+        <a id="see-more" {{ printf "href=%q " .URL | safeHTMLAttr }}>
+            <span>See more&hellip;</span>
+        </a>
+    </li>
+    {{ end }} {{ end }}
+</ul>
+{{ end }} {{ partial "footer.html" . }}

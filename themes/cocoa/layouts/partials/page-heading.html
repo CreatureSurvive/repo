@@ -1,0 +1,4 @@
+<div class="page-heading">
+    {{ if .Params.banner }} {{- $folder := lower .Title -}}
+    <img src="/packages/{{ $folder }}/screenshots/{{ .Params.banner }}" width="100%"> {{ else }} {{ .Title }} {{ end }}
+</div>

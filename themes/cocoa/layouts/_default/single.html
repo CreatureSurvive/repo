@@ -1,0 +1,54 @@
+{{ partial "header.html" . }} {{ partial "page-heading.html" . }}
+<ul>
+    <li class="markdown">
+        {{ .Content }}
+    </li>
+
+    {{- $folder := lower .Title -}} {{ if eq .Params.changelog_enabled "true" }}
+    <li>
+        <a href="/packages/{{ $folder }}/changelog">Changelog</a>
+    </li>
+    {{ end }} {{ if eq .Params.screens_enabled "true" }}
+    <li>
+        <a href="/packages/{{ $folder }}/screenshots">Screenshots</a>
+    </li>
+    {{ end }} {{ if eq .Params.screenshots "true" }} {{ range readDir (print "./content/packages/" $folder "/screenshots") }}
+    {{ if in .Name ".png" }}
+    <img src="/packages/{{ $folder }}/screenshots/{{ .Name }}" width="100%"> {{ end }} {{ if in .Name ".gif" }}
+    <img src="/packages/{{ $folder }}/screenshots/{{ .Name }}" width="100%"> {{ end }} {{ if in .Name ".jpeg" }}
+    <img src="/packages/{{ $folder }}/screenshots/{{ .Name }}" width="100%"> {{ end }} {{ if in .Name ".m4v" }}
+    <center>
+        <video width="90%">
+            <source src="/packages/{{ $folder }}/screenshots/{{ .Name }}" type="video/mp4">
+        </video>
+    </center>
+    {{ end }} {{ if in .Name ".mov" }}
+    <center>
+        <video width="90%">
+            <source src="/packages/{{ $folder }}/screenshots/{{ .Name }}" type="video/mp4">
+        </video>
+    </center>
+    {{ end }} {{ if in .Name ".mp4" }}
+    <center>
+        <video width="90%">
+            <source src="/packages/{{ $folder }}/screenshots/{{ .Name }}" type="video/mp4">
+        </video>
+    </center>
+    {{ end }} {{ end }} {{ end }}
+</ul>
+
+<ul>
+    <li class="back-to-posts">
+        <a href="/packages/">{{ i18n "backToPackages" }}</a>
+    </li>
+
+    {{ if .Site.Params.disqusshortname }}
+    <li class="disqus">
+        {{ template "_internal/disqus.html" . }}
+    </li>
+    {{ end }} {{ if .Site.Params.gitalk }}
+    <li id="gitalk-container"></li>
+    {{ end }}
+</ul>
+
+{{ partial "footer.html" . }}

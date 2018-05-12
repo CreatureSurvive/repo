@@ -1,0 +1,56 @@
+{{ partial "head_includes.html" . }}
+<h2>{{ partial "page-heading.html" . }}</h2>
+<ul>
+    <li class="markdown">
+        {{ .Content }}
+    </li>
+
+    {{- $folder := lower .Title -}} {{ if eq .Params.changelog_enabled "true" }}
+    <li>
+        <a href="/cydia/{{ $folder }}/changelog">Changelog</a>
+    </li>
+    {{ end }} {{ if eq .Params.screens_enabled "true" }}
+    <li>
+        <a href="/cydia/{{ $folder }}/screenshots">Screenshots</a>
+    </li>
+    {{ end }} {{ if eq .Params.screenshots "true" }} {{ range readDir (print "./content/cydia/" $folder "/screenshots") }} {{ if in .Name ".png" }}
+    <img src="/cydia/{{ $folder }}/screenshots/{{ .Name }}" width="100%"> {{ end }} {{ if in .Name ".gif" }}
+    <img src="/cydia/{{ $folder }}/screenshots/{{ .Name }}" width="100%"> {{ end }} {{ if in .Name ".jpeg" }}
+    <img src="/cydia/{{ $folder }}/screenshots/{{ .Name }}" width="100%"> {{ end }} {{ if in .Name ".m4v" }}
+    <center>
+        <video width="90%">
+            <source src="/cydia/{{ $folder }}/screenshots/{{ .Name }}" type="video/mp4">
+        </video>
+    </center>
+    {{ end }} {{ if in .Name ".mov" }}
+    <center>
+        <video width="90%">
+            <source src="/cydia/{{ $folder }}/screenshots/{{ .Name }}" type="video/mp4">
+        </video>
+    </center>
+    {{ end }} {{ if in .Name ".mp4" }}
+    <center>
+        <video width="90%">
+            <source src="/cydia/{{ $folder }}/screenshots/{{ .Name }}" type="video/mp4">
+        </video>
+    </center>
+    {{ end }} {{ end }} {{ end }}
+</ul>
+
+<ul>
+    <li class="back-to-posts">
+        <a href="/cydia/">{{ i18n "toPackages" }}</a>
+    </li>
+</ul>
+
+<ul>
+    {{ if .Site.Params.disqus }}
+    <li class="disqus">
+        {{ template "_internal/disqus.html" . }}
+    </li>
+    {{ end }} {{ if .Site.Params.gitalk }}
+    <li id="gitalk-container"></li>
+    {{ end }}
+</ul>
+
+{{ partial "footer.html" . }}

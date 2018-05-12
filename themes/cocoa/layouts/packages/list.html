@@ -1,0 +1,14 @@
+{{ partial "header.html" . }}
+<h2>{{ partial "page-heading.html" . }}</h2>
+<ul>
+    {{ with .Content }}
+    <li class="markdown">
+        {{ .Content }}
+    </li>
+    {{ end }} {{ with .Data.Pages }} {{ range .ByWeight }} {{ if eq .Slug "depiction" }}
+    <li class="cell">
+        <a {{ printf "href=%q" .URL | safeHTMLAttr }} role="button">{{ default .Title .Params.heading }}</a>
+    </li>
+    {{ end }} {{ end }} {{ end }}
+</ul>
+{{ partial "footer.html" . }}

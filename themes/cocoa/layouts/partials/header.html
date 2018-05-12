@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+{{ partial "head.html" . }}
+<nav>
+    <a class="title" href=" {{ .Site.BaseURL }} ">{{ .Site.Title }}</a>
+    <span>
+        {{ range .Site.Menus.main }}
+        <a style="margin-left: 3em; " href="{{ .URL | relLangURL }} ">{{ .Name }} </a>
+        {{ end }}
+    </span>
+</nav>
+
+<body lang=" {{ .Site.Params.lang }} ">

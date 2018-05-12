@@ -1,0 +1,62 @@
+{{ partial "header.html" . }}
+<h2>{{ partial "page-heading" . }}</h2>
+<ul>
+    <div class="initials">
+        <a href="{{ .Site.BaseURL }}">{{ .Site.Params.Initials }}</a>
+    </div>
+
+    {{ if and .Site.Params.dateformfull .Site.Params.dateform }}
+    <li class="date" title='{{ .Date.Format .Site.Params.dateformfull }}'>{{ .Date.Format .Site.Params.dateform }}</li>
+    {{ else }}
+    <li class="date" title='{{ .Date.Format "Mon Jan 2 2006 15:04:05 MST" }}'>{{ .Date.Format "Jan 2, 2006" }}</li>
+    {{ end }} {{ if not .Site.Params.noshowreadtime }}
+    <li class="reading-time">
+        <div class="middot"></div>{{ i18n "readingTime" .ReadingTime }}</li>
+    {{ end }}
+</ul>
+
+<ul>
+    <li class="markdown">
+        {{ .Content }}
+        <br> {{ if .Params.tags }}
+        <div class="tags">
+            <strong>Tags:</strong>
+            {{range .Params.tags}}
+            <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+            {{end}}
+        </div>
+        {{end}}
+    </li>
+
+</ul>
+
+<ul>
+
+    <li class="back-to-posts">
+        <a href="/blog/">{{ i18n "backToPosts" }}</a>
+    </li>
+
+</ul>
+
+<ul>
+
+    <li class="disqus">
+        {{ template "_internal/disqus.html" . }}
+    </li>
+
+    {{ if .Site.Params.gitalk }}
+    <li id="gitalk-container"></li>
+</ul>
+
+<script type="text/javascript">
+    const gitalk = new Gitalk({
+        clientID: "{{ .Site.Params.gitalk_clientID }}",
+        clientSecret: "{{ .Site.Params.gitalk_clientSecret }}",
+        repo: "{{ .Site.Params.gitalk_repo }}",
+        owner: "{{ .Site.Params.gitalk_owner }}",
+        admin: {{ .Site.Params.gitalk_admin }},
+    // facebook-like distraction free mode
+    distractionFreeMode: true
+                })
+    gitalk.render('gitalk-container')
+</script> {{ end }} {{ partial "footer.html" . }}
