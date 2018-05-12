@@ -46,7 +46,6 @@ env:
 install:
     - wget https://github.com/gohugoio/hugo/releases/download/v0.40.3/hugo_0.40.3_Linux-64bit.deb
     - sudo dpkg -i hugo*.deb
-    - pip install Pygments
 
 # on build attempt to generate the site
 script:
