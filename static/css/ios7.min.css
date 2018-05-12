@@ -57,7 +57,14 @@ hr {
 
 code, kbd, pre, samp {
     font-family: monospace, monospace;
-    font-size: 1em
+    font-size: 1em;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 2px;
+    background-color: #2e2e2e;
+    color: white;
 }
 
 a {
@@ -495,4 +502,184 @@ nav a.title {
 nav {
     text-align: center;
     padding: 1rem 1rem;
+}
+
+.markdown h1, .markdown h2, .markdown h3, .markdown h4, .markdown h5, .markdown h6 {
+    font-size: 18px;
+    font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
+    letter-spacing: -0.005rem;
+    font-weight: 700;
+    color: #333;
+    text-transform: none;
+    margin-top: 1.75rem;
+}
+
+.markdown h1 {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.markdown h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.markdown h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.markdown h4, .markdown h5, .markdown h6 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    letter-spacing: none;
+}
+
+.markdown code, .markdown pre {
+    font-family: 'Ubuntu Mono', 'Menlo', monospace;
+    font-size: 1rem;
+    background-color: #2e2e2e;
+    border-radius: 5;
+}
+
+.markdown code {
+    /* enclosed by single backtick (`) */
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 2px;
+    color: white;
+}
+
+.markdown pre {
+    /* Hugo specific: consider using the 'highlight' shortcode */
+    border-left: 3px green solid;
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    line-height: 1.5em;
+    white-space: pre;
+    white-space: pre-wrap;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.markdown pre code {
+    /* enclosed by 3 backticks (```) */
+    padding: 0;
+    font-size: 1rem;
+}
+
+.markdown a code {
+    color: #428bca !important;
+}
+
+.markdown a code:hover {
+    text-decoration: underline;
+}
+
+.markdown p {
+    /* Invoked by line break */
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.markdown ul, .markdown ol, .markdown dl {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.markdown dt {
+    font-weight: bold;
+}
+
+.markdown dd {
+    margin-bottom: .5rem;
+}
+
+.markdown ul {
+    margin-bottom: 1.25rem;
+}
+
+.markdown ul li {
+    list-style-type: disc;
+}
+
+.markdown ol li {
+    list-style-type: decimal;
+}
+
+.markdown li {
+    list-style-position: outside;
+    margin-left: 1em;
+}
+
+.markdown em {
+    font-style: italic;
+}
+
+.markdown strong {
+    font-weight: 700;
+}
+
+.markdown hr {
+    position: relative;
+    margin: 1.75rem 0;
+    border: 0;
+    border-top: 1px solid #808080;
+    border-top: 1px solid #999999;
+}
+
+.markdown abbr {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #666666;
+    text-transform: uppercase;
+}
+
+.markdown abbr[title] {
+    cursor: help;
+    border-bottom: 1px dotted #808080;
+}
+
+.markdown blockquote {
+    padding: .5rem 1rem;
+    margin: .8rem 0;
+    color: #7a7a7a;
+    border-left: .25rem solid #e5e5e5;
+}
+
+.markdown blockquote p:last-child {
+    margin-bottom: 0;
+}
+
+@media (min-width: 550px) {
+    .markdown blockquote {
+        padding-right: 5rem;
+        padding-left: 1.25rem;
+    }
+}
+
+.markdown img {
+    margin: 1rem 0;
+    max-width: 100%;
+}
+
+.markdown table {
+    margin-bottom: 1rem;
+    width: 100%;
+    border: 1px solid #e5e5e5;
+    border-collapse: collapse;
+}
+
+.markdown td, .markdown th {
+    padding: .25rem .5rem;
+    border: 1px solid #e5e5e5;
+}
+
+.markdown tbody tr:nth-child(odd) td, .markdown tbody tr:nth-child(odd) th {
+    background-color: #f7f7f7;
 }

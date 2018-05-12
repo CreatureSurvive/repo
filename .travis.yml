@@ -10,32 +10,56 @@
 #   on:
 #     branch: master
 
-language: go
+# language: go
 
-env:
-  global:
-  - HUGO_VERSION=0.40.2  # set in the environment to make it easy 
+# env:
+#   global:
+#   - HUGO_VERSION=0.40.2  # set in the environment to make it easy 
 
-# install hugo before the build is run; download the public
-# release, untar, and copy it to a known location
+# # install hugo before the build is run; download the public
+# # release, untar, and copy it to a known location
+# install:
+#     - wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.deb
+#     - sudo dpkg -i hugo*.deb
+
+# # on build attempt to generate the site
+# script:
+# - hugo
+
+# # the deploy configuration for github pages; this is an
+# # out-of-the-box travis feature
+# deploy:
+#   provider: pages
+#   # publish the "public" folder, where hugo builds by default
+#   local_dir: public
+#   skip_cleanup: true
+#   # use the github token stored in the environment, which is
+#   # securely encrypted in `matrix.secure` above
+#   github_token: "$GITHUB_TOKEN"
+#   # only publish on master branch builds
+#   on:
+#     branch: master
+
+# Install the apt prerequisites
+addons:
+  apt:
+    packages:
+      - python-pygments
+
+# Clean and don't fail
 install:
-    - wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.deb
-    - sudo dpkg -i hugo*.deb
+  - rm -rf public || exit 0
 
-# on build attempt to generate the site
+# Build the website
 script:
-- hugo
+  - cd src
+  - ../binaries/hugo # --theme=ghoust
 
-# the deploy configuration for github pages; this is an
-# out-of-the-box travis feature
+# Deploy to GitHub pages
 deploy:
   provider: pages
-  # publish the "public" folder, where hugo builds by default
-  local_dir: public
   skip_cleanup: true
-  # use the github token stored in the environment, which is
-  # securely encrypted in `matrix.secure` above
-  github_token: "$GITHUB_TOKEN"
-  # only publish on master branch builds
+  local_dir: public
+  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
   on:
     branch: master

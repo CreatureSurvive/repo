@@ -1,7 +1,7 @@
 {{ partial "header.html" . }}
 <h2>{{ partial "page-heading.html" . }}</h2>
 <ul>
-    {{ with .Content }}
+    {{ if .Content }}
     <li class="markdown">
         {{ .Content }}
     </li>
