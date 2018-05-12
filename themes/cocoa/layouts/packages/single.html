@@ -10,28 +10,27 @@
     </li>
     {{ end }} {{ if eq .Params.screens_enabled "true" }}
     <li>
-        <a href="/packages/{{ $folder }}/screenshots">Screenshots</a>
+        <a href="/screenshots/{{ $folder }}">Screenshots</a>
     </li>
-    {{ end }} {{ if eq .Params.screenshots "true" }} {{ range readDir (print "./content/packages/" $folder "/screenshots") }}
-    {{ if in .Name ".png" }}
-    <img src="/packages/{{ $folder }}/screenshots/{{ .Name }}" width="100%"> {{ end }} {{ if in .Name ".gif" }}
-    <img src="/packages/{{ $folder }}/screenshots/{{ .Name }}" width="100%"> {{ end }} {{ if in .Name ".jpeg" }}
-    <img src="/packages/{{ $folder }}/screenshots/{{ .Name }}" width="100%"> {{ end }} {{ if in .Name ".m4v" }}
+    {{ end }} {{ if eq .Params.screenshots "true" }} {{ range readDir (print "./screenshots/" $folder "/screenshots") }} {{ if in .Name ".png" }}
+    <img src="/screenshots/{{ $folder }}/{{ .Name }}" width="100%"> {{ end }} {{ if in .Name ".gif" }}
+    <img src="/screenshots/{{ $folder }}/{{ .Name }}" width="100%"> {{ end }} {{ if in .Name ".jpeg" }}
+    <img src="/screenshots/{{ $folder }}/{{ .Name }}" width="100%"> {{ end }} {{ if in .Name ".m4v" }}
     <center>
         <video width="90%">
-            <source src="/packages/{{ $folder }}/screenshots/{{ .Name }}" type="video/mp4">
+            <source src="/screenshots/{{ $folder }}/{{ .Name }}" type="video/mp4">
         </video>
     </center>
     {{ end }} {{ if in .Name ".mov" }}
     <center>
         <video width="90%">
-            <source src="/packages/{{ $folder }}/screenshots/{{ .Name }}" type="video/mp4">
+            <source src="/screenshots/{{ $folder }}/{{ .Name }}" type="video/mp4">
         </video>
     </center>
     {{ end }} {{ if in .Name ".mp4" }}
     <center>
         <video width="90%">
-            <source src="/packages/{{ $folder }}/screenshots/{{ .Name }}" type="video/mp4">
+            <source src="/screenshots/{{ $folder }}/{{ .Name }}" type="video/mp4">
         </video>
     </center>
     {{ end }} {{ end }} {{ end }}

@@ -1,13 +1,23 @@
-language: go
+# language: go
 
-go:
-  - master # This uses automatically the latest version of go
+# go:
+#   - master # This uses automatically the latest version of go
+
+# install:
+#   - go get github.com/gohugoio/hugo # This provides the latest version of Hugo to Travis CI
+
+# script:
+#   - hugo # This commands builds your website on travis
+
+language: python
 
 install:
-  - go get github.com/gohugoio/hugo # This provides the latest version of Hugo to Travis CI
+    - wget https://github.com/gohugoio/hugo/releases/download/v0.40.3/hugo_0.40.3_Linux-64bit.deb
+    - sudo dpkg -i hugo*.deb
+    - pip install Pygments
 
 script:
-  - hugo # This commands builds your website on travis
+    - hugo
 
 deploy:
   local_dir: public # Default static site output dir for Hugo
