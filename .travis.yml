@@ -52,8 +52,7 @@ install:
 
 # Build the website
 script:
-  - cd src
-  - ../binaries/hugo # --theme=ghoust
+  - /binaries/hugo # --theme=ghoust
 
 # Deploy to GitHub pages
 deploy:
