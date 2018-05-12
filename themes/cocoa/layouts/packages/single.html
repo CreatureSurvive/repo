@@ -12,8 +12,7 @@
     <li>
         <a href="/packages/{{ $folder }}/screenshots">Screenshots</a>
     </li>
-    {{ end }} {{ if eq .Params.screenshots "true" }} {{ range readDir (print "./content/packages/" $folder "/screenshots") }}
-    {{ if in .Name ".png" }}
+    {{ end }} {{ if .Params.screenshots }} {{ range readDir (print "./content/packages/" $folder "/screenshots/") }} {{ if in .Name ".png" }}
     <img src="/packages/{{ $folder }}/screenshots/{{ .Name }}" width="100%"> {{ end }} {{ if in .Name ".gif" }}
     <img src="/packages/{{ $folder }}/screenshots/{{ .Name }}" width="100%"> {{ end }} {{ if in .Name ".jpeg" }}
     <img src="/packages/{{ $folder }}/screenshots/{{ .Name }}" width="100%"> {{ end }} {{ if in .Name ".m4v" }}
