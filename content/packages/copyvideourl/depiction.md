@@ -1,5 +1,5 @@
 +++
-date = "2018-04-28"
+date = "April 28, 2018"
 title = "copyVideoURL"
 package = "com.creaturecoding.copyvideourl"
 slug = "depiction"

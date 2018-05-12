@@ -16,19 +16,19 @@
 
 <!-- Fonts and icon CSS -->
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500"> {{ if .Site.Params.cachebuster }} {{ $t := now }}
 <link rel="stylesheet" href="/css/reset.css?t={{$t}}">
 <link rel="stylesheet" href="/css/pygments.css?t={{$t}}">
 <!-- <link rel="stylesheet" href="/css/main.css?t={{$t}}"> -->
-<link rel="stylesheet" href="/css/ios7.min.css?t={{$t}}"> {{ if eq .Site.Params.iconFont "font-awesome" }}
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"> {{ else }}
-<link rel="stylesheet" href="/css/monosocialiconsfont.css?t={{$t}}"> {{ end }} {{range .Site.Params.extracssfiles}}
+<link rel="stylesheet" href="/css/ios7.min.css?t={{$t}}"> {{range .Site.Params.extracssfiles}}
 <link rel="stylesheet " href=" {{.}} ?t= {{$t}} "> {{ end }} {{ else }}
 
 
 <link rel="stylesheet " href="/css/reset.css ">
 <link rel="stylesheet " href="/css/pygments.css ">
-<link rel="stylesheet " href="/css/main.css "> {{range .Site.Params.extracssfiles}}
+<!-- <link rel="stylesheet " href="/css/main.css ">  -->
+{{range .Site.Params.extracssfiles}}
 <link rel="stylesheet " href=" {{.}} "> {{end}} {{ end }}
 
 <!-- Icon -->

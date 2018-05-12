@@ -9,7 +9,7 @@ googleAnalytics = ""
 languageCode = "en-US"
 layoutdir = "layouts"
 pluralizelisttitles = false
-publishdir = "docs"
+publishdir = "public"
 publishBranch = "gh-pages"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
@@ -80,16 +80,13 @@ title = "CreatureSurvive"
 	title404 = ""
 	subtitle404 = ""
     # Choose a font for the social icons in the footer. Either "mono-social" or "font-awesome"
-	iconFont = "mono-social"
-    # The social icons can be styled differently if you use mono as font - circle, rounded, or empty
-    socialIconStyle = "circle"
+	iconFont = "font-awesome"
 
 [social]
-    twitter  = "https://www.twitter.com/CreatureSurvive"
-    github   = "https://www.github.com/CreatureSurvive"
-    reddit  = "https://www.reddit.com/u/CreatureSurvive"
-    email = "support@creaturecoding.com"
-    home = "https://creaturesurvive.github.io/repo"
+    twitter = "https://www.twitter.com/CreatureSurvive"
+    github = "https://www.github.com/CreatureSurvive"
+    reddit = "https://www.reddit.com/u/CreatureSurvive"
+    envelope = "support@creaturecoding.com"
 
 
 [permalinks]

@@ -26,7 +26,7 @@
     {{ range (first $latestpostscount (where .Data.Pages.ByPublishDate.Reverse "Section" "packages")) }} {{ partial "li.html" . }}
     {{ end }} {{ if gt $totalpostscount $latestpostscount }} {{ range where .Site.Menus.main "Identifier" "packages" }}
     <li class="post-item no-bullet">
-        <a id="see-more" {{ printf "href=%q " .URL | safeHTMLAttr }}>
+        <a id="see-more" {{ printf "href=%q " .URL | safeHTMLAttr }} role="button">
             <span>See more&hellip;</span>
         </a>
     </li>

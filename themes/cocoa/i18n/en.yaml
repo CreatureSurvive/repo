@@ -20,7 +20,7 @@
   translation: "Back to posts"
 
 - id: backToPackages
-  translation: "Back to packages"
+  translation: "All packages"
 
 - id: toPackages
   translation: "Go to packages"

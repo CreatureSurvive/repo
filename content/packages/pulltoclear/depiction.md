@@ -1,5 +1,5 @@
 +++
-date = "2018-05-05"
+date = "October 14, 2017"
 title = "PullToClear"
 package = "com.creaturecoding.pulltoclear"
 slug = "depiction"

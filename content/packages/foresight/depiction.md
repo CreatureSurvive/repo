@@ -1,5 +1,5 @@
 +++
-date = "2018-05-05"
+date = "October 6, 2017"
 title = "foresight"
 package = "com.creaturecoding.foresight"
 slug = "depiction"

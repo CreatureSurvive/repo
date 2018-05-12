@@ -1,5 +1,5 @@
 +++
-date = "2018-05-05"
+date = "May 12, 2018"
 title = "switcherRadiiXI"
 package = "com.creaturecoding.switcherradiixi"
 slug = "depiction"

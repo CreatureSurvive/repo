@@ -1,5 +1,5 @@
 +++
-date = "2018-05-05"
+date = "January 23, 2018"
 title = "libCSWeather"
 package = "com.creaturecoding.libcsweather"
 slug = "depiction"

@@ -8,7 +8,6 @@ slug = "changelog"
 - General project cleanup
 - Fixed missing depiction
 
----
 
 ## Version 0.5.7 (October 11, 2017)
 
@@ -16,10 +15,7 @@ slug = "changelog"
 - improved layout
 - better support for libCSPreferences
 
----
 
 ## Version 0.5.2 (April 22, 2017)
 
 - initial release
-
----

@@ -1,5 +1,5 @@
 +++
-date = "2018-05-06"
+date = "May 5, 2018"
 title = "reachCC"
 package = "com.creaturecoding.reachcc"
 slug = "depiction"

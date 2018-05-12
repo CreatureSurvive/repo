@@ -1,5 +1,5 @@
 +++
-date = "2018-05-05"
+date = "July 1, 2017"
 title = "FastDel"
 package = "com.creaturecoding.fastdel"
 slug = "depiction"

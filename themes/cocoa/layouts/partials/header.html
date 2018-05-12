@@ -4,6 +4,7 @@
 {{ partial "head.html" . }}
 <nav>
     <a class="title" href=" {{ .Site.BaseURL }} ">{{ .Site.Title }}</a>
+    <br>
     <span>
         {{ range .Site.Menus.main }}
         <a style="margin-left: 3em; " href="{{ .URL | relLangURL }} ">{{ .Name }} </a>

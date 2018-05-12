@@ -1,5 +1,5 @@
 +++
-date = "2018-05-05"
+date = "January 28, 2017"
 title = "InteligentPower"
 package = "com.creaturecoding.inteligentpower"
 slug = "depiction"

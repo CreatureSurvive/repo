@@ -1,5 +1,5 @@
 +++
-date = "2018-05-05"
+date = "September 30, 2016"
 title = "PredictionStickAround"
 package = "com.creaturecoding.predictionstickaround"
 slug = "depiction"

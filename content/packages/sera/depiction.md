@@ -1,5 +1,5 @@
 +++
-date = "2018-05-05"
+date = "December 26, 2016"
 title = "sera"
 package = "com.creaturecoding.sera"
 slug = "depiction"

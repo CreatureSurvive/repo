@@ -4,7 +4,7 @@
         <br> {{ partial "social.html" . }}
         <br>{{ end }}
         <p>
-            {{.Site.Params.copyright }} © Copyright {{ now.Format "2006" }}
+            <a class="title" href=" {{ .Site.BaseURL }} ">{{.Site.Params.copyright }}</a> © Copyright {{ now.Format "2006" }}
         </p>
     </footer>
 </body>
