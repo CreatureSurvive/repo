@@ -1,24 +1,3 @@
-# language: go
-
-# go:
-#   - master # This uses automatically the latest version of go
-
-# install:
-#   - go get github.com/gohugoio/hugo # This provides the latest version of Hugo to Travis CI
-
-# script:
-#   - hugo # This commands builds your website on travis
-
-# language: python
-
-# install:
-#     - wget https://github.com/gohugoio/hugo/releases/download/v0.40.3/hugo_0.40.3_Linux-64bit.deb
-#     - sudo dpkg -i hugo*.deb
-#     - pip install Pygments
-
-# script:
-#     - hugo
-
 # deploy:
 #   local_dir: public # Default static site output dir for Hugo
 #   repo: CreatureSurvive/repo.github.io # This is the slug of the repo you want to deploy your site to
@@ -31,25 +10,21 @@
 #   on:
 #     branch: master
 
-# go is not actually required for the build process, but I've
-# had issues with golang on some lightweight distributions
-# such as alpine; using the go image ensures that the build
-# will not have any issues running hugo
 language: go
 
 env:
   global:
-  - HUGO_VERSION=0.40.3  # set in the environment to make it easy 
+    - HUGO_VERSION=0.40.2  # set in the environment to make it easy 
 
 # install hugo before the build is run; download the public
 # release, untar, and copy it to a known location
 install:
-    - wget https://github.com/gohugoio/hugo/releases/download/v0.40.3/hugo_0.40.3_Linux-64bit.deb
-    - sudo dpkg -i hugo*.deb
+  - wget https://github.com/gohugoio/hugo/releases/download/v0.40.2/hugo_0.40.2_Linux-64bit.deb
+   - sudo dpkg -i hugo*.deb
 
 # on build attempt to generate the site
 script:
-- hugo
+  - hugo
 
 # the deploy configuration for github pages; this is an
 # out-of-the-box travis feature
