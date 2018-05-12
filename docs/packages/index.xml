@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Packages on CreatureSurvive</title>
+    <link>https://creaturesurvive.github.io/repo/packages/</link>
+    <description>Recent content in Packages on CreatureSurvive</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 06 May 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://creaturesurvive.github.io/repo/packages/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>reachCC</title>
+      <link>https://creaturesurvive.github.io/repo/packages/reachcc/depiction/</link>
+      <pubDate>Sun, 06 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/reachcc/depiction/</guid>
+      <description>Activate the Control Center on iPhone X using the reachability gesture.</description>
+    </item>
+    
+    <item>
+      <title>FastDel</title>
+      <link>https://creaturesurvive.github.io/repo/packages/fastdel/depiction/</link>
+      <pubDate>Sat, 05 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/fastdel/depiction/</guid>
+      <description>This tweak disables the annoying delete word function and enables rapid character deletion instantly. FastDel is now open source!</description>
+    </item>
+    
+    <item>
+      <title>FlatFields</title>
+      <link>https://creaturesurvive.github.io/repo/packages/flatfields/depiction/</link>
+      <pubDate>Sat, 05 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/flatfields/depiction/</guid>
+      <description>Removes background bubbles from textfields system wide</description>
+    </item>
+    
+    <item>
+      <title>InteligentPower</title>
+      <link>https://creaturesurvive.github.io/repo/packages/inteligentpower/depiction/</link>
+      <pubDate>Sat, 05 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/inteligentpower/depiction/</guid>
+      <description>This tweak enables Low Power Mode when locking the device. When unlocking the device Low Power Mode will be disabled but only if the current battery charge is above the threshold that the user sets in the tweak settings</description>
+    </item>
+    
+    <item>
+      <title>PredictionStickAround</title>
+      <link>https://creaturesurvive.github.io/repo/packages/predictionstickaround/depiction/</link>
+      <pubDate>Sat, 05 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/predictionstickaround/depiction/</guid>
+      <description>disables swipe to dismiss on the predictive keyboard bar.</description>
+    </item>
+    
+    <item>
+      <title>PullToClear</title>
+      <link>https://creaturesurvive.github.io/repo/packages/pulltoclear/depiction/</link>
+      <pubDate>Sat, 05 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/pulltoclear/depiction/</guid>
+      <description>PullToClear notifications on the LockScreen and NotificationCenter on iOS 10
+ custom fonts custom labels custom pull distance custom colors  this is a beta</description>
+    </item>
+    
+    <item>
+      <title>foresight</title>
+      <link>https://creaturesurvive.github.io/repo/packages/foresight/depiction/</link>
+      <pubDate>Sat, 05 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/foresight/depiction/</guid>
+      <description>Replaces lockscreen hint text with the daily weather forecast</description>
+    </item>
+    
+    <item>
+      <title>libCSColorpicker</title>
+      <link>https://creaturesurvive.github.io/repo/packages/libcscolorpicker/depiction/</link>
+      <pubDate>Sat, 05 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/libcscolorpicker/depiction/</guid>
+      <description>A simplistic color picker for use in PreferenceLoader preference bundles. Supports iOS 9 &amp;amp; 10, other iOS versions have not been tested</description>
+    </item>
+    
+    <item>
+      <title>libCSPreferences</title>
+      <link>https://creaturesurvive.github.io/repo/packages/libcspreferences/depiction/</link>
+      <pubDate>Sat, 05 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/libcspreferences/depiction/</guid>
+      <description>A simple to use preference library for iOS
+ 3DTouch support integrated color picker powerful font picker with custom font support theming support change log controller fully integrated backup/restore system zero coding required to integrate in your project crazy simple to use  fully supports iOS 10, other firmwares have not been tested as of yet. this should support iOS 9 as well.</description>
+    </item>
+    
+    <item>
+      <title>libCSWeather</title>
+      <link>https://creaturesurvive.github.io/repo/packages/libcsweather/depiction/</link>
+      <pubDate>Sat, 05 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/libcsweather/depiction/</guid>
+      <description>A simple little library for fetching the current weather information such as:
+ current temperature (celsius/Fahrenheit) current temperature (celsius/Fahrenheit) based on weather preference setting daily high daily low current weather condition icon wether description more coming soon  </description>
+    </item>
+    
+    <item>
+      <title>noDropSheets</title>
+      <link>https://creaturesurvive.github.io/repo/packages/nodropsheets/depiction/</link>
+      <pubDate>Sat, 05 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/nodropsheets/depiction/</guid>
+      <description>Removes airdrop section in share sheets. ONLY PARTIALLY WORKING AT THE MOMENT!</description>
+    </item>
+    
+    <item>
+      <title>selectiveControls</title>
+      <link>https://creaturesurvive.github.io/repo/packages/selectivecontrols/depiction/</link>
+      <pubDate>Sat, 05 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/selectivecontrols/depiction/</guid>
+      <description>stop LockScreen Now Playing controls from showing up for blacklisted apps, configure from settings</description>
+    </item>
+    
+    <item>
+      <title>sera</title>
+      <link>https://creaturesurvive.github.io/repo/packages/sera/depiction/</link>
+      <pubDate>Sat, 05 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/sera/depiction/</guid>
+      <description> is currently in beta and the feature set is not complete, you may encounter bugs. If you find any bugs please contact me via support in settings or via Cydia.
+Features Date &amp;amp; Time  Date and time positioning Date and time height Date and time size Date and time background color Date and time background alpha Date and time font Date and time font size  Media  Media controls position Media controls size Media controls compact view  Notifications  Notification area position Notification area height Notification area background color Notification area background alpha Notification area background blur  </description>
+    </item>
+    
+    <item>
+      <title>switcherRadii</title>
+      <link>https://creaturesurvive.github.io/repo/packages/switcherradii/depiction/</link>
+      <pubDate>Sat, 05 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/switcherradii/depiction/</guid>
+      <description>sets the corner radius of the app switcher cards should support ios 9 and 10, but its only tested on 10</description>
+    </item>
+    
+    <item>
+      <title>switcherRadiiXI</title>
+      <link>https://creaturesurvive.github.io/repo/packages/switcherradiixi/depiction/</link>
+      <pubDate>Sat, 05 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/switcherradiixi/depiction/</guid>
+      <description>sets the corner radius of the app switcher cards should supports iOS 11.</description>
+    </item>
+    
+    <item>
+      <title>copyVideoURL</title>
+      <link>https://creaturesurvive.github.io/repo/packages/copyvideourl/depiction/</link>
+      <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/copyvideourl/depiction/</guid>
+      <description>Copies the URL of videos played in the native MPMoviePlayerController. This is useful for using CromeCast with apps that don&amp;rsquo;t support it. This does not work for videos played in WebViews, or custom video players.</description>
+    </item>
+    
+    <item>
+      <title>alwaysPlaying</title>
+      <link>https://creaturesurvive.github.io/repo/packages/alwaysplaying/depiction/</link>
+      <pubDate>Wed, 11 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/alwaysplaying/depiction/</guid>
+      <description>force now playing controls on LS via activator</description>
+    </item>
+    
+    <item>
+      <title>CopyVideoURL</title>
+      <link>https://creaturesurvive.github.io/repo/packages/copyvideourl/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/copyvideourl/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FastDel</title>
+      <link>https://creaturesurvive.github.io/repo/packages/fastdel/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/fastdel/changelog/</guid>
+      <description>Version 0.3 (July 1, 2017)  Rewrote the whole project This project is now open source  Version 0.2 (March 18, 2017)  iOS 10.2 support The previous update for iOS 10 actually only worked up to 10.1.1. The settings pane would not showup on 10.2 rendering FastDel usless, this is now fixed.  Version 0.1 (January 28, 2017)  iOS 10 support  Version 0.0.8 (October 20, 2016)  another preferences rewrite no respring required for any prefs changes prefs text field now updates immediately to reflect current settings added option to disable cursor smoothing  Version 0.</description>
+    </item>
+    
+    <item>
+      <title>FastDel</title>
+      <link>https://creaturesurvive.github.io/repo/packages/fastdel/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/fastdel/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FlatFields</title>
+      <link>https://creaturesurvive.github.io/repo/packages/flatfields/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/flatfields/changelog/</guid>
+      <description> Version 0.0.5 (September 30, 2016)  removed unnecessary hook  Version 0.0.4 (September 29, 2016)  updated package with support email minor refactoring  Version 0.0.3 (September 29, 2016)  fixed typo  Version 0.0.2 (September 29, 2016)  Initial Release  </description>
+    </item>
+    
+    <item>
+      <title>FlatFields</title>
+      <link>https://creaturesurvive.github.io/repo/packages/flatfields/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/flatfields/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>InteligentPower</title>
+      <link>https://creaturesurvive.github.io/repo/packages/inteligentpower/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/inteligentpower/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PredictionStickAround</title>
+      <link>https://creaturesurvive.github.io/repo/packages/predictionstickaround/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/predictionstickaround/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PullToClear</title>
+      <link>https://creaturesurvive.github.io/repo/packages/pulltoclear/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/pulltoclear/changelog/</guid>
+      <description> Version 0.3.1 (October 14, 2017)  Official support for NCLink10 Lots of refactoring and little improvements, that you should not notice  Version 0.2.1 (October 11, 2017)  initial public release no 3rd party tweak support yet  </description>
+    </item>
+    
+    <item>
+      <title>PullToClear</title>
+      <link>https://creaturesurvive.github.io/repo/packages/pulltoclear/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/pulltoclear/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>alwaysPlaying</title>
+      <link>https://creaturesurvive.github.io/repo/packages/alwaysplaying/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/alwaysplaying/changelog/</guid>
+      <description> Version 0.1.0 (October 11, 2017)  now updates the LockScreen instantly (you no longer need to lock and unlock your device for the controls to appear)  Version 0.0.7 (October 9, 2017)  initial release  </description>
+    </item>
+    
+    <item>
+      <title>alwaysPlaying</title>
+      <link>https://creaturesurvive.github.io/repo/packages/alwaysplaying/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/alwaysplaying/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>alwaysPlaying</title>
+      <link>https://creaturesurvive.github.io/repo/packages/foresight/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/foresight/changelog/</guid>
+      <description> Version 0.0.5 (January 28, 2017)  iOS 10 support  Version 0.0.1 (September 20, 2016)  Initial Release  </description>
+    </item>
+    
+    <item>
+      <title>alwaysPlaying</title>
+      <link>https://creaturesurvive.github.io/repo/packages/inteligentpower/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/inteligentpower/changelog/</guid>
+      <description> Version 0.1.0 (October 11, 2017)  now updates the LockScreen instantly (you no longer need to lock and unlock your device for the controls to appear)  Version 0.0.7 (October 9, 2017)  initial release  </description>
+    </item>
+    
+    <item>
+      <title>alwaysPlaying</title>
+      <link>https://creaturesurvive.github.io/repo/packages/libcscolorpicker/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/libcscolorpicker/changelog/</guid>
+      <description> Version 0.5.9 (October 13, 2017)  General project cleanup Fixed missing depiction  Version 0.5.7 (October 11, 2017)  better support for default values improved layout better support for libCSPreferences  Version 0.5.2 (April 22, 2017)  initial release  </description>
+    </item>
+    
+    <item>
+      <title>alwaysPlaying</title>
+      <link>https://creaturesurvive.github.io/repo/packages/libcspreferences/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/libcspreferences/changelog/</guid>
+      <description>Version 0.9.7 (January 22, 2018)  added CSPCalloutCell for use of accessoryView and border callouts  Version 0.9.6 (January 19, 2018)  switched to 10.1 SDK added option for openInSafari to open in the safari app fixed interaction issue on the CSPImageCell initial work on verifying you are using the official liCSPreferences  Version 0.9.3 (December 18, 2017)  Added CSPreferencesAuthenticate for authenticating a package with a server Fixed issue where the decimal keypad would appear with a comma in some languages making it impossible to type a period Rewrote CSPValueCell to be more versatile  Version 0.</description>
+    </item>
+    
+    <item>
+      <title>alwaysPlaying</title>
+      <link>https://creaturesurvive.github.io/repo/packages/nodropsheets/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/nodropsheets/changelog/</guid>
+      <description> Version 0.1.0 (October 11, 2017)  now updates the LockScreen instantly (you no longer need to lock and unlock your device for the controls to appear)  Version 0.0.7 (October 9, 2017)  initial release  </description>
+    </item>
+    
+    <item>
+      <title>copyVideoURL</title>
+      <link>https://creaturesurvive.github.io/repo/packages/copyvideourl/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/copyvideourl/changelog/</guid>
+      <description> Version 0.0.1-7 (April 28, 2018)  Compiled to suport iOS 9 - 11 Added depiction  Version 0.0.1-7 (April 28, 2018)  Initial Release  </description>
+    </item>
+    
+    <item>
+      <title>foresight</title>
+      <link>https://creaturesurvive.github.io/repo/packages/foresight/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/foresight/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>libCSColorpicker</title>
+      <link>https://creaturesurvive.github.io/repo/packages/libcscolorpicker/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/libcscolorpicker/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>libCSWeather</title>
+      <link>https://creaturesurvive.github.io/repo/packages/libcsweather/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/libcsweather/changelog/</guid>
+      <description>Version 0.5.1b (January 23, 2018)  further optimizations to fetching technique working on solution to verify and cache weather so it can persist through resprings without re-fetching  Version 0.5.0b (January 22, 2018)  reimplemented weather fetching technique added weather error reporting which logs to &amp;lsquo;/var/mobile/Documents/CSWeatherErrorLogs/&amp;rsquo;  Version 0.4.9b (October 23, 2017)  switched to a different update method when location-services are disabled added notification for when the current city changes better handling of setting the current city  Version 0.</description>
+    </item>
+    
+    <item>
+      <title>libCSWeather</title>
+      <link>https://creaturesurvive.github.io/repo/packages/libcsweather/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/libcsweather/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>noDropSheets</title>
+      <link>https://creaturesurvive.github.io/repo/packages/nodropsheets/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/nodropsheets/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>predictionStickAround</title>
+      <link>https://creaturesurvive.github.io/repo/packages/predictionstickaround/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/predictionstickaround/changelog/</guid>
+      <description> Version 0.0.2 (September 30, 2016)  Refactor  Version 0.0.1 (September 30, 2016)  Initial Release  </description>
+    </item>
+    
+    <item>
+      <title>reachCC</title>
+      <link>https://creaturesurvive.github.io/repo/packages/reachcc/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/reachcc/changelog/</guid>
+      <description> Version 1.0.0 (May 6, 2018)  Initial Release  </description>
+    </item>
+    
+    <item>
+      <title>selectiveControls</title>
+      <link>https://creaturesurvive.github.io/repo/packages/selectivecontrols/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/selectivecontrols/changelog/</guid>
+      <description> Version 0.0.3 (October 11, 2017)  initial release  </description>
+    </item>
+    
+    <item>
+      <title>selectiveControls</title>
+      <link>https://creaturesurvive.github.io/repo/packages/selectivecontrols/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/selectivecontrols/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sera</title>
+      <link>https://creaturesurvive.github.io/repo/packages/sera/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/sera/changelog/</guid>
+      <description>Version 0.6.7 (December 26, 2016)  Completely rewrote artwork handeling, all artwork bugs are now fixed and its a lot more efficient Added onption to swap the share/like buttons on the media controls with shuffle/repeat buttons Major refactor in preparation for settings redesign Proper bug reporting coming soon This update contains a lot of rewritten code, if you experience any bugs please let me know  Version 0.6.1.1 (December 23, 2016)  Fixed bug in preferences where notification positioning with media controls present would not work at all if media controls alignment was set to top  Version 0.</description>
+    </item>
+    
+    <item>
+      <title>sera</title>
+      <link>https://creaturesurvive.github.io/repo/packages/sera/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/sera/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>switcherRadii</title>
+      <link>https://creaturesurvive.github.io/repo/packages/libcspreferences/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/libcspreferences/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>switcherRadii</title>
+      <link>https://creaturesurvive.github.io/repo/packages/reachcc/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/reachcc/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>switcherRadii</title>
+      <link>https://creaturesurvive.github.io/repo/packages/switcherradii/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/switcherradii/changelog/</guid>
+      <description> Version 1.0.2 (October 9, 2017)  removed blurred backgrounds, that will be a seporate tweak  Version 1.0.1 (October 4, 2017)  Added blurred headers  Version 1.0.0 (October 3, 2017)  Initial Release  </description>
+    </item>
+    
+    <item>
+      <title>switcherRadii</title>
+      <link>https://creaturesurvive.github.io/repo/packages/switcherradii/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/switcherradii/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>switcherRadiiXI</title>
+      <link>https://creaturesurvive.github.io/repo/packages/switcherradiixi/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/switcherradiixi/changelog/</guid>
+      <description> Version 1.0.0 (May 12, 2018)  Initial Release  </description>
+    </item>
+    
+    <item>
+      <title>switcherRadiiXI</title>
+      <link>https://creaturesurvive.github.io/repo/packages/switcherradiixi/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/packages/switcherradiixi/screenshots/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
