@@ -9,24 +9,61 @@
 # script:
 #   - hugo # This commands builds your website on travis
 
-language: python
+# language: python
 
-install:
-    - wget https://github.com/gohugoio/hugo/releases/download/v0.40.3/hugo_0.40.3_Linux-64bit.deb
-    - sudo dpkg -i hugo*.deb
-    - pip install Pygments
+# install:
+#     - wget https://github.com/gohugoio/hugo/releases/download/v0.40.3/hugo_0.40.3_Linux-64bit.deb
+#     - sudo dpkg -i hugo*.deb
+#     - pip install Pygments
 
+# script:
+#     - hugo
+
+# deploy:
+#   local_dir: public # Default static site output dir for Hugo
+#   repo: CreatureSurvive/repo.github.io # This is the slug of the repo you want to deploy your site to
+#   target_branch: master # GitHub pages branch to deploy to (in other cases it can be gh-pages)
+#   provider: pages
+#   skip_cleanup: true
+#   github_token: $GITHUB_TOKEN # This is the authentication which you will setup in the next step in travis-ci dashboard
+#   email: support@creaturecoding.com
+#   name: "CreatureSurvive"
+#   on:
+#     branch: master
+
+# go is not actually required for the build process, but I've
+# had issues with golang on some lightweight distributions
+# such as alpine; using the go image ensures that the build
+# will not have any issues running hugo
+language: go
+go:
+- 1.7
+env:
+  global:
+  - HUGO_VERSION=0.40.3  # set in the environment to make it easy 
+  matrix:
+    # would be a long string; removed to read easier here.
+    secure: <secure_token>
+# install hugo before the build is run; download the public
+# release, untar, and copy it to a known location
+before_install:
+- mkdir -p bin
+- curl -L https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz
+  -o bin/hugo.tar.gz
+- tar xzvvf bin/hugo.tar.gz -C ./bin
+# on build attempt to generate the site
 script:
-    - hugo
-
+- "./bin/hugo"
+# the deploy configuration for github pages; this is an
+# out-of-the-box travis feature
 deploy:
-  local_dir: public # Default static site output dir for Hugo
-  repo: CreatureSurvive/repo.github.io # This is the slug of the repo you want to deploy your site to
-  target_branch: master # GitHub pages branch to deploy to (in other cases it can be gh-pages)
   provider: pages
+  # publish the "public" folder, where hugo builds by default
+  local_dir: public
   skip_cleanup: true
-  github_token: $GITHUB_TOKEN # This is the authentication which you will setup in the next step in travis-ci dashboard
-  email: support@creaturecoding.com.com
-  name: "CreatureSurvive"
+  # use the github token stored in the environment, which is
+  # securely encrypted in `matrix.secure` above
+  github_token: "$GITHUB_TOKEN"
+  # only publish on master branch builds
   on:
     branch: master
