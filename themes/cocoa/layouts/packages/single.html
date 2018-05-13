@@ -71,14 +71,14 @@
     {{ end }}
 </ul>
 
+{{ if eq .Site.Params.disqus "true" }}
 <ul>
-    {{ if .Site.Params.disqus }}
     <li class="disqus">
         {{ template "_internal/disqus.html" . }}
     </li>
-    {{ end }} {{ if .Site.Params.gitalk }}
-    <li id="gitalk-container"></li>
-    {{ end }}
 </ul>
-
-{{ partial "footer.html" . }}
+{{ end }} {{ if .Site.Params.gitalk }}
+<ul>
+    <li id="gitalk-container"></li>
+</ul>
+{{ end }} {{ partial "footer.html" . }}
