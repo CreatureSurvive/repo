@@ -7,4 +7,6 @@ screens_enabled = "true"
 changelog_enabled = "true"
 +++
 
-stop LockScreen Now Playing controls from showing up for blacklisted apps, configure from settings
+Quickly connect/disconnect from bluetooth devices using your Control center Configure device in settings.
+
+Requires either: [CCSupport Package](http://cydia.saurik.com/package/com.opa334.ccsupport/) or [Silo Package](http://cydia.saurik.com/package/com.ioscreatix.silo/) 

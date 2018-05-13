@@ -1,5 +1,5 @@
 +++
-title = "switcherRadii"
+title = "libCSPreferences"
 slug = "screenshots"
 screenshots = "true"
 +++
