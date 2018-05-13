@@ -1,6 +1,6 @@
 +++
-title: "Unity Update Manager Continued"
-date: 2016-09-10 
+title = "Unity Update Manager Continued"
+date = 2016-09-10 
 math = "false"
 draft = "false"
 +++
