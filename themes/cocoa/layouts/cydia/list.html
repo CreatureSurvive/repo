@@ -7,7 +7,16 @@
     </li>
     {{ end }} {{ with .Data.Pages }} {{ range .ByWeight }} {{ if eq .Slug "depiction" }}
     <li>
-        <a {{ printf "href=%q" .URL | safeHTMLAttr }} role="button">{{ default .Title .Params.heading }}</a>
+        <a {{ printf "href=%q" .URL | safeHTMLAttr }} role="button">
+            <span>
+                <img class="icon" src="../images/icons/tweaks/icon.png">
+            </span>
+            <span>
+                <label>
+                    <p style="margin-left: 25px;">{{ default .Title .Params.heading }}</p>
+                </label>
+            </span>
+        </a>
     </li>
     {{ end }} {{ end }} {{ end }}
 </ul>
