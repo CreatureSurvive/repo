@@ -8,11 +8,11 @@
     </li>
     {{ end }} {{- $folder := lower .Title -}} {{ if eq .Params.changelog_enabled "true" }}
     <li>
-        <a href="/packages/{{ $folder }}/changelog">Changelog</a>
+        <a href="/packages/{{ $folder }}/changelog" role="button">Changelog</a>
     </li>
     {{ end }} {{ if eq .Params.screens_enabled "true" }}
     <li>
-        <a href="/packages/{{ $folder }}/screenshots">Screenshots</a>
+        <a href="/packages/{{ $folder }}/screenshots" role="button">Screenshots</a>
     </li>
     {{ end }}
 </ul>

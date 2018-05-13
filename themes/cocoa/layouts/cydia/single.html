@@ -7,11 +7,11 @@
     </li>
     {{ end }} {{- $folder := lower .Title -}} {{ if eq .Params.changelog_enabled "true" }}
     <li>
-        <a href="/cydia/{{ $folder }}/changelog">Changelog</a>
+        <a href="/cydia/{{ $folder }}/changelog" role="button">Changelog</a>
     </li>
     {{ end }} {{ if eq .Params.screens_enabled "true" }}
     <li>
-        <a href="/cydia/{{ $folder }}/screenshots">Screenshots</a>
+        <a href="/cydia/{{ $folder }}/screenshots" role="button">Screenshots</a>
     </li>
     {{ end }}
 </ul>
