@@ -5,7 +5,6 @@ math = "false"
 draft = "false"
 +++
 
-------
 
 ### What is an update manager?
 

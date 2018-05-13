@@ -506,7 +506,7 @@ nav {
 
 .markdown h1, .markdown h2, .markdown h3, .markdown h4, .markdown h5, .markdown h6 {
     font-size: 18px;
-    font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
+    font-family: 'Helvetica Neue', sans-serif;
     letter-spacing: -0.005rem;
     font-weight: 700;
     color: #333;
@@ -536,7 +536,7 @@ nav {
 }
 
 .markdown code, .markdown pre {
-    font-family: 'Ubuntu Mono', 'Menlo', monospace;
+    font-family: monospace, monospace;
     font-size: 1rem;
     background-color: #2e2e2e;
     border-radius: 5;
