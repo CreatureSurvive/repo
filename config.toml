@@ -40,12 +40,12 @@ title = "CreatureSurvive"
     description = "Don't panic"
     faviconfile = "img/favicon.ico"
 
-    gitalk = true
+    gitalk = false
     gitalk_admin = ["CreatureSurvive"]
     gitalk_clientid = "58099ad49b44018d2e74"
     gitalk_clientsecret = "901f2522f31f1ac57486c1f7c7a2c8d442aecea7"
     gitalk_owner = "CreatureSurvive"
-    gitalk_repo = "https://creaturesurvive.github.io/repo/"
+    gitalk_repo = "https://creaturesurvive.github.io/website_comments/"
 
     disqus = false
     disqusShortname = "CreatureCoding"
@@ -58,7 +58,7 @@ title = "CreatureSurvive"
     include_rss = true
     keywords = "blog,developer,cydia,repo"
     lang = "en"
-    latestpostscount = 10
+    latestpostscount = 15
     noshowreadtime = false
     selfintro = ""
 	
