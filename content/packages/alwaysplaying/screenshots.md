@@ -1,5 +1,5 @@
 +++
 title = "alwaysPlaying"
 slug = "screenshots"
-screenshots = "true"
+screenshots = "false"
 +++

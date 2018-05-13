@@ -1,5 +1,5 @@
 +++
 title = "libCSWeather"
 slug = "screenshots"
-screenshots = "true"
+screenshots = "false"
 +++

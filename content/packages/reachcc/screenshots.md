@@ -1,5 +1,5 @@
 +++
 title = "switcherRadii"
 slug = "screenshots"
-screenshots = "true"
+screenshots = "false"
 +++

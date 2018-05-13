@@ -1,5 +1,5 @@
 +++
 title = "InteligentPower"
 slug = "screenshots"
-screenshots = "true"
+screenshots = "false"
 +++

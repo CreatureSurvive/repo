@@ -1,5 +1,5 @@
 +++
 title = "PredictionStickAround"
 slug = "screenshots"
-screenshots = "true"
+screenshots = "false"
 +++

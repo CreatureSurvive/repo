@@ -1,5 +1,5 @@
 +++
 title = "noDropSheets"
 slug = "screenshots"
-screenshots = "true"
+screenshots = "false"
 +++

@@ -1,5 +1,5 @@
 +++
 title = "CopyVideoURL"
 slug = "screenshots"
-screenshots = "true"
+screenshots = "false"
 +++
