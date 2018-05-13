@@ -58,7 +58,7 @@ title = "CreatureSurvive"
     include_rss = true
     keywords = "blog,developer,cydia,repo"
     lang = "en"
-    latestpostscount = 5
+    latestpostscount = 10
     noshowreadtime = false
     selfintro = ""
 	

@@ -21,10 +21,38 @@
 
 {{ end }} {{ $totalpostscount := len (where .Data.Pages "Section" "packages") }} {{ $latestpostscount := .Site.Params.latestpostscount | default $totalpostscount }}
 {{ if gt $latestpostscount 0 }}
-<div class="page-heading">{{ i18n "latestPosts" }}</div>
+<h2 class="heading">{{ i18n "latestPosts" }}</h2>
+<!-- <ul>
+    {{ with .Data.Pages }} {{ range .ByWeight }} {{ if eq .Slug "depiction" }}
+    <li>
+        <a {{ printf "href=%q" .URL | safeHTMLAttr }} role="button">
+            <span>
+                <img class="icon" src="images/icons/tweaks/icon.png">
+            </span>
+            <span>
+                <label>
+                    <p style="margin-left: 25px;">{{ default .Title .Params.heading }}</p>
+                </label>
+            </span>
+        </a>
+    </li>
+    {{ end }} {{ end }} {{ end }}
+</ul> -->
 <ul>
-    {{ range (first $latestpostscount (where .Data.Pages.ByPublishDate.Reverse "Section" "packages")) }} {{ partial "li.html" . }}
-    {{ end }} {{ if gt $totalpostscount $latestpostscount }} {{ range where .Site.Menus.main "Identifier" "packages" }}
+    {{ range (first $latestpostscount (where .Data.Pages.ByPublishDate.Reverse "Section" "packages")) }} {{ if eq .Slug "depiction" }}
+    <li>
+        <a {{ printf "href=%q" .URL | safeHTMLAttr }} role="button">
+            <span>
+                <img class="icon" src="images/icons/tweaks/icon.png">
+            </span>
+            <span>
+                <label>
+                    <p style="margin-left: 25px;">{{ default .Title .Params.heading }}</p>
+                </label>
+            </span>
+        </a>
+    </li>
+    {{ end }} {{ end }} {{ if gt $totalpostscount $latestpostscount }} {{ range where .Site.Menus.main "Identifier" "packages" }}
     <li class="post-item no-bullet">
         <a id="see-more" {{ printf "href=%q " .URL | safeHTMLAttr }} role="button">
             <span>See more&hellip;</span>

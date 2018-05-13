@@ -2,7 +2,8 @@
 <div class="markdown">
     {{ .Content }}
 </div>
-{{ end }} {{ i18n "blogHeading" }}
+{{ end }}
+<h2 class="heading">{{ i18n "blogHeading" }}</h2>
 <ul>
     {{ if eq .Site.Params.bloggroupby "month" }} {{ $.Scratch.Set "datespec" "Jan, 2006" }} {{ else if eq .Site.Params.bloggroupby "year" }}
     {{ $.Scratch.Set "datespec" "2006" }} {{ end }} {{ if not ($.Scratch.Get "datespec") }} {{ range .Data.Pages.ByPublishDate.Reverse }}
