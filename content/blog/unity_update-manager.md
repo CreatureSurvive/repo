@@ -1,5 +1,5 @@
 +++
-date = "2016-09-04 23:46:50 "
+date = "2016-09-04"
 title = "Unity Update Manager"
 math = "false"
 draft = "false"

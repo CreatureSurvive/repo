@@ -1,9 +1,9 @@
----
-
++++
 title: "Unity Update Manager Continued"
-date: 2016-09-10 04:00:26 
-draft: false
----
+date: 2016-09-10 
+math = "false"
+draft = "false"
++++
 
 After receiving a good amount of feedback on my previous post \[Update Manager\](http://creaturecoding.com/update-manager/) I decided to write a followup post to fill in some of the information I left out in the original post.
 
