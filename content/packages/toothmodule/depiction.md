@@ -9,4 +9,4 @@ changelog_enabled = "true"
 
 Quickly connect/disconnect from bluetooth devices using your Control center Configure device in settings.
 
-Requires either: [CCSupport Package](http://cydia.saurik.com/package/com.opa334.ccsupport/) or [Silo Package](http://cydia.saurik.com/package/com.ioscreatix.silo/) 
+Requires either: [CCSupport Package](http://cydia.saurik.com/package/com.opa334.ccsupport/) or [Silo Package](https://repo.packix.com/package/com.ioscreatix.silo/) 
