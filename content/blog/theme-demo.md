@@ -1,6 +1,6 @@
 +++
 date = "2017-01-08"
-title = "Theme Demo"
+title = "test post"
 math = "true"
 
 +++
