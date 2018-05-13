@@ -2,11 +2,11 @@
 
 <h2 class="heading">{{ partial "page-heading.html" . }}</h2>
 <ul>
+    {{ if .Content }}
     <li class="markdown">
         {{ .Content }}
     </li>
-
-    {{- $folder := lower .Title -}} {{ if eq .Params.changelog_enabled "true" }}
+    {{ end }} {{- $folder := lower .Title -}} {{ if eq .Params.changelog_enabled "true" }}
     <li>
         <a href="/packages/{{ $folder }}/changelog">Changelog</a>
     </li>
@@ -14,36 +14,64 @@
     <li>
         <a href="/packages/{{ $folder }}/screenshots">Screenshots</a>
     </li>
-    {{ end }} {{ if eq .Params.screenshots "true" }} {{ range readDir (print "./content/packages/" $folder "/screenshots/") }}
-    {{ if in .Name ".png" }}
-    <img src="/packages/{{ $folder }}/screenshots/{{ .Name }}" width="100%"> {{ end }} {{ if in .Name ".gif" }}
-    <img src="/packages/{{ $folder }}/screenshots/{{ .Name }}" width="100%"> {{ end }} {{ if in .Name ".jpeg" }}
-    <img src="/packages/{{ $folder }}/screenshots/{{ .Name }}" width="100%"> {{ end }} {{ if in .Name ".m4v" }}
-    <center>
-        <video width="90%">
-            <source src="/packages/{{ $folder }}/screenshots/{{ .Name }}" type="video/mp4">
-        </video>
-    </center>
+    {{ end }}
+</ul>
+
+{{ if eq .Params.screenshots "true" }}
+<ul>
+    {{ range readDir (print "./content/packages/" $folder "/screenshots/") }} {{ if in .Name ".png" }}
+    <li>
+        <img src="/packages/{{ $folder }}/screenshots/{{ .Name }}" width="100%">
+    </li>
+    {{ end }} {{ if in .Name ".gif" }}
+    <li>
+        <img src="/packages/{{ $folder }}/screenshots/{{ .Name }}" width="100%">
+    </li>
+    {{ end }} {{ if in .Name ".jpeg" }}
+    <li>
+        <img src="/packages/{{ $folder }}/screenshots/{{ .Name }}" width="100%">
+    </li>
+    {{ end }} {{ if in .Name ".m4v" }}
+    <li>
+        <center>
+            <video width="90%">
+                <source src="/packages/{{ $folder }}/screenshots/{{ .Name }}" type="video/mp4">
+            </video>
+        </center>
+    </li>
     {{ end }} {{ if in .Name ".mov" }}
-    <center>
-        <video width="90%">
-            <source src="/packages/{{ $folder }}/screenshots/{{ .Name }}" type="video/mp4">
-        </video>
-    </center>
+    <li>
+        <center>
+            <video width="90%">
+                <source src="/packages/{{ $folder }}/screenshots/{{ .Name }}" type="video/mp4">
+            </video>
+        </center>
+    </li>
     {{ end }} {{ if in .Name ".mp4" }}
-    <center>
-        <video width="90%">
-            <source src="/packages/{{ $folder }}/screenshots/{{ .Name }}" type="video/mp4">
-        </video>
-    </center>
-    {{ end }} {{ end }} {{ end }}
+    <li>
+        <center>
+            <video width="90%">
+                <source src="/packages/{{ $folder }}/screenshots/{{ .Name }}" type="video/mp4">
+            </video>
+        </center>
+    </li>
+    {{ end }} {{ end }}
+</ul>
+{{ end }}
+
+<ul>
+    {{ if eq .Slug "depiction"}}
+    <li class="back-to-posts">
+        <a href="/cydia">{{ i18n "toPackages" }}</a>
+    </li>
+    {{ else }}
+    <li class="back-to-posts">
+        <a href="/cydia/{{ $folder }}/depiction">{{ i18n "backToDepiction" }}</a>
+    </li>
+    {{ end }}
 </ul>
 
 <ul>
-    <li class="back-to-posts">
-        <a href="/packages/">{{ i18n "backToPackages" }}</a>
-    </li>
-
     {{ if .Site.Params.disqus }}
     <li class="disqus">
         {{ template "_internal/disqus.html" . }}

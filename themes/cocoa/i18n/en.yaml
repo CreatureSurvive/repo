@@ -22,5 +22,8 @@
 - id: backToPackages
   translation: "All packages"
 
+- id: backToDepiction
+  translation: "Back to Depiction"
+
 - id: toPackages
   translation: "Go to packages"
