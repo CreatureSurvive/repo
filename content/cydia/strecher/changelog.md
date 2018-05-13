@@ -1,5 +1,5 @@
 +++
-title = "strecher"
+title = "stretcher"
 slug = "changelog"
 +++
 

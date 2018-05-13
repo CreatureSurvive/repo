@@ -1,7 +1,7 @@
 +++
 date = "May 11, 2018"
-title = "strecher"
-package = "com.creaturecoding.strecher"
+title = "stretcher"
+package = "com.creaturecoding.stretcher"
 slug = "depiction"
 screens_enabled = "false"
 changelog_enabled = "true"
