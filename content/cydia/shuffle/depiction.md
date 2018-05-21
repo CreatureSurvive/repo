@@ -3,7 +3,7 @@ date = "May 21, 2018"
 title = "shuffle"
 package = "com.creaturecoding.shuffle"
 slug = "depiction"
-screens_enabled = "false"
+screens_enabled = "true"
 changelog_enabled = "true"
 +++
 
