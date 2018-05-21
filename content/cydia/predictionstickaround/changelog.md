@@ -7,6 +7,7 @@ slug = "changelog"
 
 - Refactor
 
+---
 
 ## Version 0.0.1 (September 30, 2016)
 

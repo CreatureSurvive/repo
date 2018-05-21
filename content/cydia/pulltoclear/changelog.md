@@ -8,6 +8,7 @@ slug = "changelog"
 - Official support for NCLink10
 - Lots of refactoring and little improvements, that you should not notice
 
+---
 
 ## Version 0.2.1 (October 11, 2017)
 

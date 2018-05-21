@@ -60,7 +60,7 @@ code, kbd, pre, samp {
     font-size: 1em;
     padding-left: 5px;
     padding-right: 5px;
-    padding-top: 2px;
+    padding-top: 1px;
     padding-bottom: 2px;
     border-radius: 2px;
     background-color: #2e2e2e;
@@ -237,6 +237,10 @@ button {
     width: 100%;
     height: 1px;
     background: #c8c7cc
+}
+
+.subpixel-line, .markdown>header:after, .markdown>hr, .markdown>ul li:after, .markdown>ul:after, .markdown>ul:before, .markdown>ul>li>ul:after, .markdown>ul>li>ul:before, .markdown>ol>li:after {
+    height: 0px;
 }
 
 .has-subpixel .subpixel-line, .has-subpixel body>header:after, .has-subpixel hr, .has-subpixel ul li:after, .has-subpixel ul:after, .has-subpixel ul:before, ul .has-subpixel li:after {
@@ -504,10 +508,6 @@ nav {
     padding: 1rem 1rem;
 }
 
-.markdown .subpixel-line {
-    background: transparent;
-}
-
 .markdown h1, .markdown h2, .markdown h3, .markdown h4, .markdown h5, .markdown h6 {
     font-size: 18px;
     font-family: 'Helvetica Neue', sans-serif;
@@ -550,9 +550,9 @@ nav {
     /* enclosed by single backtick (`) */
     padding-left: 5px;
     padding-right: 5px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    border-radius: 2px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 5px;
     color: white;
 }
 
@@ -610,6 +610,7 @@ nav {
 
 .markdown ul li {
     list-style-type: disc;
+    padding: 3px
 }
 
 .markdown ol li {
@@ -619,6 +620,7 @@ nav {
 .markdown li {
     list-style-position: outside;
     margin-left: 1em;
+    padding: 3px
 }
 
 .markdown em {

@@ -8,6 +8,8 @@ slug = "changelog"
 - Added Silo compatibility
 - Removed backup section in settings
 
+---
+
 ## Version 1.0.0b (October 11, 2017)
 
 - initial release

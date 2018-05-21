@@ -7,6 +7,7 @@ slug = "changelog"
 
 - iOS 10 support
 
+---
 
 ## Version 0.0.1 (September 20, 2016)
 

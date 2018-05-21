@@ -7,6 +7,7 @@ slug = "changelog"
 
 - fixed typos
 
+---
 
 ### Version 0.0.7 (May 5, 2018)
 
