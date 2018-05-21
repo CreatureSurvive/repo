@@ -1,5 +1,5 @@
 +++
-title = "ebulliance"
+title = "ebullience"
 slug = "changelog"
 +++
 

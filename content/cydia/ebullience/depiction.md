@@ -1,7 +1,7 @@
 +++
 date = "May 21, 2018"
-title = "ebulliance"
-package = "com.creaturecoding.ebulliance"
+title = "ebullience"
+package = "com.creaturecoding.ebullience"
 slug = "depiction"
 screens_enabled = "true"
 changelog_enabled = "true"
