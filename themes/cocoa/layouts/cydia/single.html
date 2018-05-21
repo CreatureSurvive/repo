@@ -26,7 +26,7 @@
         <img src="/cydia/{{ $folder }}/screenshots/{{ .Name }}" width="100%"> {{ end }} {{ if in .Name ".m4v" }}</li>
     <li>
         <center>
-            <video controls="" poster="/packages/{{ $folder }}/screenshots/{{ replace .Name ".m4v" ".png" }}" src="/packages/{{ $folder }}/screenshots/{{ .Name }}"
+            <video width="90%" controls="" poster="/packages/{{ $folder }}/screenshots/{{ replace .Name ".m4v" ".png" }}" src="/packages/{{ $folder }}/screenshots/{{ .Name }}"
                 type="video/mp4"></video>
             <!-- <video width="90%"> <source src="/packages/{{ $folder }}/screenshots/{{ .Name }}" type="video/mp4"></video> -->
         </center>
@@ -34,7 +34,7 @@
     {{ end }} {{ if in .Name ".mov" }}
     <li>
         <center>
-            <video controls="" poster="/packages/{{ $folder }}/screenshots/{{ replace .Name ".mov" ".png" }}" src="/packages/{{ $folder }}/screenshots/{{ .Name }}"
+            <video width="90%" controls="" poster="/packages/{{ $folder }}/screenshots/{{ replace .Name ".mov" ".png" }}" src="/packages/{{ $folder }}/screenshots/{{ .Name }}"
                 type="video/mp4"></video>
             <!-- <video width="90%"><source src="/packages/{{ $folder }}/screenshots/{{ .Name }}" type="video/mp4"></video> -->
         </center>
@@ -42,7 +42,7 @@
     {{ end }} {{ if in .Name ".mp4" }}
     <li>
         <center>
-            <video controls="" poster="/packages/{{ $folder }}/screenshots/{{ replace .Name ".mp4" ".png" }}" src="/packages/{{ $folder }}/screenshots/{{ .Name }}"
+            <video width="90%" controls="" poster="/packages/{{ $folder }}/screenshots/{{ replace .Name ".mp4" ".png" }}" src="/packages/{{ $folder }}/screenshots/{{ .Name }}"
                 type="video/mp4"></video>
             <!-- <video width="90%"><source src="/packages/{{ $folder }}/screenshots/{{ .Name }}" type="video/mp4"></video> -->
         </center>
