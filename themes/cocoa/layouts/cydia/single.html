@@ -26,25 +26,25 @@
         <img src="/cydia/{{ $folder }}/screenshots/{{ .Name }}" width="100%"> {{ end }} {{ if in .Name ".m4v" }}</li>
     <li>
         <center>
-            <video width="90%">
-                <source src="/cydia/{{ $folder }}/screenshots/{{ .Name }}" type="video/mp4">
-            </video>
+            <video controls="" poster="/packages/{{ $folder }}/screenshots/{{ replace .Name ".m4v" ".png" }}" src="/packages/{{ $folder }}/screenshots/{{ .Name }}"
+                type="video/mp4"></video>
+            <!-- <video width="90%"> <source src="/packages/{{ $folder }}/screenshots/{{ .Name }}" type="video/mp4"></video> -->
         </center>
     </li>
     {{ end }} {{ if in .Name ".mov" }}
     <li>
         <center>
-            <video width="90%">
-                <source src="/cydia/{{ $folder }}/screenshots/{{ .Name }}" type="video/mp4">
-            </video>
+            <video controls="" poster="/packages/{{ $folder }}/screenshots/{{ replace .Name ".mov" ".png" }}" src="/packages/{{ $folder }}/screenshots/{{ .Name }}"
+                type="video/mp4"></video>
+            <!-- <video width="90%"><source src="/packages/{{ $folder }}/screenshots/{{ .Name }}" type="video/mp4"></video> -->
         </center>
     </li>
     {{ end }} {{ if in .Name ".mp4" }}
     <li>
         <center>
-            <video width="90%">
-                <source src="/cydia/{{ $folder }}/screenshots/{{ .Name }}" type="video/mp4">
-            </video>
+            <video controls="" poster="/packages/{{ $folder }}/screenshots/{{ replace .Name ".mp4" ".png" }}" src="/packages/{{ $folder }}/screenshots/{{ .Name }}"
+                type="video/mp4"></video>
+            <!-- <video width="90%"><source src="/packages/{{ $folder }}/screenshots/{{ .Name }}" type="video/mp4"></video> -->
         </center>
     </li>
     {{ end }} {{ end }}
