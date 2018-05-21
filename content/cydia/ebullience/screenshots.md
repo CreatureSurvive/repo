@@ -1,5 +1,5 @@
 +++
 title = "ebullience"
 slug = "screenshots"
-screenshots = "true"
+screenshots = "false"
 +++
