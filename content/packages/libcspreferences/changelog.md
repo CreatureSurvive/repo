@@ -3,7 +3,7 @@ title = "libCSPreferences"
 slug = "changelog"
 +++
 
-## Version 0.9.9 (May 21, 2018)
+## Version 0.9.9 (May 22, 2018)
 
 - Added libCSPUtilities with a process manager for launching processes from anywhere.
 - Added almighty tool for running processes as superuser.
