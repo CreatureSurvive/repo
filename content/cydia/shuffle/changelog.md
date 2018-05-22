@@ -3,7 +3,7 @@ title = "shuffle"
 slug = "changelog"
 +++
 
-## Version 0.5.9b (May 22, 2018)
+## Version 0.6.4b (May 22, 2018)
 
 - Added 'App Storage' section to the Apps group
 - Added 'Tweak Dylibs' section to the tweaks group
