@@ -3,6 +3,13 @@ title = "libCSPreferences"
 slug = "changelog"
 +++
 
+## Version 0.9.9 (May 21, 2018)
+
+- Added libCSPUtilities with a process manager for launching processes from anywhere.
+- Added almighty tool for running processes as superuser.
+
+---
+
 ## Version 0.9.8 (May 21, 2018)
 - Refactored 3DTouch for greater compatibility
 
