@@ -3,6 +3,12 @@ title = "shuffle"
 slug = "changelog"
 +++
 
+## Version 0.6.5b (May 22, 2018)
+
+- Hotfix for issue where packages marked as 'Ignore Upgrades' would cause the settings app to crash when viewing the package info
+
+---
+
 ## Version 0.6.4b (May 22, 2018)
 
 - Added 'App Storage' section to the Apps group
@@ -27,6 +33,6 @@ slug = "changelog"
 
 ---
 
-## Version 1.5.0b (May 21, 2018)
+## Version 0.5.0b (May 21, 2018)
 
 - initial release
