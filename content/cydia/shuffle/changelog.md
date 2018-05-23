@@ -3,6 +3,13 @@ title = "shuffle"
 slug = "changelog"
 +++
 
+## Version 0.6.6b (May 22, 2018)
+
+- Added icons for preference bundles with missing icons
+- Added icons for Packages and dylibs sections
+
+---
+
 ## Version 0.6.5b (May 22, 2018)
 
 - Hotfix for issue where packages marked as 'Ignore Upgrades' would cause the settings app to crash when viewing the package info
