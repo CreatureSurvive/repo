@@ -3,6 +3,13 @@ title = "libCSPreferences"
 slug = "changelog"
 +++
 
+## Version 0.9.9.1 (May 23, 2018)
+
+- Fixed a permissions issue that prevented almighty from gaining root privileges.
+- Looking into fixing almighty on iOS 10, just bear with me.
+
+---
+
 ## Version 0.9.9 (May 22, 2018)
 
 - Added libCSPUtilities with a process manager for launching processes from anywhere.
