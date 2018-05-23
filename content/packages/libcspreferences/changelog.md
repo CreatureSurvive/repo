@@ -3,6 +3,12 @@ title = "libCSPreferences"
 slug = "changelog"
 +++
 
+## Version 0.9.9.2 (May 23, 2018)
+
+- Fixed an issue with the previous build where permissions still wouldn't be set properly for almighty.
+
+---
+
 ## Version 0.9.9.1 (May 23, 2018)
 
 - Fixed a permissions issue that prevented almighty from gaining root privileges.
