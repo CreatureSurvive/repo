@@ -3,7 +3,7 @@ date = "May 31, 2018"
 title = "covert"
 package = "com.creaturecoding.covert"
 slug = "depiction"
-screens_enabled = "false"
+screens_enabled = "true"
 changelog_enabled = "true"
 +++
 
