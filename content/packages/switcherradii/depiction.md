@@ -5,6 +5,7 @@ package = "com.creaturecoding.switcherradii"
 slug = "depiction"
 screens_enabled = "true"
 changelog_enabled = "true"
+supported_firmwares = "10.x"
 +++
 
 sets the corner radius of the app switcher cards

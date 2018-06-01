@@ -87,7 +87,15 @@ mark {
 }
 
 small {
+    font-size: 80%
+}
+
+medium {
     font-size: 70%
+}
+
+tiny {
+    font-size: 60%
 }
 
 sub, sup {

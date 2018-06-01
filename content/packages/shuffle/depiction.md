@@ -5,6 +5,7 @@ package = "com.creaturecoding.shuffle"
 slug = "depiction"
 screens_enabled = "true"
 changelog_enabled = "true"
+supported_firmwares = "10.x(partial) - 11.x(full)"
 +++
 
 Mix Up your preferences!

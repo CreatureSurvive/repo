@@ -4,7 +4,11 @@
 <ul>
     {{ if .Content }}
     <li class="markdown">
-        {{ .Content }}
+        {{ if .Params.supported_firmwares}}
+        <medium>
+            <em>Supported Firmwares:</em> iOS {{ .Params.supported_firmwares }}</medium>
+        <br>
+        <br> {{ end }} {{ .Content }}
     </li>
     {{ end }} {{- $folder := lower .Title -}} {{ if eq .Params.changelog_enabled "true" }}
     <li>

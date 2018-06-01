@@ -5,6 +5,7 @@ package = "com.creaturecoding.sera"
 slug = "depiction"
 screens_enabled = "true"
 changelog_enabled = "true"
+supported_firmwares = "9.x"
 +++
 
 is currently in beta and the feature set is not complete, you may encounter bugs. If you find any bugs

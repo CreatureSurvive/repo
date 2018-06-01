@@ -6,6 +6,7 @@ slug = "depiction"
 screens_enabled = "true"
 changelog_enabled = "true"
 banner = "banner.png"
+supported_firmwares = "9.x - 11.x"
 +++
 
 This tweak disables the annoying delete word function and enables rapid character deletion instantly.

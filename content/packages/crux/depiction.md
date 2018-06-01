@@ -5,6 +5,7 @@ package = "com.creaturecoding.crux"
 slug = "depiction"
 screens_enabled = "false"
 changelog_enabled = "true"
+supported_firmwares = "11.x"
 +++
 
 run any command as root: 

@@ -5,6 +5,7 @@ package = "com.creaturecoding.libcsweather"
 slug = "depiction"
 screens_enabled = "false"
 changelog_enabled = "true"
+supported_firmwares = "10.x - 11.x"
 +++
 
 A simple little library for fetching the current weather information such as:
