@@ -41,11 +41,11 @@ title = "CreatureSurvive"
     faviconfile = "img/favicon.ico"
 
     gitalk = false
-    gitalk_admin = ["CreatureSurvive"]
+    gitalk_admin = "CreatureSurvive"
     gitalk_clientid = "58099ad49b44018d2e74"
     gitalk_clientsecret = "901f2522f31f1ac57486c1f7c7a2c8d442aecea7"
     gitalk_owner = "CreatureSurvive"
-    gitalk_repo = "https://creaturesurvive.github.io/website_comments/"
+    gitalk_repo = "website_comments"
 
     disqus = false
     disqusShortname = "CreatureCoding"

@@ -2,11 +2,11 @@
     <a href="{{ .Permalink }}" role="button">
         {{ if .Site.Params.dateform }}
         <span class="meta" style="color: black">
-            <time datetime='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}'>{{ .Date.Format .Site.Params.dateform }} </time>
+            <time datetime='{{ .Date.Format "Jan 2, 2018" }}'>{{ .Date.Format .Site.Params.dateform }} </time>
         </span>
         {{ else }}
         <span class="meta" style="color: black">
-            <time datetime='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}'>{{ .Date.Format "Jan 2, 2006" }} </time>
+            <time datetime='{{ .Date.Format "Jan 2, 2018" }}'>{{ .Date.Format "Jan 2, 2018" }} </time>
         </span>
         {{ end }}
         <span> {{ .Title }}</span>
