@@ -3,6 +3,16 @@ title = "libCSPreferences"
 slug = "changelog"
 +++
 
+### Version 0.9.9.4 (July 22, 2018)
+
+- Changed to iOS 11.4 SDK.
+- Added almighty.
+- Added libCSPUtilities process runner.
+- Fixed broken backups on iOS 11.
+- Moved backup directory to 'User/Library/Preferences/CSPreferences' for persistence.
+
+---
+
 ### Version 0.9.9.2 (May 23, 2018)
 
 - Fixed an issue with the previous build where permissions still wouldn't be set properly for almighty.

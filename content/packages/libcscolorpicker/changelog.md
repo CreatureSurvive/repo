@@ -3,6 +3,12 @@ title = "alwaysPlaying"
 slug = "changelog"
 +++
 
+### Version 0.6.0 (July 22, 2018)
+
+- Fixed layout issues on iPhone X using safe area
+
+---
+
 ### Version 0.5.9 (October 13, 2017)
 
 - General project cleanup

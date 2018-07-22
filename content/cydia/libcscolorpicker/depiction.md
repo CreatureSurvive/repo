@@ -1,5 +1,5 @@
 +++
-date = "October 13, 2017"
+date = "July 22, 2017"
 title = "libCSColorpicker"
 package = "com.creaturecoding.libcscolorpicker"
 slug = "depiction"
@@ -8,5 +8,7 @@ changelog_enabled = "true"
 supported_firmwares = "9.x - 11.x"
 +++
 
-A simplistic color picker for use in PreferenceLoader preference bundles. Supports iOS 9 &amp; 10, other iOS versions
-have not been tested
+A simplistic yet powerful color picker for use in PreferenceLoader preference bundles. Supports iOS 9 - 11, other iOS versions
+have not been tested.
+
+Best when used with [libCSPreference](https://creaturesurvive.github.io/repo/cydia/libcspreferences/depiction/) but also works fine on it's own.
