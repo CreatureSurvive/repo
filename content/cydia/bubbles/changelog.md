@@ -3,6 +3,12 @@ title = "bubbles"
 slug = "changelog"
 +++
 
+### Version 0.1.7b (July 24, 2018)
+
+- [Fixed] forgot to add the updated defaults in v0.1.6b, so here they are
+- [Fixed] typos in new Support Page
+
+---
 
 ### Version 0.1.6b (July 23, 2018)
 
