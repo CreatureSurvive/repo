@@ -3,6 +3,18 @@ title = "bubbles"
 slug = "changelog"
 +++
 
+### Version 0.1.9b (July 24, 2018)
+
+- [Added] option to disable blur on the input field background
+- [Added] option to color input field background
+- [Added] option to disable chat bubble tails
+- [Added] option to customize chat footer color (below input field)
+- [Added] option for bordered chat bubbles
+- [Fixed] App Drawer background color not working
+- [Fixed] Temporary fix for transparent Contact view (will fix background blur at another time)
+
+---
+
 ### Version 0.1.7b (July 24, 2018)
 
 - [Fixed] forgot to add the updated defaults in v0.1.6b, so here they are
