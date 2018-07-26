@@ -3,6 +3,20 @@ title = "bubbles"
 slug = "changelog"
 +++
 
+### Version 0.2.0b (July 25, 2018)
+
+[Fixed] proper fix for Contact view by restoring blurred background
+[Fixed] Compose view NavigationBar title text color
+[Fixed] crash when using 3dTouch to set color from pasteboard
+[Fixed] fixed directory creation for image picker
+[Added] Compose view contact name color options (iMessage/SMS/default)
+[Added] option for background image in the chat view
+[Added] option for background image in the conversation list (this is experimental, and will be changing in the future)
+[Added] warning in preferences when restoring defaults
+[Added] image placeholder in backup details view
+
+---
+
 ### Version 0.1.9b (July 24, 2018)
 
 - [Added] option to disable blur on the input field background

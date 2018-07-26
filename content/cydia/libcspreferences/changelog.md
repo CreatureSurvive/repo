@@ -3,6 +3,22 @@ title = "libCSPreferences"
 slug = "changelog"
 +++
 
+### Version 0.9.9.5 (July 25, 2018)
+
+- Fixed crash when using 3dTouch to set color value
+- Fixed set from pasteboard option appearing on color preview when no valid hex is in the clipboard
+- Fixed height not being set properly when enabling/disabling cells with custom heights
+- Fixed imagePickerController delegate not creating directory to save
+- Fixed imageCells not saving a path value
+- Added prompt to confirm when restoring defaults via the backup window
+- Added placeholder image for backups on the CSPImageCell
+- Fixed CSPSideImageCell not setting imageView size while laying out view
+- Added Pick New Image option to CSPImagePreviewController
+- Added Delete Image option to CSPImagePreviewController
+- Added createDirectoryAtPath: removeLastComponent: error: to CSFileManager
+
+---
+
 ### Version 0.9.9.4 (July 22, 2018)
 
 - Changed to iOS 11.4 SDK.
