@@ -3,6 +3,13 @@ title = "libCSPreferences"
 slug = "changelog"
 +++
 
+### Version 0.9.9.6 (July 27, 2018)
+
+- Rewrote colorFromHex support with new features from libCSColorPicker
+- Added package piracy alert to alert users when they are using a pirated copy of a tweak and optionally disable support, or install the official repo
+
+---
+
 ### Version 0.9.9.5 (July 25, 2018)
 
 - Fixed crash when using 3dTouch to set color value
