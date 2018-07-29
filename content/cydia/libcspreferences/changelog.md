@@ -3,6 +3,13 @@ title = "libCSPreferences"
 slug = "changelog"
 +++
 
+### Version 0.9.9.7 (July 28, 2018)
+
+- Fixed Refactored internal Hex Color support to resolve conflicts with other tweaks/apps
+- Added Policy Alert specifier
+
+---
+
 ### Version 0.9.9.6 (July 27, 2018)
 
 - Rewrote colorFromHex support with new features from libCSColorPicker
