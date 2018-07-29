@@ -3,6 +3,22 @@ title = "libCSColorPicker"
 slug = "changelog"
 +++
 
+### Version 0.7.3 (July 28, 2018)
+
+- libCSColorPicker will soon be open sourced on [GitHub](https://github.com/CreatureSurvive/libCSColorPicker)
+- Added NSString convenience methods (instance & class)
+- Added UIColor convenience methods (instance)
+- Fixed issue where fallback would not work
+- Change Refactored cell class
+- Change Refactored background class
+- Change Cleaned up ViewController
+- Change Cleaned up slider class
+- Change Added CSColorSliderType
+- Change Cleaned up headers
+- Change added credits where they were due (Background/UIViewParentController)
+
+---
+
 ### Version 0.7.0 (July 27, 2018)
 
 - Completely rewrote hex color management within the library
