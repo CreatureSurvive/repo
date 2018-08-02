@@ -3,6 +3,20 @@ title = "bubbles"
 slug = "changelog"
 +++
 
+### Version 0.2.2b (August 1, 2018)
+
+- Fixed Conversation List background image had incorrect scale
+- Fixed Light Mode failed to apply
+- Fixed Light Background images setting Dark Background images
+- Fixed Bubbles being filled for short messages when 'bubble borders only' option was enabled
+- Added Settings changes automatically apply
+- Added Experimental Gradient Bubble option (please no bug reports for this feature, its still being developed)
+- Added Settings changes automatically apply
+- Added Option for square chat bubbles, doesn't work with borders only option (will be expanded soon)
+- Changed Internal work on iOS 10 support (Coming Soon)
+
+---
+
 ### Version 0.2.0b (July 25, 2018)
 
 - Fixed proper fix for Contact view by restoring blurred background
