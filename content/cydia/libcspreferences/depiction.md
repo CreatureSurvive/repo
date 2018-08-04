@@ -1,5 +1,5 @@
 +++
-date = "July 29, 2018"
+date = "August 4, 2018"
 title = "libCSPreferences"
 package = "com.creaturecoding.libcspreferences"
 slug = "depiction"

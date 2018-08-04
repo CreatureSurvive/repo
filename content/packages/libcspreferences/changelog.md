@@ -3,6 +3,13 @@ title = "libCSPreferences"
 slug = "changelog"
 +++
 
+### Version 0.9.9.9 (August 4, 2018)
+
+- Fixed issue that may cause backups not to restore
+- Added callbackAction specifier key that executes after restoring defaults/backups
+
+---
+
 ### Version 0.9.9.8 (July 29, 2018)
 
 - Fixed Nothing new, fixes a bug affecting some users where the Settings app would crash on launch
