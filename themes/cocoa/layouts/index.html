@@ -41,7 +41,7 @@
 <ul>
     {{ range (first $latestpostscount (where .Data.Pages.ByPublishDate.Reverse "Section" "packages")) }} {{ if eq .Slug "depiction" }}
     <li>
-        <a {{ printf "href=%q" .URL | safeHTMLAttr }} role="button">
+        <a {{ printf "href=%q" .URL | safeHTMLAttr }} role="button" class="cydia_blank">
             <span>
                 <img class="icon" src="images/icons/tweaks/icon.png">
             </span>
@@ -54,7 +54,7 @@
     </li>
     {{ end }} {{ end }} {{ if gt $totalpostscount $latestpostscount }} {{ range where .Site.Menus.main "Identifier" "packages" }}
     <li class="post-item no-bullet">
-        <a id="see-more" {{ printf "href=%q " .URL | safeHTMLAttr }} role="button">
+        <a id="see-more" {{ printf "href=%q " .URL | safeHTMLAttr }} role="button" class="cydia_blank">
             <span>See more&hellip;</span>
         </a>
     </li>
