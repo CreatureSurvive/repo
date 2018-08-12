@@ -1,5 +1,5 @@
 +++
-date = "May 28, 2018"
+date = "August 12, 2018"
 title = "simmerDown"
 package = "com.creaturecoding.simmerdown"
 slug = "depiction"
