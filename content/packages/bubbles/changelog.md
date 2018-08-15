@@ -3,6 +3,21 @@ title = "bubbles"
 slug = "changelog"
 +++
 
+### Version 0.2.4b (August 14, 2018)
+
+- Fixed some strange behavior with no fill bubbles coloring
+- Fixed Chat background image scaling, proper resizing when rotating device
+- Added Black (OLED) configuration
+- Added Segmented Control tint color
+- Added NoctisXI toggle support
+- Added Option to disable navigation bar blur
+- Added Initial support for Quick Reply theming
+- Changed Minor tweaks to the Gradient color generation
+- Changed Removed CPSUtility link
+- Changed Removed SpringBoard target
+
+---
+
 ### Version 0.2.2b (August 1, 2018)
 
 - Fixed Conversation List background image had incorrect scale

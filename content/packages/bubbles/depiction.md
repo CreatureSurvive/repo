@@ -1,5 +1,5 @@
 +++
-date = "August 1, 2018"
+date = "August 14, 2018"
 title = "bubbles"
 package = "com.creaturecoding.bubbles"
 slug = "depiction"
