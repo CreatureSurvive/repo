@@ -3,6 +3,12 @@ title = "libCSColorPicker"
 slug = "changelog"
 +++
 
+### Version 0.7.4 (August 17, 2018)
+
+- Fixed issue with Eclipse altering color of cell previews
+
+---
+
 ### Version 0.7.3 (July 28, 2018)
 
 - libCSColorPicker will soon be open sourced on [GitHub](https://github.com/CreatureSurvive/libCSColorPicker)
