@@ -3,6 +3,14 @@ title = "libCSPreferences"
 slug = "changelog"
 +++
 
+### Version 0.9.9.9-1 (August 17, 2018)
+
+- Fixed layout on PSSliderCell value
+- Fixed CSPDateCell saving issues
+- Added support for slider labels and sublabel
+
+---
+
 ### Version 0.9.9.9 (August 4, 2018)
 
 - Fixed issue that may cause backups not to restore
