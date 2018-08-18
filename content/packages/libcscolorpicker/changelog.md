@@ -3,6 +3,12 @@ title = "libCSColorPicker"
 slug = "changelog"
 +++
 
+### Version 0.7.5 (August 17, 2018)
+
+- Fixed issue with Eclipse altering color picker view
+
+---
+
 ### Version 0.7.4 (August 17, 2018)
 
 - Fixed issue with Eclipse altering color of cell previews
