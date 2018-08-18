@@ -3,6 +3,29 @@ title = "bubbles"
 slug = "changelog"
 +++
 
+### Version 0.2.8b (August 17, 2018)
+
+- Fixed Fixed some strange behavior with no fill bubbles coloring
+- Fixed Black transition when sending a message with chat background image set
+- Fixed Chat background image persisting after being disabled
+- Fixed iMessage games showing as black with (borders only) turned on
+- Fixed Image sending with (borders only) turned on
+- Fixed Message stickers with (borders only) turned on receiving borders
+- Fixed Various other issues with borders only turned on
+- Fixed Add new contact view being transparent
+- Fixed Optimizations to memory usage
+- Fixed Optimizations to gradient colors
+- Fixed Navigation bar turning white when rotating for some users
+- Added Global option to disable app drawer (conflicts with noMoreAppBar)
+- Added Global option to add sending progress bar to SMS (conflicts with barinProgress)
+- Added Global option to disable group chat contact avatars
+- Added Option to set gradient cell transparency
+- Added Option to disable contact selection search bar blur
+- Added Option to set contact selection search bar color
+- Added Option to set Reaction selection background color
+
+---
+
 ### Version 0.2.4b (August 14, 2018)
 
 - Fixed some strange behavior with no fill bubbles coloring
