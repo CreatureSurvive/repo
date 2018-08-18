@@ -3,6 +3,13 @@ title = "bubbles"
 slug = "changelog"
 +++
 
+### Version 0.2.9b (August 17, 2018)
+
+- Fixed Disable App Drawer not working
+- Fixed App bar color not working(temporary fix, proper fix coming tomorrow)
+
+---
+
 ### Version 0.2.8b (August 17, 2018)
 
 - Fixed Fixed some strange behavior with no fill bubbles coloring
