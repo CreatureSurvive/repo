@@ -3,6 +3,13 @@ title = "libCSWeather"
 slug = "changelog"
 +++
 
+
+### Version 0.5.5b (August 27, 2018)
+
+- iOS 11 support
+
+---
+
 ### Version 0.5.1b (January 23, 2018)
 
 - further optimizations to fetching technique
