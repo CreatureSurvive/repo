@@ -3,6 +3,11 @@ title = "libCSWeather"
 slug = "changelog"
 +++
 
+### Version 0.5.6b (August 27, 2018)
+
+- fix dumb mistake that may cause crashing on iOS 10 devices
+
+---
 
 ### Version 0.5.5b (August 27, 2018)
 
