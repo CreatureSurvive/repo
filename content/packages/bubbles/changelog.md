@@ -3,6 +3,15 @@ title = "bubbles"
 slug = "changelog"
 +++
 
+### Version 0.3.0b (August 27, 2018)
+
+- Fixed App Drawer not hiding correctly
+- Fixed disappearing cells when selecting a conversation
+- Fixed adjusted contact information background blur to be darker for dark/black mode (more customization coming soon)
+- Added iOS 10 support (likely has bugs, consider iOS 10 support to be in alpha)
+
+---
+
 ### Version 0.2.9b (August 17, 2018)
 
 - Fixed Disable App Drawer not working
