@@ -3,6 +3,14 @@ title = "libCSColorPicker"
 slug = "changelog"
 +++
 
+### Version 0.7.7 (September 8, 2018)
+
+- Fixed issue that may prevent color preview from updating 
+- Project refactoring
+- Deprecated C methods
+
+---
+
 ### Version 0.7.5 (August 17, 2018)
 
 - Fixed issue with Eclipse altering color picker view

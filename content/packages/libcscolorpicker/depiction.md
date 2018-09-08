@@ -1,5 +1,5 @@
 +++
-date = "August 17, 2018"
+date = "September 8, 2018"
 title = "libCSColorpicker"
 package = "com.creaturecoding.libcscolorpicker"
 slug = "depiction"
