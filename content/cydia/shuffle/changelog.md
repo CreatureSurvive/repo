@@ -3,6 +3,16 @@ title = "shuffle"
 slug = "changelog"
 +++
 
+### Version 0.8.0b (September 8, 2018)
+
+- Added option to move shuffle group to the top of settings
+- Added System Apps section
+- Rewrote Force Touch support
+- Added Advances section
+- General optimizations and refactoring
+
+---
+
 ### Version 0.6.6b (May 22, 2018)
 
 - Added icons for preference bundles with missing icons
