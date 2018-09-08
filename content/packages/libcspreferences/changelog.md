@@ -3,6 +3,21 @@ title = "libCSPreferences"
 slug = "changelog"
 +++
 
+### Version 1.0.1 (September 8, 2018)
+
+- Added GIF and Video support to image cells
+- Refactored 3DTouch
+- Refactored Action methods
+- Refactored Respring
+- Refactored tint logic
+- Updated Project structure
+- Finished implementing CSPDatePicker
+- Reduced memory footprint
+- Fixed issue with slider labels
+- Updated changelog UI
+
+---
+
 ### Version 0.9.9.9-1 (August 17, 2018)
 
 - Fixed layout on PSSliderCell value
