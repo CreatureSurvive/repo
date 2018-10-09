@@ -1,7 +1,55 @@
 +++
-title = "alwaysPlaying"
+title = "libCSColorPicker"
 slug = "changelog"
 +++
+
+### Version 0.7.7 (September 8, 2018)
+
+- Fixed issue that may prevent color preview from updating 
+- Project refactoring
+- Deprecated C methods
+
+---
+
+### Version 0.7.5 (August 17, 2018)
+
+- Fixed issue with Eclipse altering color picker view
+
+---
+
+### Version 0.7.4 (August 17, 2018)
+
+- Fixed issue with Eclipse altering color of cell previews
+
+---
+
+### Version 0.7.3 (July 28, 2018)
+
+- libCSColorPicker will soon be open sourced on [GitHub](https://github.com/CreatureSurvive/libCSColorPicker)
+- Added NSString convenience methods (instance & class)
+- Added UIColor convenience methods (instance)
+- Fixed issue where fallback would not work
+- Change Refactored cell class
+- Change Refactored background class
+- Change Cleaned up ViewController
+- Change Cleaned up slider class
+- Change Added CSColorSliderType
+- Change Cleaned up headers
+- Change added credits where they were due (Background/UIViewParentController)
+
+---
+
+### Version 0.7.0 (July 27, 2018)
+
+- Completely rewrote hex color management within the library
+- Completely new public facing usage
+- New format support for hex strings 'RGB', 'ARGB', 'RRGGBB', 'AARRGGBB', 'RGB:0.25', 'RRGGBB:0.25'
+- Alpha slider can now be disabled using the 'alpha' specifier key
+- Now supports usage with Cephei preferences by HASHBANG 
+- Now uses bold system font for better legibility 
+- Refactored most of the project, and improved performance
+
+---
 
 ### Version 0.6.0 (July 22, 2018)
 

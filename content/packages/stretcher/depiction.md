@@ -1,5 +1,5 @@
 +++
-date = "May 11, 2018"
+date = "September 13, 2018"
 title = "stretcher"
 package = "com.creaturecoding.stretcher"
 slug = "depiction"

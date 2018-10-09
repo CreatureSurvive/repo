@@ -7,11 +7,11 @@
     </li>
     {{ end }} {{- $folder := lower .Title -}} {{ if eq .Params.changelog_enabled "true" }}
     <li>
-        <a href="/cydia/{{ $folder }}/changelog" role="button">Changelog</a>
+        <a href="/cydia/{{ $folder }}/changelog" role="button" class="cydia_blank">Changelog</a>
     </li>
     {{ end }} {{ if eq .Params.screens_enabled "true" }}
     <li>
-        <a href="/cydia/{{ $folder }}/screenshots" role="button">Screenshots</a>
+        <a href="/cydia/{{ $folder }}/screenshots" role="button" class="cydia_blank">Screenshots</a>
     </li>
     {{ end }}
 </ul>
@@ -58,7 +58,7 @@
     </li>
     {{ else }}
     <li class="back-to-posts">
-        <a href="/cydia/{{ $folder }}/depiction" role="button">{{ i18n "backToDepiction" }}</a>
+        <a href="/cydia/{{ $folder }}/depiction" role="button" class="cydia_blank">{{ i18n "backToDepiction" }}</a>
     </li>
     {{ end }}
 </ul>

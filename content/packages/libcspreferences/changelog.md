@@ -3,6 +3,56 @@ title = "libCSPreferences"
 slug = "changelog"
 +++
 
+### Version 1.0.1 (September 8, 2018)
+
+- Added GIF and Video support to image cells
+- Refactored 3DTouch
+- Refactored Action methods
+- Refactored Respring
+- Refactored tint logic
+- Updated Project structure
+- Finished implementing CSPDatePicker
+- Reduced memory footprint
+- Fixed issue with slider labels
+- Updated changelog UI
+
+---
+
+### Version 0.9.9.9-1 (August 17, 2018)
+
+- Fixed layout on PSSliderCell value
+- Fixed CSPDateCell saving issues
+- Added support for slider labels and sublabel
+
+---
+
+### Version 0.9.9.9 (August 4, 2018)
+
+- Fixed issue that may cause backups not to restore
+- Added callbackAction specifier key that executes after restoring defaults/backups
+
+---
+
+### Version 0.9.9.8 (July 29, 2018)
+
+- Fixed Nothing new, fixes a bug affecting some users where the Settings app would crash on launch
+
+---
+
+### Version 0.9.9.7 (July 28, 2018)
+
+- Fixed Refactored internal Hex Color support to resolve conflicts with other tweaks/apps
+- Added Policy Alert specifier
+
+---
+
+### Version 0.9.9.6 (July 27, 2018)
+
+- Rewrote colorFromHex support with new features from libCSColorPicker
+- Added package piracy alert to alert users when they are using a pirated copy of a tweak and optionally disable support, or install the official repo
+
+---
+
 ### Version 0.9.9.5 (July 25, 2018)
 
 - Fixed crash when using 3dTouch to set color value

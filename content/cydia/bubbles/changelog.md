@@ -3,6 +3,74 @@ title = "bubbles"
 slug = "changelog"
 +++
 
+### Version 0.3.0b (August 27, 2018)
+
+- Fixed App Drawer not hiding correctly
+- Fixed disappearing cells when selecting a conversation
+- Fixed adjusted contact information background blur to be darker for dark/black mode (more customization coming soon)
+- Added iOS 10 support (likely has bugs, consider iOS 10 support to be in alpha)
+
+---
+
+### Version 0.2.9b (August 17, 2018)
+
+- Fixed Disable App Drawer not working
+- Fixed App bar color not working(temporary fix, proper fix coming tomorrow)
+
+---
+
+### Version 0.2.8b (August 17, 2018)
+
+- Fixed Fixed some strange behavior with no fill bubbles coloring
+- Fixed Black transition when sending a message with chat background image set
+- Fixed Chat background image persisting after being disabled
+- Fixed iMessage games showing as black with (borders only) turned on
+- Fixed Image sending with (borders only) turned on
+- Fixed Message stickers with (borders only) turned on receiving borders
+- Fixed Various other issues with borders only turned on
+- Fixed Add new contact view being transparent
+- Fixed Optimizations to memory usage
+- Fixed Optimizations to gradient colors
+- Fixed Navigation bar turning white when rotating for some users
+- Added Global option to disable app drawer (conflicts with noMoreAppBar)
+- Added Global option to add sending progress bar to SMS (conflicts with barinProgress)
+- Added Global option to disable group chat contact avatars
+- Added Option to set gradient cell transparency
+- Added Option to disable contact selection search bar blur
+- Added Option to set contact selection search bar color
+- Added Option to set Reaction selection background color
+
+---
+
+### Version 0.2.4b (August 14, 2018)
+
+- Fixed some strange behavior with no fill bubbles coloring
+- Fixed Chat background image scaling, proper resizing when rotating device
+- Added Black (OLED) configuration
+- Added Segmented Control tint color
+- Added NoctisXI toggle support
+- Added Option to disable navigation bar blur
+- Added Initial support for Quick Reply theming
+- Changed Minor tweaks to the Gradient color generation
+- Changed Removed CPSUtility link
+- Changed Removed SpringBoard target
+
+---
+
+### Version 0.2.2b (August 1, 2018)
+
+- Fixed Conversation List background image had incorrect scale
+- Fixed Light Mode failed to apply
+- Fixed Light Background images setting Dark Background images
+- Fixed Bubbles being filled for short messages when 'bubble borders only' option was enabled
+- Added Settings changes automatically apply
+- Added Experimental Gradient Bubble option (please no bug reports for this feature, its still being developed)
+- Added Settings changes automatically apply
+- Added Option for square chat bubbles, doesn't work with borders only option (will be expanded soon)
+- Changed Internal work on iOS 10 support (Coming Soon)
+
+---
+
 ### Version 0.2.0b (July 25, 2018)
 
 - Fixed proper fix for Contact view by restoring blurred background

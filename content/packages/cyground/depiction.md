@@ -1,5 +1,5 @@
 +++
-date = "July 22, 2018"
+date = "August 4, 2018"
 title = "cyground"
 package = "com.creaturecoding.cyground"
 slug = "depiction"

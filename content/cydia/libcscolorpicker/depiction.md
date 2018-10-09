@@ -1,5 +1,5 @@
 +++
-date = "July 22, 2017"
+date = "September 8, 2018"
 title = "libCSColorpicker"
 package = "com.creaturecoding.libcscolorpicker"
 slug = "depiction"
@@ -12,3 +12,4 @@ A simplistic yet powerful color picker for use in PreferenceLoader preference bu
 have not been tested.
 
 Best when used with [libCSPreference](https://creaturesurvive.github.io/repo/cydia/libcspreferences/depiction/) but also works fine on it's own.
+For usage info and resources, check out libCSColorPicker on [GitHub](https://github.com/CreatureSurvive/libCSColorPicker), soon to be open sourced.
