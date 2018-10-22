@@ -3,6 +3,13 @@ title = "libCSPreferences"
 slug = "changelog"
 +++
 
+### Version 1.0.4 (October 22, 2018)
+
+- Fixed crash when loading font picker
+- Added localization support for cell sublabels
+
+---
+
 ### Version 1.0.1 (September 8, 2018)
 
 - Added GIF and Video support to image cells

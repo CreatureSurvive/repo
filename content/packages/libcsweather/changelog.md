@@ -3,6 +3,17 @@ title = "libCSWeather"
 slug = "changelog"
 +++
 
+### Version 0.6.0b (October 22, 2018)
+
+- Project wide refactoring and optimization 
+- Proper nil condition handling
+- Removed heavy @try @catch conditions
+- Proper handling of iOS 11.1.2 api changes
+- Added persistent backing store for caching weather data
+- Fixed condition where weather would load and then return nil
+
+---
+
 ### Version 0.5.6b (August 27, 2018)
 
 - fix dumb mistake that may cause crashing on iOS 10 devices
