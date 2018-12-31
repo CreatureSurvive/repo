@@ -3,6 +3,13 @@ title = "libCSColorPicker"
 slug = "changelog"
 +++
 
+### Version 0.7.9 (December 31, 2018)
+
+- Fixed bug where CSColorDisplayCell would not always update after picking a new color
+- Added NSUserDefaults support, you can now fetch values instantly from NSUserDefaults
+
+---
+
 ### Version 0.7.7 (September 8, 2018)
 
 - Fixed issue that may prevent color preview from updating 
