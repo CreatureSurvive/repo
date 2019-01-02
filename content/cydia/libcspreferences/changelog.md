@@ -3,6 +3,13 @@ title = "libCSPreferences"
 slug = "changelog"
 +++
 
+### Version 1.0.6 (January 1, 2018)
+
+- Added NSUserDefaults support, saved values can now be fetched immediatly from NSUserDefaults
+- Changed package compression to LZMA due to decompressing issues with meridian jailbreak
+
+---
+
 ### Version 1.0.4 (October 22, 2018)
 
 - Fixed crash when loading font picker
