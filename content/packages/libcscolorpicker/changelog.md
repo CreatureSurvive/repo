@@ -3,6 +3,13 @@ title = "libCSColorPicker"
 slug = "changelog"
 +++
 
+### Version 0.8.1 (March 22, 2019)
+
+- Fixed issue where colors would be saved to the plist using the wrong key. (caused colors to reset themselves)
+- Minor refactoring
+
+---
+
 ### Version 0.7.9 (December 31, 2018)
 
 - Fixed bug where CSColorDisplayCell would not always update after picking a new color
