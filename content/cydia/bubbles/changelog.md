@@ -3,6 +3,13 @@ title = "bubbles"
 slug = "changelog"
 +++
 
+### Version 0.3.1b (March 24, 2019)
+
+- Fixed Reaction Heart being transparent (that was tricky)
+- Fixed Reaction background default colors
+
+---
+
 ### Version 0.3.0b (August 27, 2018)
 
 - Fixed App Drawer not hiding correctly
