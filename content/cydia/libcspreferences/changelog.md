@@ -3,7 +3,15 @@ title = "libCSPreferences"
 slug = "changelog"
 +++
 
-### Version 1.0.6 (January 1, 2018)
+### Version 1.0.8 (March 26, 2019)
+
+- New Custom font loading methods, no longer injects into UIKit
+- New ‘Add Font’ button in the font picker to download custom fonts from a url (You can also add font files directly to ‘/var/mobile/Documents/CSPreferences/fonts’
+- New CSPDeveloperCellModern with better layout behavior
+
+---
+
+### Version 1.0.6 (January 1, 2019)
 
 - Added NSUserDefaults support, saved values can now be fetched immediatly from NSUserDefaults
 - Changed package compression to LZMA due to decompressing issues with meridian jailbreak
