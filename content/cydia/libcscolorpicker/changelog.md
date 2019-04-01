@@ -3,7 +3,7 @@ title = "libCSColorPicker"
 slug = "changelog"
 +++
 
-### Version 0.8.1 (April 1, 2019)
+### Version 0.8.2 (April 1, 2019)
 
 - Compiled with `arm64e` slice for A12 device support
 
