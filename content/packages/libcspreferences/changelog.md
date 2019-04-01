@@ -3,6 +3,12 @@ title = "libCSPreferences"
 slug = "changelog"
 +++
 
+### Version 1.0.9 (April 1, 2019)
+
+- Compiled with `arm64e` slice for A12 device support
+
+---
+
 ### Version 1.0.8 (March 26, 2019)
 
 - New Custom font loading methods, no longer injects into UIKit

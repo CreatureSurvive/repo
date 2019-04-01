@@ -3,6 +3,12 @@ title = "libCSColorPicker"
 slug = "changelog"
 +++
 
+### Version 0.8.1 (April 1, 2019)
+
+- Compiled with `arm64e` slice for A12 device support
+
+---
+
 ### Version 0.8.1 (March 22, 2019)
 
 - Fixed issue where colors would be saved to the plist using the wrong key. (caused colors to reset themselves)
