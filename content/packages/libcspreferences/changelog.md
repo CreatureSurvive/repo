@@ -3,6 +3,12 @@ title = "libCSPreferences"
 slug = "changelog"
 +++
 
+### Version 1.1.1 (April 8, 2019)
+
+- Fixed Color preview ‘copy to clipboard’ not copying the alpha channel 
+
+---
+
 ### Version 1.1.0 (April 7, 2019)
 
 - Added Gradient Preview support for libCSColorPicker v0.9.1 Gradient Builder

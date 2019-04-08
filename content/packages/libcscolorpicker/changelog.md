@@ -3,6 +3,13 @@ title = "libCSColorPicker"
 slug = "changelog"
 +++
 
+### Version 0.9.3 (April 8, 2019)
+
+- Fixed alpha channel being ignored when copying colors, or opening the color picker
+- Added `UIColor hexStringWithAlphs` instance method for convenience
+
+---
+
 ### Version 0.9.2 (April 7, 2019)
 
 - Fixed alpha slider being disabled by default, i forgot i designed it to be on by default
