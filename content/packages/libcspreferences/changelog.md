@@ -3,6 +3,15 @@ title = "libCSPreferences"
 slug = "changelog"
 +++
 
+### Version 1.1.0 (April 7, 2019)
+
+- Added Gradient Preview support for libCSColorPicker v0.9.1 Gradient Builder
+- Added Gradient Gradient array support to CSPreferencesProvider `colorsForKey` & `CGcolorsForKey`
+- Fixed crash when uploading tweak list to GhostBin (Upload still fails, probably need to change providers or update the api)
+- Added support for using preference icons in the navigation bar, used `icon` field from the entry specifier.
+
+---
+
 ### Version 1.0.9 (April 1, 2019)
 
 - Compiled with `arm64e` slice for A12 device support

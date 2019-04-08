@@ -3,6 +3,16 @@ title = "libCSColorPicker"
 slug = "changelog"
 +++
 
+### Version 0.9.1 (April 7, 2019)
+
+- Added built in Gradient Builder for building dynamic gradients in a stylish way
+- Added CSGradientDisplayCell for displaying gradient previews
+- Added `NSString gradientStringCGColors`, and `NSString gradientStringColors` for getting an array of UIColors, or CGColors from a gradient array string
+- Fixed issue in with failsafe color in CSColorDisplayCell that could result in no color being displayed
+- Fixed issue where alpha slider would always appear even when disabled
+
+---
+
 ### Version 0.8.2 (April 1, 2019)
 
 - Compiled with `arm64e` slice for A12 device support

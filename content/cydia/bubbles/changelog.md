@@ -3,6 +3,21 @@ title = "bubbles"
 slug = "changelog"
 +++
 
+### Version 0.4.0 (April 7, 2019)
+
+- Stable Initial stable release, officially out of beta
+- Fixed Conversation Cell gradients are now smooth flowing and customizable
+- Fixed Chat background images occasionaly being strangely positioned
+- Fixed Typing indicator not coloring correctly
+- Fixed Link Cells not being themed, (thanks u/tincan_pham for the fix)
+- Fixed Typing indicator not coloring correctly
+- Added Gradient color options for chat bubbles
+- Added New Gradient Picker for custom gradients
+- Added Support for A12 devices (arm64e)
+- Updated Much more efficient gradient calculation algorithm
+
+---
+
 ### Version 0.3.1b (March 24, 2019)
 
 - Fixed Reaction Heart being transparent (that was tricky)
