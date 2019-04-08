@@ -3,6 +3,12 @@ title = "libCSColorPicker"
 slug = "changelog"
 +++
 
+### Version 0.9.2 (April 7, 2019)
+
+- Fixed alpha slider being disabled by default, i forgot i designed it to be on by default
+
+---
+
 ### Version 0.9.1 (April 7, 2019)
 
 - Added built in Gradient Builder for building dynamic gradients in a stylish way
