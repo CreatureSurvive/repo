@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+<base target="_top">
+<link rel="stylesheet" type="text/css" href="./depictions/resources/css/style.css" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="referrer" content="no-referrer"> 
+<meta name="author" content="CreatureSurvive">
+<meta name="description" content="What is an update manager? An update manager is a class that holds a reference to all of your MonoBehaviour&rsquo;s and executes all of their Update() methods each frame.
+What is the benefit of an update manager? An update manager is very useful when you have a large amount of Monobehaviour&rsquo;s using the Update() method.
+Whats wrong with using lots of Updates? MonoBehaviour&rsquo;s handle all of unity&rsquo;s &lsquo;Magic Methods&rsquo;(I&rsquo;ll explain these in a minute) and though typically you wouldn&rsquo;t need to worry about how unity handles these methods, when you end up with a lot of them it can start bogging down your performance."> <meta property="og:title" content="Unity Update Manager" />
+<meta property="og:description" content="What is an update manager? An update manager is a class that holds a reference to all of your MonoBehaviour&rsquo;s and executes all of their Update() methods each frame.
+What is the benefit of an update manager? An update manager is very useful when you have a large amount of Monobehaviour&rsquo;s using the Update() method.
+Whats wrong with using lots of Updates? MonoBehaviour&rsquo;s handle all of unity&rsquo;s &lsquo;Magic Methods&rsquo;(I&rsquo;ll explain these in a minute) and though typically you wouldn&rsquo;t need to worry about how unity handles these methods, when you end up with a lot of them it can start bogging down your performance." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://creaturesurvive.github.io/repo/blog/unity-update-manager/" />
+
+
+
+<meta property="article:published_time" content="2016-09-04T00:00:00&#43;00:00"/>
+
+<meta property="article:modified_time" content="2016-09-04T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+    <title>
+           Unity Update Manager  
+    </title>
+    <link rel="canonical" href="https://creaturesurvive.github.io/repo/blog/unity-update-manager/"> 
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/ir-black.min.css"> 
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500">  
+<link rel="stylesheet" href="https://creaturesurvive.github.io/repo/css/reset.css?t=2019-04-10%2009%3a22%3a32.039984203%20%2b0000%20UTC%20m%3d%2b0.354400249">
+<link rel="stylesheet" href="https://creaturesurvive.github.io/repo/css/pygments.css?t=2019-04-10%2009%3a22%3a32.039984203%20%2b0000%20UTC%20m%3d%2b0.354400249">
+
+<link rel="stylesheet" href="https://creaturesurvive.github.io/repo/css/ios7.min.css?t=2019-04-10%2009%3a22%3a32.039984203%20%2b0000%20UTC%20m%3d%2b0.354400249">  
+
+
+<link rel="shortcut icon"  href="https://creaturesurvive.github.io/repo/img/favicon.ico" >
+
+
+
+
+
+
+
+
+
+<script src="https://creaturesurvive.github.io/repo/js/ios7.min.js"></script>
+
+</head>
+<nav>
+    <a class="title" href=" https://creaturesurvive.github.io/repo ">CreatureSurvive</a>
+    <br>
+    <span>
+        
+        <a style="margin-left: 3em; " href="https://creaturesurvive.github.io/repo/blog/ ">Blog </a>
+        
+        <a style="margin-left: 3em; " href="https://creaturesurvive.github.io/repo/about/ ">About </a>
+        
+        <a style="margin-left: 3em; " href="https://creaturesurvive.github.io/repo/packages/ ">Packages </a>
+        
+    </span>
+</nav>
+
+<body lang=" en ">
+<h2 class="heading"><div class="page-heading">
+     Unity Update Manager 
+</div></h2>
+<ul>
+    <div class="initials">
+        <a href="https://creaturesurvive.github.io/repo"></a>
+    </div>
+
+    
+    <li class="date" title='Sun Sep 4 2016 00:00:00 UTC'>Sep 4, 2016</li>
+     
+    <li class="reading-time">
+        <div class="middot"></div>8 minute read</li>
+    
+</ul>
+
+<ul>
+    <li class="markdown">
+        
+
+<h3 id="what-is-an-update-manager">What is an update manager?</h3>
+
+<p>An update manager is a class that holds a reference to all of your <code>MonoBehaviour</code>&rsquo;s and executes all of their <code>Update()</code> methods each frame.</p>
+
+<h3 id="what-is-the-benefit-of-an-update-manager">What is the benefit of an update manager?</h3>
+
+<p>An update manager is very useful when you have a large amount of <code>Monobehaviour</code>&rsquo;s using the <code>Update()</code> method.</p>
+
+<h3 id="whats-wrong-with-using-lots-of-updates">Whats wrong with using lots of Updates?</h3>
+
+<p><code>MonoBehaviour</code>&rsquo;s handle all of unity&rsquo;s <em>&lsquo;Magic Methods&rsquo;</em>(I&rsquo;ll explain these in a minute) and though typically you wouldn&rsquo;t need to worry about how unity handles these methods, when you end up with a lot of them it can start bogging down your performance.</p>
+
+<p>Take this for example, we have a scene in which we need to spawn 1000 cubes and move them around. Lets create new scene and add a cube in it.<br />
+now lets create a new script to update the position of the cube</p>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">using</span> <span class="nn">UnityEngine</span><span class="p">;</span>
+
+<span class="k">public</span> <span class="k">class</span> <span class="nc">RandomCubeMover</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+<span class="p">{</span>
+    <span class="kt">float</span> <span class="n">speed</span> <span class="p">=</span> <span class="m">10.0f</span><span class="p">;</span>
+    <span class="n">Vector3</span> <span class="n">vel</span><span class="p">;</span>
+    <span class="k">void</span> <span class="n">Update</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">vel</span> <span class="p">=</span> <span class="n">Random</span><span class="p">.</span><span class="n">onUnitSphere</span> <span class="p">*</span> <span class="n">speed</span><span class="p">;</span>
+        <span class="n">transform</span><span class="p">.</span><span class="n">Translate</span> <span class="p">(</span><span class="n">vel</span><span class="p">*</span> <span class="n">Time</span><span class="p">.</span><span class="n">deltaTime</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+<p>Now lets add this to script to the cube in our scene.</p>
+
+<p>You can hit play and watch your cube moving around like this.<br />
+<img src="https://creaturesurvive.github.io/repo/images/2016/09/Sep-04-2016-20-07-08-CubeMovement.gif" alt="gif" /></p>
+
+<p>Lets make this cube into a prefab by dragging it from the hierarchy into our project browser. Now lets make a spawn manager class to spawn out 1000 cubes when we hit play</p>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">using</span> <span class="nn">UnityEngine</span><span class="p">;</span>
+
+<span class="k">public</span> <span class="k">class</span> <span class="nc">SpawnManager</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+<span class="p">{</span><span class="na">
+</span><span class="na">    [SerializeField]</span><span class="kt">int</span> <span class="n">amountToSpawn</span> <span class="p">=</span> <span class="m">1000</span><span class="p">;</span><span class="na">
+</span><span class="na">    [SerializeField]</span><span class="n">GameObject</span> <span class="n">cubePrefab</span><span class="p">;</span>
+
+    <span class="kt">int</span> <span class="n">spawnAmount</span><span class="p">;</span>
+
+    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">while</span> <span class="p">(</span><span class="n">spawnAmount</span> <span class="p">&lt;</span> <span class="n">amountToSpawn</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">GameObject</span> <span class="n">cube</span><span class="p">;</span>
+            <span class="n">cube</span> <span class="p">=</span> <span class="n">Instantiate</span> <span class="p">(</span><span class="n">cubePrefab</span><span class="p">,</span> <span class="n">transform</span><span class="p">.</span><span class="n">position</span><span class="p">,</span> <span class="n">Quaternion</span><span class="p">.</span><span class="n">identity</span><span class="p">)</span> <span class="k">as</span> <span class="n">GameObject</span><span class="p">;</span>
+            <span class="n">cube</span><span class="p">.</span><span class="n">transform</span><span class="p">.</span><span class="n">SetParent</span> <span class="p">(</span><span class="n">transform</span><span class="p">);</span>
+            <span class="n">spawnAmount</span><span class="p">++;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+<p>Create an empty gameobject in your scene and call it &lsquo;SpawnManager&rsquo;<br />
+Add this script to the object, and drag the &lsquo;Cube&rsquo; prefab from the project browser into the &lsquo;cubePrefab&rsquo; field. Now when you hit play 1000 cubes will spawn and dance around.</p>
+
+<p><img src="https://creaturesurvive.github.io/repo/images/2016/09/Sep-05-2016-00-42-07-1000-Cube-Movement.gif" alt="" /></p>
+
+<p>If you check the stats you can see this has already brought our performance way down.</p>
+
+<h3 id="how-does-calling-update-effect-performance">How does calling update effect performance?</h3>
+
+<p>Back to the term <em>&lsquo;Magic Methods&rsquo;</em>, <em>&lsquo;Magic Methods&rsquo;</em> are all the methods inherited from <code>MonoBehaviour</code> such as <code>Awake()</code>, <code>Start()</code>, <code>Update()</code>, <code>FixedUpdate()</code>, etc&hellip; When a <code>MonoBehaviour</code> is accessed for the first time, it is then scanned by the <a href="https://msdn.microsoft.com/en-us/library/8bs2ecf4(v=vs.110).aspx">Common Language Runtime (CLR)</a> for any <em>&lsquo;Magic Methods&rsquo;</em> it may have in it. When the <code>MonoBehaviour</code> is scanned, all the <em>&lsquo;Magic Methods&rsquo;</em> within it are then added to lists i.e. a list of <code>Update()</code> methods, a list of <code>Start()</code> methods, etc. Then when Unity calls these functions it simply iterates through the list of methods.</p>
+
+<p>All of our C# scripts that we create inside Unity are compiled into <em>Managed Code</em>, managed code is code that is read and interpreted by the CLR. whereas Unity is made up of C++ that is compiled into <em>Native Code</em>, native code is code that is read and interpreted directly by the computer making it really fast.</p>
+
+<p>So here is the problem with this, Unity handles executing all of the magic methods from within the engine meaning its handled in <em>Native Code</em>, however the methods it is executing are contained in the <em>Managed Code</em>. Every time a method is executed from <em>native</em> to <em>managed</em> it generates overhead. So if we have 1000 Updated being called each frame thats taking that overhead and multiplying it by 1000, this really slows things down. Heres where the Update Manager comes in.</p>
+
+<h3 id="how-does-the-update-manager-increases-performance">How does the update manager increases performance.</h3>
+
+<p>An Update Manager works the exact same way as unity handles its <em>&lsquo;Magic Methods&rsquo;</em>, it simply has a list of all the methods and executes them as needed. However there is one key difference, <strong>It&rsquo;s all handled in Managed Code</strong>, so instead of suffering the same overhead as the unity implementation on a per call basis, it only generates overhead once.</p>
+
+<h3 id="creating-the-update-manager">Creating the update manager</h3>
+
+<p>Now that we understand the issue with unity&rsquo;s implementation we can effectively come up with a solution.</p>
+
+<p>First we need a way to keep track of all the classes that contain <em>&lsquo;Magic Methods&rsquo;</em>. We could do this by creating a list of all our <code>MonoBehaviour</code>&rsquo;s but that wouldn&rsquo;t allow us to control method execution. Instead lets extend <code>MonoBehaviour</code> by creating a new class that inherits from <code>MonoBehaviour</code> and add some virtual methods we can overload later.</p>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public</span> <span class="k">abstract</span> <span class="k">class</span> <span class="nc">BaseMonoBehaviour</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+<span class="p">{</span>       
+    <span class="k">public</span> <span class="k">virtual</span> <span class="k">void</span> <span class="n">UpdateNormal</span><span class="p">()</span> <span class="p">{}</span>
+        
+    <span class="k">public</span> <span class="k">virtual</span> <span class="k">void</span> <span class="n">UpdateFixed</span><span class="p">()</span> <span class="p">{}</span>
+
+    <span class="k">public</span> <span class="k">virtual</span> <span class="k">void</span> <span class="n">UpdateLate</span><span class="p">()</span> <span class="p">{}</span>
+<span class="p">}</span></code></pre></div>
+<p>​</p>
+
+<p>We want this class to be abstract because we are going to be inheriting from it but we won&rsquo;t always need all the methods within it also it allows us control over how the interface methods are called.</p>
+
+<p>Now all our <code>MonoBehaviour</code> classes instead of inheriting from <code>MonoBehaviour</code> we&rsquo;ll inherit from <code>BaseMonoBehavoir</code> and instead of using <code>void Update()</code> we will use <code>public override void UpdateNormal()</code>.</p>
+
+<p>Now we need the manager its self this will be the class responsible for storing a reference to all our <code>BaseMonoBehaviour</code>&rsquo;s and executing methods. We will also need a way of accessing methods within it easily so that each <code>BaseMonoBehaviour</code> doesn&rsquo;t need to hold a reference to it in order to be added to the manager, for this we can just create a static instance of the Manager in its constructor so that the first time its accessed a static instance will me stored for easy access <a href="https://msdn.microsoft.com/en-us/library/ff650316.aspx">(singleton)</a></p>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">using</span> <span class="nn">UnityEngine</span><span class="p">;</span>
+
+<span class="k">public</span> <span class="k">class</span> <span class="nc">UpdateManager</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+<span class="p">{</span>
+    <span class="k">private</span> <span class="kt">int</span> <span class="n">behaviourCount</span><span class="p">;</span>
+    <span class="k">private</span> <span class="n">BaseMonoBehaviour</span><span class="na">[]</span> <span class="n">behaviors</span><span class="p">;</span>
+
+    <span class="k">private</span> <span class="k">static</span> <span class="n">UpdateManager</span> <span class="n">instance</span><span class="p">;</span>
+
+    <span class="k">public</span> <span class="n">UpdateManager</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">instance</span> <span class="p">=</span> <span class="k">this</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+<p>Now lets add some functionality to this. We&rsquo;ll need methods for adding and removing behaviors from the manager so lets start with that by creating some static methods for adding and removing items.</p>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="n">AddBehaviour</span><span class="p">(</span><span class="n">BaseMonoBehaviour</span> <span class="n">behaviour</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">instance</span><span class="p">.</span><span class="n">behaviours</span> <span class="p">==</span> <span class="k">null</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">behaviours</span> <span class="p">=</span> <span class="k">new</span> <span class="n">BaseMonoBehaviour</span><span class="na">[1]</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">else</span>
+    <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="n">Array</span><span class="p">.</span><span class="n">Resize</span><span class="p">(</span><span class="k">ref</span> <span class="n">instance</span><span class="p">.</span><span class="n">behaviours</span><span class="p">,</span> <span class="n">instance</span><span class="p">.</span><span class="n">behaviours</span><span class="p">.</span><span class="n">Length</span> <span class="p">+</span> <span class="m">1</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="n">instance</span><span class="p">.</span><span class="n">behaviours</span><span class="na">[behaviours.Length - 1]</span> <span class="p">=</span> <span class="n">behaviour</span><span class="p">;</span>
+    <span class="n">instance</span><span class="p">.</span><span class="n">behaviourCount</span> <span class="p">=</span> <span class="n">behaviours</span><span class="p">.</span><span class="n">Length</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="n">RemoveBehaviour</span><span class="p">(</span><span class="n">BaseMonoBehaviour</span> <span class="n">behaviour</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">addAtIndex</span><span class="p">;</span>
+    <span class="n">BaseMonoBehaviour</span><span class="na">[]</span> <span class="n">tempBehavioursArray</span> <span class="p">=</span> <span class="k">new</span> <span class="n">BaseMonoBehaviour</span><span class="na">[behaviours.Length - 1]</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="n">instance</span><span class="p">.</span><span class="n">behaviours</span><span class="p">.</span><span class="n">Length</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span>
+    <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">instance</span><span class="p">.</span><span class="n">behaviours</span><span class="na">[i]</span> <span class="p">==</span> <span class="k">null</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">continue</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">instance</span><span class="p">.</span><span class="n">behaviours</span><span class="na">[i]</span> <span class="p">==</span> <span class="n">behaviour</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">continue</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="n">tempArray</span><span class="na">[addAtIndex]</span> <span class="p">=</span> <span class="n">behaviours</span><span class="na">[i]</span><span class="p">;</span>
+        <span class="n">addAtIndex</span><span class="p">++;</span>
+    <span class="p">}</span>
+
+    <span class="n">instance</span><span class="p">.</span><span class="n">behaviours</span> <span class="p">=</span> <span class="k">new</span> <span class="n">BaseMonoBehaviour</span><span class="na">[tempArray.Length]</span><span class="p">;</span>
+    
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="n">tempArray</span><span class="p">.</span><span class="n">Length</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span>
+    <span class="p">{</span>
+        <span class="n">instance</span><span class="p">.</span><span class="n">behaviours</span><span class="na">[i]</span> <span class="p">=</span> <span class="n">tempArray</span><span class="na">[i]</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="n">instance</span><span class="p">.</span><span class="n">behaviourCount</span> <span class="p">=</span> <span class="n">instance</span><span class="p">.</span><span class="n">behaviours</span><span class="p">.</span><span class="n">Length</span><span class="p">.</span>
+<span class="p">}</span></code></pre></div>
+<p>Now that we have the methods for adding and removing behaviours from the manager, we need to create some methods for calling <code>UpdateNormal()</code>, <code>UpdateFixed()</code>, and <code>UpdateLate()</code> within our <code>BaseMonoBehaviour</code>&rsquo;s.<br />
+These methods will be really simple all they need to do is iterate through the array of behaviours within the manager and execute these methods. Notice that we made our Update Manager a regular <code>MonoBehaviour</code> thats because we are going to use <code>Update()</code>, <code>LateUpdate()</code>, and <code>FixedUpdate()</code> as regular <em>&lsquo;Magic Methods&rsquo;</em> to handle calling our <code>BaseMonobehaviour</code> methods.</p>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">private</span> <span class="k">void</span> <span class="n">Update</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">behaviourCount</span> <span class="p">&gt;</span> <span class="m">0</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">var</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="n">behaviours</span><span class="p">.</span><span class="n">Length</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span>
+        <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">behaviours</span><span class="na">[i]</span> <span class="p">==</span> <span class="k">null</span> <span class="p">||</span> <span class="p">!</span><span class="n">behaviours</span><span class="na">[i]</span><span class="p">.</span><span class="n">isActiveAndEnabled</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="k">continue</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="n">behaviours</span><span class="na">[i]</span><span class="p">.</span><span class="n">UpdateNormal</span><span class="p">();</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">private</span> <span class="k">void</span> <span class="n">FixedUpdate</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">behaviourCount</span> <span class="p">&gt;</span> <span class="m">0</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">var</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="n">behaviours</span><span class="p">.</span><span class="n">Length</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span>
+        <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">behaviours</span><span class="na">[i]</span> <span class="p">==</span> <span class="k">null</span> <span class="p">||</span> <span class="p">!</span><span class="n">behaviours</span><span class="na">[i]</span><span class="p">.</span><span class="n">isActiveAndEnabled</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="k">continue</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="n">behaviours</span><span class="na">[i]</span><span class="p">.</span><span class="n">UpdateFixed</span><span class="p">();</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">private</span> <span class="k">void</span> <span class="n">LateUpdate</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">behaviourCount</span> <span class="p">&gt;</span> <span class="m">0</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">var</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="n">behaviours</span><span class="p">.</span><span class="n">Length</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span>
+        <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">behaviours</span><span class="na">[i]</span> <span class="p">==</span> <span class="k">null</span> <span class="p">||</span> <span class="p">!</span><span class="n">behaviours</span><span class="na">[i]</span><span class="p">.</span><span class="n">isActiveAndEnabled</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="k">continue</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="n">behaviours</span><span class="na">[i]</span><span class="p">.</span><span class="n">UpdateLate</span><span class="p">();</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+<p>Now that we have all our update manager set up lets look into adding our <code>BaseMonoBehaviour</code>&rsquo;s to it automatically. Within the any class we implement <code>BaseMonoBehaviour</code> we could simply add the behaviour to the <code>UpdateManager</code>in the <code>Awake()</code> method but it would be great if we could handle this without having to do it manually. So instead lets handle this in the <code>Awake()</code> method within the <code>BaseMonoBehaviour</code> class. We know that the Awake method will be called in this class even if we don&rsquo;t implement it in our behaviour. just to ensure that we don&rsquo;t call this method from outside the <code>BaseMonoBehaviour</code> class its self lets make this method protected. So back in the <code>BaseMonoBehaviour</code> class lets add this method.</p>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">protected</span> <span class="k">virtual</span> <span class="k">void</span> <span class="n">Awake</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">UpdateManager</span><span class="p">.</span><span class="n">AddBehaviour</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+<span class="p">}</span></code></pre></div>
+<h3 id="using-the-update-manager">Using the update manager.</h3>
+
+<p>Using the update manager is almost the same as using unity built in method. Now in your classes instead of calling <code>void Update()</code> you do this <code>public override void UpdateNormal()</code></p>
+
+<p>Lets go back to our original example and update it to use our <code>UpdateManager</code>. All we need to do is inherit from <code>BaseMonoBehaviour</code> instead of <code>MonoBehaviour</code> and change our <code>Update()</code> method.</p>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">using</span> <span class="nn">UnityEngine</span><span class="p">;</span>
+
+<span class="k">public</span> <span class="k">class</span> <span class="nc">RandomCubeMover</span> <span class="p">:</span> <span class="n">BaseMonoBehaviour</span>
+<span class="p">{</span>
+    <span class="kt">float</span> <span class="n">speed</span> <span class="p">=</span> <span class="m">10.0f</span><span class="p">;</span>
+    <span class="n">Vector3</span> <span class="n">vel</span><span class="p">;</span>
+    <span class="k">public</span> <span class="k">override</span> <span class="k">void</span> <span class="n">UpdateNormal</span> <span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">vel</span> <span class="p">=</span> <span class="n">Random</span><span class="p">.</span><span class="n">onUnitSphere</span> <span class="p">*</span> <span class="n">speed</span><span class="p">;</span>
+        <span class="n">transform</span><span class="p">.</span><span class="n">Translate</span> <span class="p">(</span><span class="n">vel</span><span class="p">*</span> <span class="n">Time</span><span class="p">.</span><span class="n">deltaTime</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+<p>If you need do use Awake within your class the instead of calling <code>void Awake()</code> use <code>protected override void Awake()</code> though unlike with the <code>UpdateNormal</code> method you also need to call <code>base.Awake</code> this will execute the method within the base class ensuring this behaviour gets added to the <code>UpdateManager</code></p>
+
+<p>so your methods should look like this</p>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">protected</span> <span class="k">override</span> <span class="k">void</span> <span class="n">Awake</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="k">base</span><span class="p">.</span><span class="n">Awake</span><span class="p">();</span>
+    <span class="c1">//Your code goes here
+</span><span class="c1"></span><span class="p">}</span>
+
+<span class="k">public</span> <span class="k">override</span> <span class="k">void</span> <span class="n">UpdateNormal</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="c1">//Your code goes here
+</span><span class="c1"></span><span class="p">}</span>
+
+<span class="k">public</span> <span class="k">override</span> <span class="k">void</span> <span class="n">UpdateFixed</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="c1">//Your code goes here
+</span><span class="c1"></span><span class="p">}</span>
+
+<span class="k">public</span> <span class="k">override</span> <span class="k">void</span> <span class="n">UpdateLate</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="c1">//Your code goes here
+</span><span class="c1"></span><span class="p">}</span></code></pre></div>
+<p>If anyone is interested in implementing execution order into the <code>UpdateManager</code> just let me know and I can write another post adding this functionality.</p>
+
+<p>This was my first blog post ever, I hope it was helpful.</p>
+
+        <br> 
+    </li>
+
+</ul>
+
+<ul>
+
+    <li class="back-to-posts">
+        <a href="https://creaturesurvive.github.io/repo/blog/" role="button">Back to posts</a>
+    </li>
+
+</ul>
+
+<ul>
+
+    <li class="disqus">
+        
+    </li>
+
+     <body>
+    <footer role="footer" style="text-align: center">
+        
+        <br> <div id="social" style="text-align: center; font-size: 32px;">
+     
+    <a class="symbol" href="support@creaturecoding.com">
+        <i class="fa fa-envelope-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.github.com/CreatureSurvive">
+        <i class="fa fa-github-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.reddit.com/u/CreatureSurvive">
+        <i class="fa fa-reddit-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/CreatureSurvive">
+        <i class="fa fa-twitter-square"></i>
+    </a>
+     
+</div>
+        <br>
+        <p>
+            <a class="title" href=" https://creaturesurvive.github.io/repo ">CreatureCoding</a> © Copyright 2019
+        </p>
+    </footer>
+</body>
+
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-119551439-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/go.min.js"></script>
+  
+
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+</ul>

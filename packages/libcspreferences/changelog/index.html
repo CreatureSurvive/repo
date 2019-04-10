@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+<base target="_top">
+<link rel="stylesheet" type="text/css" href="./depictions/resources/css/style.css" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="referrer" content="no-referrer"> 
+<meta name="author" content="CreatureSurvive">
+<meta name="description" content="Version 1.1.1 (April 8, 2019)  Fixed Color preview ‘copy to clipboard’ not copying the alpha channel  Version 1.1.0 (April 7, 2019)  Added Gradient Preview support for libCSColorPicker v0.9.1 Gradient Builder Added Gradient Gradient array support to CSPreferencesProvider colorsForKey &amp; CGcolorsForKey Fixed crash when uploading tweak list to GhostBin (Upload still fails, probably need to change providers or update the api) Added support for using preference icons in the navigation bar, used icon field from the entry specifier."> <meta property="og:title" content="libCSPreferences" />
+<meta property="og:description" content="Version 1.1.1 (April 8, 2019)  Fixed Color preview ‘copy to clipboard’ not copying the alpha channel  Version 1.1.0 (April 7, 2019)  Added Gradient Preview support for libCSColorPicker v0.9.1 Gradient Builder Added Gradient Gradient array support to CSPreferencesProvider colorsForKey &amp; CGcolorsForKey Fixed crash when uploading tweak list to GhostBin (Upload still fails, probably need to change providers or update the api) Added support for using preference icons in the navigation bar, used icon field from the entry specifier." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://creaturesurvive.github.io/repo/packages/libcspreferences/changelog/" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <title>
+           libCSPreferences  
+    </title>
+    <link rel="canonical" href="https://creaturesurvive.github.io/repo/packages/libcspreferences/changelog/"> 
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/ir-black.min.css"> 
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500">  
+<link rel="stylesheet" href="https://creaturesurvive.github.io/repo/css/reset.css?t=2019-04-10%2009%3a22%3a32.139804199%20%2b0000%20UTC%20m%3d%2b0.454220246">
+<link rel="stylesheet" href="https://creaturesurvive.github.io/repo/css/pygments.css?t=2019-04-10%2009%3a22%3a32.139804199%20%2b0000%20UTC%20m%3d%2b0.454220246">
+
+<link rel="stylesheet" href="https://creaturesurvive.github.io/repo/css/ios7.min.css?t=2019-04-10%2009%3a22%3a32.139804199%20%2b0000%20UTC%20m%3d%2b0.454220246">  
+
+
+<link rel="shortcut icon"  href="https://creaturesurvive.github.io/repo/img/favicon.ico" >
+
+
+
+
+
+
+
+
+
+<script src="https://creaturesurvive.github.io/repo/js/ios7.min.js"></script>
+
+</head>
+<nav>
+    <a class="title" href=" https://creaturesurvive.github.io/repo ">CreatureSurvive</a>
+    <br>
+    <span>
+        
+        <a style="margin-left: 3em; " href="https://creaturesurvive.github.io/repo/blog/ ">Blog </a>
+        
+        <a style="margin-left: 3em; " href="https://creaturesurvive.github.io/repo/about/ ">About </a>
+        
+        <a style="margin-left: 3em; " href="https://creaturesurvive.github.io/repo/packages/ ">Packages </a>
+        
+    </span>
+</nav>
+
+<body lang=" en ">
+
+<h2 class="heading"><div class="page-heading">
+     libCSPreferences 
+</div></h2>
+<ul>
+    
+    <li class="markdown">
+         
+
+<h3 id="version-1-1-1-april-8-2019">Version 1.1.1 (April 8, 2019)</h3>
+
+<ul>
+<li>Fixed Color preview ‘copy to clipboard’ not copying the alpha channel</li>
+</ul>
+
+<hr />
+
+<h3 id="version-1-1-0-april-7-2019">Version 1.1.0 (April 7, 2019)</h3>
+
+<ul>
+<li>Added Gradient Preview support for libCSColorPicker v0.9.1 Gradient Builder</li>
+<li>Added Gradient Gradient array support to CSPreferencesProvider <code>colorsForKey</code> &amp; <code>CGcolorsForKey</code></li>
+<li>Fixed crash when uploading tweak list to GhostBin (Upload still fails, probably need to change providers or update the api)</li>
+<li>Added support for using preference icons in the navigation bar, used <code>icon</code> field from the entry specifier.</li>
+</ul>
+
+<hr />
+
+<h3 id="version-1-0-9-april-1-2019">Version 1.0.9 (April 1, 2019)</h3>
+
+<ul>
+<li>Compiled with <code>arm64e</code> slice for A12 device support</li>
+</ul>
+
+<hr />
+
+<h3 id="version-1-0-8-march-26-2019">Version 1.0.8 (March 26, 2019)</h3>
+
+<ul>
+<li>New Custom font loading methods, no longer injects into UIKit</li>
+<li>New ‘Add Font’ button in the font picker to download custom fonts from a url (You can also add font files directly to ‘/var/mobile/Documents/CSPreferences/fonts’</li>
+<li>New CSPDeveloperCellModern with better layout behavior</li>
+</ul>
+
+<hr />
+
+<h3 id="version-1-0-6-january-1-2019">Version 1.0.6 (January 1, 2019)</h3>
+
+<ul>
+<li>Added NSUserDefaults support, saved values can now be fetched immediatly from NSUserDefaults</li>
+<li>Changed package compression to LZMA due to decompressing issues with meridian jailbreak</li>
+</ul>
+
+<hr />
+
+<h3 id="version-1-0-4-october-22-2018">Version 1.0.4 (October 22, 2018)</h3>
+
+<ul>
+<li>Fixed crash when loading font picker</li>
+<li>Added localization support for cell sublabels</li>
+</ul>
+
+<hr />
+
+<h3 id="version-1-0-1-september-8-2018">Version 1.0.1 (September 8, 2018)</h3>
+
+<ul>
+<li>Added GIF and Video support to image cells</li>
+<li>Refactored 3DTouch</li>
+<li>Refactored Action methods</li>
+<li>Refactored Respring</li>
+<li>Refactored tint logic</li>
+<li>Updated Project structure</li>
+<li>Finished implementing CSPDatePicker</li>
+<li>Reduced memory footprint</li>
+<li>Fixed issue with slider labels</li>
+<li>Updated changelog UI</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-9-9-9-1-august-17-2018">Version 0.9.9.9-1 (August 17, 2018)</h3>
+
+<ul>
+<li>Fixed layout on PSSliderCell value</li>
+<li>Fixed CSPDateCell saving issues</li>
+<li>Added support for slider labels and sublabel</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-9-9-9-august-4-2018">Version 0.9.9.9 (August 4, 2018)</h3>
+
+<ul>
+<li>Fixed issue that may cause backups not to restore</li>
+<li>Added callbackAction specifier key that executes after restoring defaults/backups</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-9-9-8-july-29-2018">Version 0.9.9.8 (July 29, 2018)</h3>
+
+<ul>
+<li>Fixed Nothing new, fixes a bug affecting some users where the Settings app would crash on launch</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-9-9-7-july-28-2018">Version 0.9.9.7 (July 28, 2018)</h3>
+
+<ul>
+<li>Fixed Refactored internal Hex Color support to resolve conflicts with other tweaks/apps</li>
+<li>Added Policy Alert specifier</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-9-9-6-july-27-2018">Version 0.9.9.6 (July 27, 2018)</h3>
+
+<ul>
+<li>Rewrote colorFromHex support with new features from libCSColorPicker</li>
+<li>Added package piracy alert to alert users when they are using a pirated copy of a tweak and optionally disable support, or install the official repo</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-9-9-5-july-25-2018">Version 0.9.9.5 (July 25, 2018)</h3>
+
+<ul>
+<li>Fixed crash when using 3dTouch to set color value</li>
+<li>Fixed set from pasteboard option appearing on color preview when no valid hex is in the clipboard</li>
+<li>Fixed height not being set properly when enabling/disabling cells with custom heights</li>
+<li>Fixed imagePickerController delegate not creating directory to save</li>
+<li>Fixed imageCells not saving a path value</li>
+<li>Added prompt to confirm when restoring defaults via the backup window</li>
+<li>Added placeholder image for backups on the CSPImageCell</li>
+<li>Fixed CSPSideImageCell not setting imageView size while laying out view</li>
+<li>Added Pick New Image option to CSPImagePreviewController</li>
+<li>Added Delete Image option to CSPImagePreviewController</li>
+<li>Added createDirectoryAtPath: removeLastComponent: error: to CSFileManager</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-9-9-4-july-22-2018">Version 0.9.9.4 (July 22, 2018)</h3>
+
+<ul>
+<li>Changed to iOS 11.4 SDK.</li>
+<li>Added almighty.</li>
+<li>Added libCSPUtilities process runner.</li>
+<li>Fixed broken backups on iOS 11.</li>
+<li>Moved backup directory to &lsquo;User/Library/Preferences/CSPreferences&rsquo; for persistence.</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-9-9-2-may-23-2018">Version 0.9.9.2 (May 23, 2018)</h3>
+
+<ul>
+<li>Fixed an issue with the previous build where permissions still wouldn&rsquo;t be set properly for almighty.</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-9-9-1-may-23-2018">Version 0.9.9.1 (May 23, 2018)</h3>
+
+<ul>
+<li>Fixed a permissions issue that prevented almighty from gaining root privileges.</li>
+<li>Looking into fixing almighty on iOS 10, just bear with me.</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-9-9-may-22-2018">Version 0.9.9 (May 22, 2018)</h3>
+
+<ul>
+<li>Added libCSPUtilities with a process manager for launching processes from anywhere.</li>
+<li>Added almighty tool for running processes as superuser.</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-9-8-may-21-2018">Version 0.9.8 (May 21, 2018)</h3>
+
+<ul>
+<li>Refactored 3DTouch for greater compatibility</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-9-7-january-22-2018">Version 0.9.7 (January 22, 2018)</h3>
+
+<ul>
+<li>added CSPCalloutCell for use of accessoryView and border callouts</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-9-6-january-19-2018">Version 0.9.6 (January 19, 2018)</h3>
+
+<ul>
+<li>switched to 10.1 SDK</li>
+<li>added option for openInSafari to open in the safari app</li>
+<li>fixed interaction issue on the CSPImageCell</li>
+<li>initial work on verifying you are using the official liCSPreferences</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-9-3-december-18-2017">Version 0.9.3 (December 18, 2017)</h3>
+
+<ul>
+<li>Added CSPreferencesAuthenticate for authenticating a package with a server</li>
+<li>Fixed issue where the decimal keypad would appear with a comma in some languages making it impossible to type a period</li>
+<li>Rewrote CSPValueCell to be more versatile</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-9-2-december-11-2017">Version 0.9.2 (December 11, 2017)</h3>
+
+<ul>
+<li>Added CSPDatePickerCell just need to fix saving of the supplied date</li>
+<li>Added CSPValueCell for displaying a decimal value and trimming it to 4 digits</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-9-1-december-11-2017">Version 0.9.1 (December 11, 2017)</h3>
+
+<ul>
+<li>Fixed bug in the preference provider that would cause colors to render incorrectly</li>
+<li>Added CSPVersionCell for showing the current version of the package</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-9-0-december-9-2017">Version 0.9.0 (December 9, 2017)</h3>
+
+<ul>
+<li>Fixed crash when 3dTouching imageCell in backup views</li>
+<li>Added CSPSideImageCell as a proper image selection cell with options to store selected image in a directory of
+your choice</li>
+<li>Modified the image preview controller, will be adding UIDocumentInteractionController in the future</li>
+<li>Lots of improvements to the CSPMailComposeManager</li>
+<li>Added option to attach files with auto detected mime-types</li>
+<li>Added option to include logs (Cydia.log, Package.log, Condensed Package.log)</li>
+<li>Added device information heads including (Device Name, Device Model, and Device Software Version)</li>
+<li>Modified the layout of the entire project, everything is now better organized and easier to maintain.</li>
+<li>Cleaned up the headers throughout the project which fixed many issues with the compilation process</li>
+<li>Added proper restring support with option to either respring with a nice fade out animation or restring and return
+to the settings page</li>
+<li>Added ‘isDecimalWithNegetive’ keyboard option to PSEditTextCell specifiers which adds a keyboard toolbar with an
+option to toggle negative/positive on the DecimalKeypad</li>
+<li>Refactored all the alert views for copying tweak lists and resprings</li>
+<li>Added alpha, red, green, blue, hue, saturation, and brightness convenience methods to UIColor+ColorFromHex</li>
+<li>Fixed compilation error with with the CSPBackupItemView (that was annoying)</li>
+<li>Added Preview for CSPSideImageCell</li>
+<li>Added CSPProcessManager for running commands via NSTask rather than ugly posix_spawn or depreciated system()</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-8-0-november-28-2017">Version 0.8.0 (November 28, 2017)</h3>
+
+<ul>
+<li>cleaned up SOURCE_FILES</li>
+<li>fixed preferences failing to load when libCSColorPicker was not installed (even when it wasn&rsquo;t used by the tweak)</li>
+<li>added &lsquo;alsoSetKeys&rsquo;, and &lsquo;alsoSetKeysInverted&rsquo; for applying a value to other specifiers when setting a value (keys
+must be of the same value type as the specifier that is setting the values)</li>
+<li>added &lsquo;defaultsPath&rsquo; key to the backup / restore specifier for restoring defaults from a plist</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-7-9-november-7-2017">Version 0.7.9 (November 7, 2017)</h3>
+
+<ul>
+<li>added option for sub-labels on any table-cell</li>
+<li>added option to enable/disable any specifier when changing editing a specifier</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-7-8-october-20-2017">Version 0.7.8 (October 20, 2017)</h3>
+
+<ul>
+<li>added option for isInvertedToggleGroup</li>
+<li>general refactoring</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-7-5-october-17-2017">Version 0.7.5 (October 17, 2017)</h3>
+
+<ul>
+<li>added option to copy entire settings pages to another page</li>
+<li>added option to long press on a cell to copy its value to another cell(not very dynamic at the moment)</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-7-3-october-13-2017">Version 0.7.3 (October 13, 2017)</h3>
+
+<ul>
+<li>initial public release</li>
+</ul>
+
+    </li>
+     
+</ul>
+
+
+
+<ul>
+    
+    <li class="back-to-posts">
+        <a href="https://creaturesurvive.github.io/repo/cydia/libcspreferences/depiction" role="button">Back to Depiction</a>
+    </li>
+    
+</ul>
+
+  <body>
+    <footer role="footer" style="text-align: center">
+        
+        <br> <div id="social" style="text-align: center; font-size: 32px;">
+     
+    <a class="symbol" href="support@creaturecoding.com">
+        <i class="fa fa-envelope-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.github.com/CreatureSurvive">
+        <i class="fa fa-github-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.reddit.com/u/CreatureSurvive">
+        <i class="fa fa-reddit-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/CreatureSurvive">
+        <i class="fa fa-twitter-square"></i>
+    </a>
+     
+</div>
+        <br>
+        <p>
+            <a class="title" href=" https://creaturesurvive.github.io/repo ">CreatureCoding</a> © Copyright 2019
+        </p>
+    </footer>
+</body>
+
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-119551439-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/go.min.js"></script>
+  
+
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+

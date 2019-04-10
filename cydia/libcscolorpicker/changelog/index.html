@@ -1,0 +1,263 @@
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/ir-black.min.css"> 
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500">  
+<link rel="stylesheet" href="https://creaturesurvive.github.io/repo/css/reset.css?t=2019-04-10%2009%3a22%3a32.133330511%20%2b0000%20UTC%20m%3d%2b0.447746550">
+<link rel="stylesheet" href="https://creaturesurvive.github.io/repo/css/pygments.css?t=2019-04-10%2009%3a22%3a32.133330511%20%2b0000%20UTC%20m%3d%2b0.447746550">
+
+<link rel="stylesheet" href="https://creaturesurvive.github.io/repo/css/ios7.min.css?t=2019-04-10%2009%3a22%3a32.133330511%20%2b0000%20UTC%20m%3d%2b0.447746550">  
+
+
+<link rel="shortcut icon"  href="https://creaturesurvive.github.io/repo/img/favicon.ico" >
+
+
+
+
+
+
+
+
+
+<script src="https://creaturesurvive.github.io/repo/js/ios7.min.js"></script>
+
+<h2 class="heading"><div class="page-heading">
+     libCSColorPicker 
+</div></h2>
+<ul>
+    
+    <li class="markdown">
+        
+
+<h3 id="version-1-0-april-10-2019">Version 1.0 (April 10, 2019)</h3>
+
+<ul>
+<li>Updated API to v1 and depreciated legacy API (Developers should update to v1 api for all new/updated projects)</li>
+<li>Minor refactoring of color/gradient cells</li>
+<li>Optimized color sliders to be more efficient and not require as many display updates</li>
+<li>Added more accurate brightness, saturation, and alpha slider gradient generation (the way it should have always been).</li>
+<li>Increased legibility of labels and elements throughout the entire color picker</li>
+<li>Added subtle, yet pleasing animations for all transitions</li>
+<li>Improved compatibility with eclipse for increased legibility</li>
+<li>Rewrote layout constraints, its now a lot more efficient during rotation and lighter on the layout engine</li>
+<li>Improved layout detection for notched devices</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-9-3-april-8-2019">Version 0.9.3 (April 8, 2019)</h3>
+
+<ul>
+<li>Fixed alpha channel being ignored when copying colors, or opening the color picker</li>
+<li>Added <code>UIColor hexStringWithAlphs</code> instance method for convenience</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-9-2-april-7-2019">Version 0.9.2 (April 7, 2019)</h3>
+
+<ul>
+<li>Fixed alpha slider being disabled by default, i forgot i designed it to be on by default</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-9-1-april-7-2019">Version 0.9.1 (April 7, 2019)</h3>
+
+<ul>
+<li>Added built in Gradient Builder for building dynamic gradients in a stylish way</li>
+<li>Added CSGradientDisplayCell for displaying gradient previews</li>
+<li>Added <code>NSString gradientStringCGColors</code>, and <code>NSString gradientStringColors</code> for getting an array of UIColors, or CGColors from a gradient array string</li>
+<li>Fixed issue in with failsafe color in CSColorDisplayCell that could result in no color being displayed</li>
+<li>Fixed issue where alpha slider would always appear even when disabled</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-8-2-april-1-2019">Version 0.8.2 (April 1, 2019)</h3>
+
+<ul>
+<li>Compiled with <code>arm64e</code> slice for A12 device support</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-8-1-march-22-2019">Version 0.8.1 (March 22, 2019)</h3>
+
+<ul>
+<li>Fixed issue where colors would be saved to the plist using the wrong key. (caused colors to reset themselves)</li>
+<li>Minor refactoring</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-7-9-december-31-2018">Version 0.7.9 (December 31, 2018)</h3>
+
+<ul>
+<li>Fixed bug where CSColorDisplayCell would not always update after picking a new color</li>
+<li>Added NSUserDefaults support, you can now fetch values instantly from NSUserDefaults</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-7-7-september-8-2018">Version 0.7.7 (September 8, 2018)</h3>
+
+<ul>
+<li>Fixed issue that may prevent color preview from updating</li>
+<li>Project refactoring</li>
+<li>Deprecated C methods</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-7-5-august-17-2018">Version 0.7.5 (August 17, 2018)</h3>
+
+<ul>
+<li>Fixed issue with Eclipse altering color picker view</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-7-4-august-17-2018">Version 0.7.4 (August 17, 2018)</h3>
+
+<ul>
+<li>Fixed issue with Eclipse altering color of cell previews</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-7-3-july-28-2018">Version 0.7.3 (July 28, 2018)</h3>
+
+<ul>
+<li>libCSColorPicker will soon be open sourced on <a href="https://github.com/CreatureSurvive/libCSColorPicker">GitHub</a></li>
+<li>Added NSString convenience methods (instance &amp; class)</li>
+<li>Added UIColor convenience methods (instance)</li>
+<li>Fixed issue where fallback would not work</li>
+<li>Change Refactored cell class</li>
+<li>Change Refactored background class</li>
+<li>Change Cleaned up ViewController</li>
+<li>Change Cleaned up slider class</li>
+<li>Change Added CSColorSliderType</li>
+<li>Change Cleaned up headers</li>
+<li>Change added credits where they were due (Background/UIViewParentController)</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-7-0-july-27-2018">Version 0.7.0 (July 27, 2018)</h3>
+
+<ul>
+<li>Completely rewrote hex color management within the library</li>
+<li>Completely new public facing usage</li>
+<li>New format support for hex strings &lsquo;RGB&rsquo;, &lsquo;ARGB&rsquo;, &lsquo;RRGGBB&rsquo;, &lsquo;AARRGGBB&rsquo;, &lsquo;RGB:0.25&rsquo;, &lsquo;RRGGBB:0.25&rsquo;</li>
+<li>Alpha slider can now be disabled using the &lsquo;alpha&rsquo; specifier key</li>
+<li>Now supports usage with Cephei preferences by HASHBANG</li>
+<li>Now uses bold system font for better legibility</li>
+<li>Refactored most of the project, and improved performance</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-6-0-july-22-2018">Version 0.6.0 (July 22, 2018)</h3>
+
+<ul>
+<li>Fixed layout issues on iPhone X using safe area</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-5-9-october-13-2017">Version 0.5.9 (October 13, 2017)</h3>
+
+<ul>
+<li>General project cleanup</li>
+<li>Fixed missing depiction</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-5-7-october-11-2017">Version 0.5.7 (October 11, 2017)</h3>
+
+<ul>
+<li>better support for default values</li>
+<li>improved layout</li>
+<li>better support for libCSPreferences</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-5-2-april-22-2017">Version 0.5.2 (April 22, 2017)</h3>
+
+<ul>
+<li>initial release</li>
+</ul>
+
+    </li>
+     
+</ul>
+
+
+<ul>
+    
+    <li class="back-to-posts">
+        <a href="https://creaturesurvive.github.io/repo/cydia/libcscolorpicker/depiction" role="button" class="cydia_blank">Back to Depiction</a>
+    </li>
+    
+</ul>
+
+
+  <body>
+    <footer role="footer" style="text-align: center">
+        
+        <br> <div id="social" style="text-align: center; font-size: 32px;">
+     
+    <a class="symbol" href="support@creaturecoding.com">
+        <i class="fa fa-envelope-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.github.com/CreatureSurvive">
+        <i class="fa fa-github-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.reddit.com/u/CreatureSurvive">
+        <i class="fa fa-reddit-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/CreatureSurvive">
+        <i class="fa fa-twitter-square"></i>
+    </a>
+     
+</div>
+        <br>
+        <p>
+            <a class="title" href=" https://creaturesurvive.github.io/repo ">CreatureCoding</a> © Copyright 2019
+        </p>
+    </footer>
+</body>
+
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-119551439-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/go.min.js"></script>
+  
+
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+

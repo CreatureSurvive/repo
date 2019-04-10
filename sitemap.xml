@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/blog/cydia-repo-update-cli/</loc>
+    <lastmod>2018-06-01T16:24:27-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/blog/test-post/</loc>
+    <lastmod>2017-01-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/blog/unity-update-manager-continued/</loc>
+    <lastmod>2016-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/blog/unity-update-manager/</loc>
+    <lastmod>2016-09-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/blog/</loc>
+    <lastmod>2015-08-22T06:42:21-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/copyvideourl/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/copyvideourl/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/</loc>
+    <lastmod>2018-06-01T16:24:27-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/blog/creaturesurvives-social-life/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/fastdel/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/fastdel/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/fastdel/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/fastdel/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/fastdel/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/fastdel/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/flatfields/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/flatfields/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/flatfields/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/flatfields/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/flatfields/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/flatfields/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/blog/hugo-on-github-pages-using-travis-ci-for-deployment/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/inteligentpower/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/inteligentpower/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/inteligentpower/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/inteligentpower/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/predictionstickaround/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/predictionstickaround/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/predictionstickaround/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/predictionstickaround/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/pulltoclear/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/pulltoclear/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/pulltoclear/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/pulltoclear/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/pulltoclear/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/pulltoclear/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/toothmodule/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/toothmodule/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/toothmodule/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/toothmodule/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/toothmodule/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/toothmodule/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/wtfeclipse/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/wtfeclipse/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/wtfeclipse/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/wtfeclipse/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/wtfeclipse/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/wtfeclipse/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/alwaysplaying/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/alwaysplaying/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/alwaysplaying/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/attributionless/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/foresight/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/inteligentpower/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/nodropsheets/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/alwaysplaying/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/alwaysplaying/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/alwaysplaying/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/attributionless/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/foresight/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/inteligentpower/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/nodropsheets/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/attributionless/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/attributionless/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/attributionless/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/attributionless/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/bubbles/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/bubbles/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/bubbles/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/bubbles/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/bubbles/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/bubbles/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/copyvideourl/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/copyvideourl/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/copyvideourl/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/copyvideourl/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/covert/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/covert/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/covert/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/covert/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/covert/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/covert/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/crux/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/crux/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/crux/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/crux/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/crux/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/crux/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/cyground/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/cyground/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/cyground/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/cyground/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/cyground/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/cyground/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/ebullience/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/ebullience/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/ebullience/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/ebullience/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/ebullience/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/ebullience/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/foresight/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/foresight/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/foresight/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/foresight/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/libcscolorpicker/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/libcscolorpicker/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/libcscolorpicker/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/libcscolorpicker/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/libcscolorpicker/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/libcscolorpicker/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/libcspreferences/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/libcspreferences/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/libcspreferences/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/libcspreferences/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/libcspreferences/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/libcspreferences/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/libcsweather/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/libcsweather/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/libcsweather/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/libcsweather/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/libcsweather/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/libcsweather/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/nodropsheets/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/nodropsheets/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/nodropsheets/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/nodropsheets/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/predictionstickaround/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/predictionstickaround/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/reachcc/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/reachcc/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/reachcc/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/reachcc/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/reachcc/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/reachcc/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/selectivecontrols/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/selectivecontrols/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/selectivecontrols/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/selectivecontrols/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/selectivecontrols/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/selectivecontrols/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/sera/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/sera/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/sera/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/sera/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/sera/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/sera/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/shuffle/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/shuffle/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/shuffle/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/shuffle/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/shuffle/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/shuffle/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/simmerdown/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/simmerdown/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/simmerdown/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/simmerdown/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/simmerdown/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/simmerdown/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/stretcher/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/stretcher/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/stretcher/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/stretcher/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/stretcher/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/stretcher/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/switcherradii/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/switcherradii/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/switcherradii/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/switcherradii/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/switcherradii/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/switcherradii/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/switcherradiixi/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/switcherradiixi/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/cydia/switcherradiixi/screenshots/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/switcherradiixi/changelog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/switcherradiixi/depiction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://creaturesurvive.github.io/repo/packages/switcherradiixi/screenshots/</loc>
+  </url>
+  
+</urlset>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+<base target="_top">
+<link rel="stylesheet" type="text/css" href="./depictions/resources/css/style.css" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="referrer" content="no-referrer"> 
+<meta name="author" content="CreatureSurvive">
+<meta name="description" content="Cydia Repo Update CLI ​ I decided to make a script for updating my Cydia repo in a less cumbersome way. It used to be that I would have to update my bash script every time I wanted to add/update a package on my repo. This got to be tedious and all around unnecessary. In addition to my workflow obviously needing some improvement, I also saw it as an opportunity to brush up on my near non-existent bash skills."> <meta property="og:title" content="Cydia Repo Update Cli" />
+<meta property="og:description" content="Cydia Repo Update CLI ​ I decided to make a script for updating my Cydia repo in a less cumbersome way. It used to be that I would have to update my bash script every time I wanted to add/update a package on my repo. This got to be tedious and all around unnecessary. In addition to my workflow obviously needing some improvement, I also saw it as an opportunity to brush up on my near non-existent bash skills." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://creaturesurvive.github.io/repo/blog/cydia-repo-update-cli/" />
+
+
+
+<meta property="article:published_time" content="2018-06-01T16:24:27-05:00"/>
+
+<meta property="article:modified_time" content="2018-06-01T16:24:27-05:00"/>
+
+
+
+
+
+
+
+
+
+
+
+    <title>
+           Cydia Repo Update Cli  
+    </title>
+    <link rel="canonical" href="https://creaturesurvive.github.io/repo/blog/cydia-repo-update-cli/"> 
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/ir-black.min.css"> 
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500">  
+<link rel="stylesheet" href="https://creaturesurvive.github.io/repo/css/reset.css?t=2019-04-10%2009%3a22%3a32.037528539%20%2b0000%20UTC%20m%3d%2b0.351944627">
+<link rel="stylesheet" href="https://creaturesurvive.github.io/repo/css/pygments.css?t=2019-04-10%2009%3a22%3a32.037528539%20%2b0000%20UTC%20m%3d%2b0.351944627">
+
+<link rel="stylesheet" href="https://creaturesurvive.github.io/repo/css/ios7.min.css?t=2019-04-10%2009%3a22%3a32.037528539%20%2b0000%20UTC%20m%3d%2b0.351944627">  
+
+
+<link rel="shortcut icon"  href="https://creaturesurvive.github.io/repo/img/favicon.ico" >
+
+
+
+
+
+
+
+
+
+<script src="https://creaturesurvive.github.io/repo/js/ios7.min.js"></script>
+
+</head>
+<nav>
+    <a class="title" href=" https://creaturesurvive.github.io/repo ">CreatureSurvive</a>
+    <br>
+    <span>
+        
+        <a style="margin-left: 3em; " href="https://creaturesurvive.github.io/repo/blog/ ">Blog </a>
+        
+        <a style="margin-left: 3em; " href="https://creaturesurvive.github.io/repo/about/ ">About </a>
+        
+        <a style="margin-left: 3em; " href="https://creaturesurvive.github.io/repo/packages/ ">Packages </a>
+        
+    </span>
+</nav>
+
+<body lang=" en ">
+<h2 class="heading"><div class="page-heading">
+     Cydia Repo Update Cli 
+</div></h2>
+<ul>
+    <div class="initials">
+        <a href="https://creaturesurvive.github.io/repo"></a>
+    </div>
+
+    
+    <li class="date" title='Fri Jun 1 2018 16:24:27 -0500'>Jun 1, 2018</li>
+     
+    <li class="reading-time">
+        <div class="middot"></div>One minute read</li>
+    
+</ul>
+
+<ul>
+    <li class="markdown">
+        
+
+<h2 id="cydia-repo-update-cli">Cydia Repo Update CLI</h2>
+
+<hr />
+
+<p>​   I decided to make a script for updating my Cydia repo in a less cumbersome way. It used to be that I would have to update my bash script every time I wanted to add/update a package on my repo. This got to be tedious and all around unnecessary. In addition to my workflow obviously needing some improvement, I also saw it as an opportunity to brush up on my near non-existent bash skills.</p>
+
+<p>Some goals I had in mind while making this:</p>
+
+<ul>
+<li>No need to update my bash script.</li>
+<li>Optionally clean the package directory.</li>
+<li>Commit the changes when complete.</li>
+<li>Pass project directory as a parameter</li>
+<li>Display errors and help messages</li>
+</ul>
+
+<h3 id="usage">Usage:</h3>
+<div class="highlight"><pre class="chroma"><code class="language-language-bash" data-lang="language-bash">Usage: ./update-repo.sh -m --commit-message
+
+  -m, --commit-message      The git commit message
+  -g, --git-commit          If passed, then commit changes
+  -p, --project-directory   the theos project directory
+  -c, --clean-debs          remove old debs i.e. no downgrade option
+  -h, -help                 display this help message
+
+Example: ./update-repo.sh --commit-message &#39;rebuild packages&#39; --project-directory my_tweak</code></pre></div>
+<h3 id="code">Code:</h3>
+
+<script src="//gist.github.com/CreatureSurvive/ac6cda3ba164449553693bee6acaaae6.js"></script>
+
+<p>Hopefully others will find this as useful as I have.</p>
+
+        <br> 
+    </li>
+
+</ul>
+
+<ul>
+
+    <li class="back-to-posts">
+        <a href="https://creaturesurvive.github.io/repo/blog/" role="button">Back to posts</a>
+    </li>
+
+</ul>
+
+<ul>
+
+    <li class="disqus">
+        
+    </li>
+
+     <body>
+    <footer role="footer" style="text-align: center">
+        
+        <br> <div id="social" style="text-align: center; font-size: 32px;">
+     
+    <a class="symbol" href="support@creaturecoding.com">
+        <i class="fa fa-envelope-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.github.com/CreatureSurvive">
+        <i class="fa fa-github-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.reddit.com/u/CreatureSurvive">
+        <i class="fa fa-reddit-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/CreatureSurvive">
+        <i class="fa fa-twitter-square"></i>
+    </a>
+     
+</div>
+        <br>
+        <p>
+            <a class="title" href=" https://creaturesurvive.github.io/repo ">CreatureCoding</a> © Copyright 2019
+        </p>
+    </footer>
+</body>
+
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-119551439-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/go.min.js"></script>
+  
+
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+</ul>

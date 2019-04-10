@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+<base target="_top">
+<link rel="stylesheet" type="text/css" href="./depictions/resources/css/style.css" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="referrer" content="no-referrer"> 
+<meta name="author" content="CreatureSurvive">
+<meta name="description" content="Version 0.6.7 (December 26, 2016)  Completely rewrote artwork handling, all artwork bugs are now fixed and its a lot more efficient Added option to swap the share/like buttons on the media controls with shuffle/repeat buttons Major refactor in preparation for settings redesign Proper bug reporting coming soon This update contains a lot of rewritten code, if you experience any bugs please let me know  Version 0.6.1.1 (December 23, 2016)  Fixed bug in preferences where notification positioning with media controls present would not work at all if media controls alignment was set to top  Version 0."> <meta property="og:title" content="sera" />
+<meta property="og:description" content="Version 0.6.7 (December 26, 2016)  Completely rewrote artwork handling, all artwork bugs are now fixed and its a lot more efficient Added option to swap the share/like buttons on the media controls with shuffle/repeat buttons Major refactor in preparation for settings redesign Proper bug reporting coming soon This update contains a lot of rewritten code, if you experience any bugs please let me know  Version 0.6.1.1 (December 23, 2016)  Fixed bug in preferences where notification positioning with media controls present would not work at all if media controls alignment was set to top  Version 0." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://creaturesurvive.github.io/repo/packages/sera/changelog/" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <title>
+           sera  
+    </title>
+    <link rel="canonical" href="https://creaturesurvive.github.io/repo/packages/sera/changelog/"> 
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/ir-black.min.css"> 
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500">  
+<link rel="stylesheet" href="https://creaturesurvive.github.io/repo/css/reset.css?t=2019-04-10%2009%3a22%3a32.162201193%20%2b0000%20UTC%20m%3d%2b0.476617274">
+<link rel="stylesheet" href="https://creaturesurvive.github.io/repo/css/pygments.css?t=2019-04-10%2009%3a22%3a32.162201193%20%2b0000%20UTC%20m%3d%2b0.476617274">
+
+<link rel="stylesheet" href="https://creaturesurvive.github.io/repo/css/ios7.min.css?t=2019-04-10%2009%3a22%3a32.162201193%20%2b0000%20UTC%20m%3d%2b0.476617274">  
+
+
+<link rel="shortcut icon"  href="https://creaturesurvive.github.io/repo/img/favicon.ico" >
+
+
+
+
+
+
+
+
+
+<script src="https://creaturesurvive.github.io/repo/js/ios7.min.js"></script>
+
+</head>
+<nav>
+    <a class="title" href=" https://creaturesurvive.github.io/repo ">CreatureSurvive</a>
+    <br>
+    <span>
+        
+        <a style="margin-left: 3em; " href="https://creaturesurvive.github.io/repo/blog/ ">Blog </a>
+        
+        <a style="margin-left: 3em; " href="https://creaturesurvive.github.io/repo/about/ ">About </a>
+        
+        <a style="margin-left: 3em; " href="https://creaturesurvive.github.io/repo/packages/ ">Packages </a>
+        
+    </span>
+</nav>
+
+<body lang=" en ">
+
+<h2 class="heading"><div class="page-heading">
+     sera 
+</div></h2>
+<ul>
+    
+    <li class="markdown">
+         
+
+<h3 id="version-0-6-7-december-26-2016">Version 0.6.7 (December 26, 2016)</h3>
+
+<ul>
+<li>Completely rewrote artwork handling, all artwork bugs are now fixed and its a lot more efficient</li>
+<li>Added option to swap the share/like buttons on the media controls with shuffle/repeat buttons</li>
+<li>Major refactor in preparation for settings redesign</li>
+<li>Proper bug reporting coming soon</li>
+<li>This update contains a lot of rewritten code, if you experience any bugs please let me know</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-6-1-1-december-23-2016">Version 0.6.1.1 (December 23, 2016)</h3>
+
+<ul>
+<li>Fixed bug in preferences where notification positioning with media controls present would not work at all
+if media controls alignment was set to top</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-6-1-december-18-2016">Version 0.6.1 (December 18, 2016)</h3>
+
+<ul>
+<li>moved color pickers into alert views (temporary fix for nasty bug that reset preferences when leaving the
+colorpicker)</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-6-december-18-2016">Version 0.6 (December 18, 2016)</h3>
+
+<ul>
+<li>Added option to disable the date &amp; time section for improved compatibility with other tweaks such as
+Forecast. Now you can let Forecast control the layout for the date &amp; time and still be able to adjust
+the vertical position and Background height/color</li>
+
+<li><p>Fixed up a lot of layout bugs in blurred notification cells. I believe its bug free now, let me know if i&rsquo;m
+wrong</p></li>
+
+<li><p>Added ability to have multi-line date (insert an asterisk&rsquo;*&rsquo; in the date format where you want a new line)</p></li>
+
+<li><p>Lots of small adjustments to the preference panel</p></li>
+
+<li><p>Lots more refactoring</p></li>
+
+<li><p>I believe that sera is nearly bug free as of this release, so if you find any bugs please let me know.</p></li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-5-4-2-december-17-2016">Version 0.5.4.2 (December 17, 2016)</h3>
+
+<ul>
+<li>Removed apply buttons in preferences, a save button will now appear in the NavBar when editing a value.</li>
+<li>minor adjustments to the preferences layout</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-5-4-december-17-2016">Version 0.5.4 (December 17, 2016)</h3>
+
+<ul>
+<li>Lots of refactoring</li>
+
+<li><p>Fixed some bugs in the normal media controls view where artwork would cover notifications, and various other
+improvements</p></li>
+
+<li><p>Sera doesn’t remove ColorFlow2 background color anymore as it resulted in horrible legibility</p></li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-5-3-7-december-17-2016">Version 0.5.3.7 (December 17, 2016)</h3>
+
+<ul>
+<li>Fixed ColorFlow2 support (working on adding better support for compact mode right now).</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-5-3-6-december-16-2016">Version 0.5.3.6 (December 16, 2016)</h3>
+
+<ul>
+<li>I forgot to include the fix from version 0.5.3.5 in the actual package so here it is.</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-5-3-5-december-15-2016">Version 0.5.3.5 (December 15, 2016)</h3>
+
+<ul>
+<li>FINALLY FIXED NOTIFICATION INTERACTION BUG. a special thanks to /u/Matchstic for this fix(note: if you previously
+installed LSTouch Fix(9.2+) you can remove that as its built into sera now</li>
+<li>A few minor adjustments to blured notification cells</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-5-3-december-13-2016">Version 0.5.3 (December 13, 2016)</h3>
+
+<ul>
+<li>Fixed bug introduced in version 0.5.0.0 where album artwork wold not show up.</li>
+<li>Completely redesigned blurred notifications (currently there are no customization options for this.)</li>
+<li>Found fix for notification interaction bug, I will implement this ASAP</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-5-2-4-december-10-2016">Version 0.5.2.4 (December 10, 2016)</h3>
+
+<ul>
+<li>Fixed some issues with notification cell blur</li>
+<li>Notification cell blur now compatible with Priority Hub</li>
+<li>If you are experiencing issues with notification interaction(cant interact with notifications) then please
+install &ldquo;LS Touch Fix (9.2+)&rdquo; from matchstic repo &ldquo;<a href="http://repo.incendo.ws/&quot;">http://repo.incendo.ws/&quot;</a>. if this fixes the issue
+please let me know via the support button in settings so that I can incorporate the fix into sera.</li>
+</ul>
+
+<p><a href="https://cydia.saurik.com/api/share#?source=http://repo.incendo.ws">add source</a></p>
+
+<hr />
+
+<h3 id="version-0-5-2-3-november-27-2016">Version 0.5.2.3 (November 27, 2016)</h3>
+
+<ul>
+<li>Fixed layout bug with Priority Hub while playing music</li>
+<li>Added Blurred Notification Cells(Currently Buggy with Priority Hub)</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-5-2-2-november-27-2016">Version 0.5.2.2 (November 27, 2016)</h3>
+
+<ul>
+<li>Added support for Priority Hub (currently only supports Priority Hub set to top) you&rsquo;ll find a new toggle
+in sera settings to enable Priority Hub support.</li>
+<li>Another attempt to fix notification interaction bugs(kind of shooting in the dark here since I can not reproduce
+the bug on my end)</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-5-2-1-november-27-2016">Version 0.5.2.1 (November 27, 2016)</h3>
+
+<ul>
+<li>Added option to adjust lockscreen dim delay</li>
+<li>Added option to prevent screen wake when receiving notifications</li>
+<li>Added Icons to Settings</li>
+<li>Yet another attempt to fix notification interaction bug affecting some users (Please anyone experiencing
+this bug, send me a bug report from the support button in the settings pane. If you are still experiencing
+this bug and you know how to use (FLEXing/FLEXible) please contact me if your interested in helping fix
+this issue. Thank You)</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-5-2-0-2-november-26-2016">Version 0.5.2.0.2 (November 26, 2016)</h3>
+
+<ul>
+<li>Fixed Creator tab not loading</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-5-2-0-1-november-26-2016">Version 0.5.2.0.1 (November 26, 2016)</h3>
+
+<ul>
+<li>Moved support button to settings root for easier visibility</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-5-2-0-november-26-2016">Version 0.5.2.0 (November 26, 2016)</h3>
+
+<ul>
+<li>NOTICE this update will alter color transparency configuration. To fix you can either need to reset sera&rsquo;s
+settings or manually adjust the colors from within the settings</li>
+<li>Added Options for coloring Media Controls(Buttons, Sliders, Labels)</li>
+<li>Integrated libcolorpicker into settings(now depends on libcolorpicker)</li>
+<li>More refactoring and bug fixes</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-5-1-0-november-24-2016">Version 0.5.1.0 (November 24, 2016)</h3>
+
+<ul>
+<li>Basic support for ColorFlow2</li>
+<li>Basic support for WaveFlow(not working in compact mode)</li>
+<li>Hopefully a fix for some users issues with notification interaction and notifications not showing</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-5-0-8-november-24-2016">Version 0.5.0.8 (November 24, 2016)</h3>
+
+<ul>
+<li>Now has default configuration for 4&rdquo;, 4.7&rdquo; &amp; 5.5&rdquo; devices (if your using a custom resolution on your
+device then the best matching configuration will be used.) Use the &ldquo;reset Preferences&rdquo; button to apply
+defaults for your device.</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-5-0-7-november-24-2016">Version 0.5.0.7 (November 24, 2016)</h3>
+
+<ul>
+<li>Major refactoring of the entire project, lots of optimizations</li>
+<li>Added option to disable blur on lockscreen</li>
+<li>Added option to disable tint on lockscreen</li>
+<li>Added option for custom tint color on lockscreen</li>
+
+<li><p>Added reset button in preferences to reset sera back to default settings(this should help fix a lot of configuration
+issues)</p></li>
+
+<li><p>Fixed issue of Notifications not showing up(use the reset button in preferences for this to work)</p></li>
+
+<li><p>improved &ldquo;Email Support&rdquo; in the preferences (now attaches the users tweak list and Sera preferences to the
+email to help with support on my end)</p></li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-5-0-1-november-15-2016">Version 0.5.0.1 (November 15, 2016)</h3>
+
+<ul>
+<li>Added options for adjusting media artwork corner radius</li>
+<li>Added option for adjusting media controls background height (note: this option also vertically scales the media
+controls)</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-5-0-0-november-15-2016">Version 0.5.0.0 (November 15, 2016)</h3>
+
+<ul>
+<li>Updated default configuration</li>
+<li>Fixed album artwork not updating when changing song</li>
+<li>Fixed album artwork flickering on occasion</li>
+<li>Added media controls compact mode toggle</li>
+<li>Added artwork scaling/positioning for compact mode</li>
+<li>Added normal mode for full size media player with customization for position</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-4-9-9-2-november-14-2016">Version 0.4.9.9-2 (November 14, 2016)</h3>
+
+<ul>
+<li>Fixed Spamming of test notifications after respringing, again, whoops</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-4-9-9-november-14-2016">Version 0.4.9.9 (November 14, 2016)</h3>
+
+<ul>
+<li>Fixed bug that would cause safe mode if an invalid hex color is entered in the settings. Now if you enter
+an invalid hex color it will default to red</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-4-9-8-november-14-2016">Version 0.4.9.8 (November 14, 2016)</h3>
+
+<ul>
+<li>Fixed album artwork appearing multiple times</li>
+<li>Fixed album artwork flickering when starting music from the lockscreen</li>
+<li>Added basic support for Xen (everything works except for Grouped Notifications)</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-4-9-5-november-14-2016">Version 0.4.9.5 (November 14, 2016)</h3>
+
+<ul>
+<li>Added options for coloring media controls background.</li>
+<li>Optimization and refactoring</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-4-9-1-november-14-2016">Version 0.4.9.1 (November 14, 2016)</h3>
+
+<ul>
+<li>Fixed spamming of test notifications after respring(forgot to remove it before release).</li>
+<li>Fixed some layout bugs for the notification area were it would sometimes act like media was playing when
+it wasn&rsquo;t and cause the size to be off.</li>
+<li>Added proper icon</li>
+</ul>
+
+<hr />
+
+<h3 id="version-0-4-9-november-13-2016">Version 0.4.9 (November 13, 2016)</h3>
+
+<ul>
+<li>Initial Beta Release</li>
+</ul>
+
+    </li>
+     
+</ul>
+
+
+
+<ul>
+    
+    <li class="back-to-posts">
+        <a href="https://creaturesurvive.github.io/repo/cydia/sera/depiction" role="button">Back to Depiction</a>
+    </li>
+    
+</ul>
+
+  <body>
+    <footer role="footer" style="text-align: center">
+        
+        <br> <div id="social" style="text-align: center; font-size: 32px;">
+     
+    <a class="symbol" href="support@creaturecoding.com">
+        <i class="fa fa-envelope-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.github.com/CreatureSurvive">
+        <i class="fa fa-github-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.reddit.com/u/CreatureSurvive">
+        <i class="fa fa-reddit-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/CreatureSurvive">
+        <i class="fa fa-twitter-square"></i>
+    </a>
+     
+</div>
+        <br>
+        <p>
+            <a class="title" href=" https://creaturesurvive.github.io/repo ">CreatureCoding</a> © Copyright 2019
+        </p>
+    </footer>
+</body>
+
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-119551439-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/go.min.js"></script>
+  
+
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+

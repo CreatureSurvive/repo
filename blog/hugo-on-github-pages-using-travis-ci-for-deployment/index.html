@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+<base target="_top">
+<link rel="stylesheet" type="text/css" href="./depictions/resources/css/style.css" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="referrer" content="no-referrer"> 
+<meta name="author" content="CreatureSurvive">
+<meta name="description" content="Hugo on GitHub Pages using Travis-CI for deployment This post shows how to automate building and deployment of Hugo static websites to GitHub Pages using Travis CI. Builds are automatically triggered when pushing to the Git repository on the master branch, and deployment when a build on the master branch succeeds.
+Hugo is a static website generator written in Go, and only requires a single binary. The easiest way to run Hugo in the Travis CI container is by including the specific hugo binary with which to build the site as part of the repository (eg."> <meta property="og:title" content="Hugo on GitHub Pages using Travis-CI for deployment" />
+<meta property="og:description" content="Hugo on GitHub Pages using Travis-CI for deployment This post shows how to automate building and deployment of Hugo static websites to GitHub Pages using Travis CI. Builds are automatically triggered when pushing to the Git repository on the master branch, and deployment when a build on the master branch succeeds.
+Hugo is a static website generator written in Go, and only requires a single binary. The easiest way to run Hugo in the Travis CI container is by including the specific hugo binary with which to build the site as part of the repository (eg." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://creaturesurvive.github.io/repo/blog/hugo-on-github-pages-using-travis-ci-for-deployment/" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <title>
+           Hugo on GitHub Pages using Travis-CI for deployment  
+    </title>
+    <link rel="canonical" href="https://creaturesurvive.github.io/repo/blog/hugo-on-github-pages-using-travis-ci-for-deployment/"> 
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/ir-black.min.css"> 
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500">  
+<link rel="stylesheet" href="https://creaturesurvive.github.io/repo/css/reset.css?t=2019-04-10%2009%3a22%3a32.073854159%20%2b0000%20UTC%20m%3d%2b0.388270322">
+<link rel="stylesheet" href="https://creaturesurvive.github.io/repo/css/pygments.css?t=2019-04-10%2009%3a22%3a32.073854159%20%2b0000%20UTC%20m%3d%2b0.388270322">
+
+<link rel="stylesheet" href="https://creaturesurvive.github.io/repo/css/ios7.min.css?t=2019-04-10%2009%3a22%3a32.073854159%20%2b0000%20UTC%20m%3d%2b0.388270322">  
+
+
+<link rel="shortcut icon"  href="https://creaturesurvive.github.io/repo/img/favicon.ico" >
+
+
+
+
+
+
+
+
+
+<script src="https://creaturesurvive.github.io/repo/js/ios7.min.js"></script>
+
+</head>
+<nav>
+    <a class="title" href=" https://creaturesurvive.github.io/repo ">CreatureSurvive</a>
+    <br>
+    <span>
+        
+        <a style="margin-left: 3em; " href="https://creaturesurvive.github.io/repo/blog/ ">Blog </a>
+        
+        <a style="margin-left: 3em; " href="https://creaturesurvive.github.io/repo/about/ ">About </a>
+        
+        <a style="margin-left: 3em; " href="https://creaturesurvive.github.io/repo/packages/ ">Packages </a>
+        
+    </span>
+</nav>
+
+<body lang=" en ">
+<h2 class="heading"><div class="page-heading">
+     Hugo on GitHub Pages using Travis-CI for deployment 
+</div></h2>
+<ul>
+    <div class="initials">
+        <a href="https://creaturesurvive.github.io/repo"></a>
+    </div>
+
+    
+    <li class="date" title='Mon Jan 1 0001 00:00:00 UTC'>Jan 1, 0001</li>
+     
+    <li class="reading-time">
+        <div class="middot"></div>2 minute read</li>
+    
+</ul>
+
+<ul>
+    <li class="markdown">
+        
+
+<h1 id="hugo-on-github-pages-using-travis-ci-for-deployment">Hugo on GitHub Pages using Travis-CI for deployment</h1>
+
+<p>This post shows how to automate building and deployment of <a href="https://gohugo.io/">Hugo</a> static websites to GitHub Pages using <a href="https://travis-ci.org/">Travis CI</a>. Builds are automatically triggered when pushing to the Git repository on the master branch, and deployment when a build on the master branch succeeds.</p>
+
+<p>Hugo is a static website generator written in Go, and only requires a single binary. The easiest way to run Hugo in the Travis CI container is by including the specific hugo binary with which to build the site as part of the repository (eg. in the directory <code>/binaries</code>). This way you don’t need to download the Hugo release on each build job, which may take several minutes. You can get the latest binary from the <a href="https://github.com/spf13/hugo/releases">Hugo releases page</a> (use the <code>hugo_&lt;VERSION&gt;_Linux-64bit.tar.gz</code> file and include only the <code>hugo</code> binary).</p>
+
+<p>For syntax highlighting, you also need <a href="http://pygments.org/">Pygments</a> installed. In the <code>.travis.yml</code> file this is done by specifying the <code>python-pygments</code> package as <a href="https://docs.travis-ci.com/user/installing-dependencies/#Installing-Packages-with-the-APT-Addon">apt addon</a>.</p>
+
+<h3 id="configuring-travis-ci">Configuring Travis CI</h3>
+
+<p>On the Travis CI homepage on your <a href="https://travis-ci.org/profile">profile page</a> you need to enable the GitHub repository you want to build.</p>
+
+<p>Travis CI also needs write-access to the GitHub repository, to be able to update the <code>gh-pages</code> branch. For this we provide a GitHub token environment variable named <code>GITHUB_TOKEN</code> in this example. Environment variables can be specified on the Travis CI website in the repository settings (see the <a href="https://docs.travis-ci.com/user/environment-variables/#Defining-Variables-in-Repository-Settings">Travis environment variables docs</a>). You can generate this token in your GitHub account settings under “<a href="https://github.com/settings/tokens/new">Personal access tokens -&gt; Generate new token</a>” (ensure that the “repo” checkbox is enabled).</p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="c"># Install the apt prerequisites</span><span class="w">
+</span><span class="w"></span>addons<span class="p">:</span><span class="w">
+</span><span class="w">  </span>apt<span class="p">:</span><span class="w">
+</span><span class="w">    </span>packages<span class="p">:</span><span class="w">
+</span><span class="w">      </span>-<span class="w"> </span>python-pygments<span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="c"># Clean and don&#39;t fail</span><span class="w">
+</span><span class="w"></span>install<span class="p">:</span><span class="w">
+</span><span class="w">  </span>-<span class="w"> </span>rm<span class="w"> </span>-rf<span class="w"> </span>public<span class="w"> </span>|<span class="sd">| exit 0</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="c"># Build the website</span><span class="w">
+</span><span class="w"></span>script<span class="p">:</span><span class="w">
+</span><span class="w">  </span>-<span class="w"> </span>./binaries/hugo<span class="w"> </span><span class="c"># --theme=ghoust</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="c"># Deploy to GitHub pages</span><span class="w">
+</span><span class="w"></span>deploy<span class="p">:</span><span class="w">
+</span><span class="w">  </span>provider<span class="p">:</span><span class="w"> </span>pages<span class="w">
+</span><span class="w">  </span>skip_cleanup<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span>local_dir<span class="p">:</span><span class="w"> </span>public<span class="w">
+</span><span class="w">  </span>github_token<span class="p">:</span><span class="w"> </span>$GITHUB_TOKEN<span class="w"> </span><span class="c"># Set in travis-ci.org dashboard</span><span class="w">
+</span><span class="w">  </span>on<span class="p">:</span><span class="w">
+</span><span class="w">    </span>branch<span class="p">:</span><span class="w"> </span>master</code></pre></div>
+        <br> 
+    </li>
+
+</ul>
+
+<ul>
+
+    <li class="back-to-posts">
+        <a href="https://creaturesurvive.github.io/repo/blog/" role="button">Back to posts</a>
+    </li>
+
+</ul>
+
+<ul>
+
+    <li class="disqus">
+        
+    </li>
+
+     <body>
+    <footer role="footer" style="text-align: center">
+        
+        <br> <div id="social" style="text-align: center; font-size: 32px;">
+     
+    <a class="symbol" href="support@creaturecoding.com">
+        <i class="fa fa-envelope-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.github.com/CreatureSurvive">
+        <i class="fa fa-github-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.reddit.com/u/CreatureSurvive">
+        <i class="fa fa-reddit-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/CreatureSurvive">
+        <i class="fa fa-twitter-square"></i>
+    </a>
+     
+</div>
+        <br>
+        <p>
+            <a class="title" href=" https://creaturesurvive.github.io/repo ">CreatureCoding</a> © Copyright 2019
+        </p>
+    </footer>
+</body>
+
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-119551439-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/go.min.js"></script>
+  
+
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+</ul>

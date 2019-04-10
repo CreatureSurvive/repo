@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cydia on CreatureSurvive</title>
+    <link>https://creaturesurvive.github.io/repo/cydia/</link>
+    <description>Recent content in Cydia on CreatureSurvive</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    
+	<atom:link href="https://creaturesurvive.github.io/repo/cydia/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CopyVideoURL</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/copyvideourl/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/copyvideourl/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FastDel</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/fastdel/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/fastdel/changelog/</guid>
+      <description>Version 0.3 (July 1, 2017)  Rewrote the whole project This project is now open source  Version 0.2 (March 18, 2017)  iOS 10.2 support The previous update for iOS 10 actually only worked up to 10.1.1. The settings pane would not show up on 10.2 rendering FastDel unless, this is now fixed.  Version 0.1 (January 28, 2017)  iOS 10 support  Version 0.0.8 (October 20, 2016)  another preferences rewrite no respring required for any prefs changes prefs text field now updates immediately to reflect current settings added option to disable cursor smoothing  Version 0.</description>
+    </item>
+    
+    <item>
+      <title>FastDel</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/fastdel/depiction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/fastdel/depiction/</guid>
+      <description>This tweak disables the annoying delete word function and enables rapid character deletion instantly. FastDel is now open source!</description>
+    </item>
+    
+    <item>
+      <title>FastDel</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/fastdel/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/fastdel/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FlatFields</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/flatfields/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/flatfields/changelog/</guid>
+      <description> Version 0.0.5 (September 30, 2016)  removed unnecessary hook  Version 0.0.4 (September 29, 2016)  updated package with support email minor refactoring  Version 0.0.3 (September 29, 2016)  fixed typo  Version 0.0.2 (September 29, 2016)  Initial Release  </description>
+    </item>
+    
+    <item>
+      <title>FlatFields</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/flatfields/depiction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/flatfields/depiction/</guid>
+      <description>Removes background bubbles from textfields system wide</description>
+    </item>
+    
+    <item>
+      <title>FlatFields</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/flatfields/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/flatfields/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>InteligentPower</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/inteligentpower/depiction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/inteligentpower/depiction/</guid>
+      <description>This tweak enables Low Power Mode when locking the device. When unlocking the device Low Power Mode will be disabled but only if the current battery charge is above the threshold that the user sets in the tweak settings</description>
+    </item>
+    
+    <item>
+      <title>InteligentPower</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/inteligentpower/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/inteligentpower/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PredictionStickAround</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/predictionstickaround/depiction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/predictionstickaround/depiction/</guid>
+      <description>disables swipe to dismiss on the predictive keyboard bar.</description>
+    </item>
+    
+    <item>
+      <title>PredictionStickAround</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/predictionstickaround/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/predictionstickaround/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PullToClear</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/pulltoclear/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/pulltoclear/changelog/</guid>
+      <description> Version 0.3.1 (October 14, 2017)  Official support for NCLink10 Lots of refactoring and little improvements, that you should not notice  Version 0.2.1 (October 11, 2017)  initial public release no 3rd party tweak support yet  </description>
+    </item>
+    
+    <item>
+      <title>PullToClear</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/pulltoclear/depiction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/pulltoclear/depiction/</guid>
+      <description>PullToClear notifications on the LockScreen and NotificationCenter on iOS 10
+ custom fonts custom labels custom pull distance custom colors  this is a beta</description>
+    </item>
+    
+    <item>
+      <title>PullToClear</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/pulltoclear/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/pulltoclear/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ToothModule</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/toothmodule/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/toothmodule/changelog/</guid>
+      <description> Version 1.0.1b (October 13, 2017)  Added Silo compatibility Removed backup section in settings  Version 1.0.0b (October 11, 2017)  initial release  </description>
+    </item>
+    
+    <item>
+      <title>ToothModule</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/toothmodule/depiction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/toothmodule/depiction/</guid>
+      <description>Quickly connect/disconnect from bluetooth devices using your Control center Configure device in settings.
+Requires either: CCSupport Package or Silo Package</description>
+    </item>
+    
+    <item>
+      <title>ToothModule</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/toothmodule/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/toothmodule/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WTFEclipse</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/wtfeclipse/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/wtfeclipse/changelog/</guid>
+      <description> Version 0.4.2b (August 13, 2018)  Initial Release Fixed AppStore &amp;lsquo;more&amp;rsquo; labels Fixed Safari &amp;lsquo;Open In&amp;rsquo; alerts iOS 11 only (for now)  </description>
+    </item>
+    
+    <item>
+      <title>WTFEclipse</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/wtfeclipse/depiction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/wtfeclipse/depiction/</guid>
+      <description>Fix annoying bugs in Eclipse. currently only supports iOS 11.x (iOS 10 support may be added soon)
+Any feature requests should be submitted to support@creaturecoding.com</description>
+    </item>
+    
+    <item>
+      <title>WTFEclipse</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/wtfeclipse/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/wtfeclipse/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>alwaysPlaying</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/alwaysplaying/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/alwaysplaying/changelog/</guid>
+      <description> Version 0.1.0 (October 11, 2017)  now updates the LockScreen instantly (you no longer need to lock and unlock your device for the controls to appear)  Version 0.0.7 (October 9, 2017)  initial release  </description>
+    </item>
+    
+    <item>
+      <title>alwaysPlaying</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/alwaysplaying/depiction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/alwaysplaying/depiction/</guid>
+      <description>force now playing controls on LS via activator</description>
+    </item>
+    
+    <item>
+      <title>alwaysPlaying</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/alwaysplaying/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/alwaysplaying/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>alwaysPlaying</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/attributionless/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/attributionless/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>alwaysPlaying</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/foresight/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/foresight/changelog/</guid>
+      <description> Version 0.0.5 (January 28, 2017)  iOS 10 support  Version 0.0.1 (September 20, 2016)  Initial Release  </description>
+    </item>
+    
+    <item>
+      <title>alwaysPlaying</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/inteligentpower/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/inteligentpower/changelog/</guid>
+      <description> Version 0.1.0 (October 11, 2017)  now updates the LockScreen instantly (you no longer need to lock and unlock your device for the controls to appear)  Version 0.0.7 (October 9, 2017)  initial release  </description>
+    </item>
+    
+    <item>
+      <title>alwaysPlaying</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/nodropsheets/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/nodropsheets/changelog/</guid>
+      <description> Version 0.1.0 (October 11, 2017)  now updates the LockScreen instantly (you no longer need to lock and unlock your device for the controls to appear)  Version 0.0.7 (October 9, 2017)  initial release  </description>
+    </item>
+    
+    <item>
+      <title>attributionless</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/attributionless/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/attributionless/changelog/</guid>
+      <description> Version 0.1.0 (May 12, 2018)  fixed typos  Version 0.0.7 (May 5, 2018)  initial release  </description>
+    </item>
+    
+    <item>
+      <title>attributionless</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/attributionless/depiction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/attributionless/depiction/</guid>
+      <description>Removes the wether provider attribution text in the Notification Center and Today View on iOS 10 &amp;amp; 11 (maybe 9 as well).</description>
+    </item>
+    
+    <item>
+      <title>bubbles</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/bubbles/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/bubbles/changelog/</guid>
+      <description>Version 0.4.0 (April 7, 2019)  Stable Initial stable release, officially out of beta Fixed Conversation Cell gradients are now smooth flowing and customizable Fixed Chat background images occasionaly being strangely positioned Fixed Typing indicator not coloring correctly Fixed Link Cells not being themed, (thanks u/tincan_pham for the fix) Fixed Typing indicator not coloring correctly Added Gradient color options for chat bubbles Added New Gradient Picker for custom gradients Added Support for A12 devices (arm64e) Updated Much more efficient gradient calculation algorithm  Version 0.</description>
+    </item>
+    
+    <item>
+      <title>bubbles</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/bubbles/depiction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/bubbles/depiction/</guid>
+      <description>bubbles gives your messages app a more modern look by adding a sense of depth to the conversation cells. Oh, and it comes with a completely customizable Light/Dark mode!
+This Is A Beta Release All bug reports must be submitted through GitHub Issues, or they will be ignored! Any other support needs, please use the Support tab in the bubbles settings. You can also contact me in my Slack group&amp;rsquo;s #betas Channel at Creature Survive Tweak&amp;rsquo;s</description>
+    </item>
+    
+    <item>
+      <title>bubbles</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/bubbles/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/bubbles/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>copyVideoURL</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/copyvideourl/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/copyvideourl/changelog/</guid>
+      <description> Version 0.0.1-7 (April 28, 2018)  Compiled to support iOS 9 - 11 Added depiction  Version 0.0.1-7 (April 28, 2018)  Initial Release  </description>
+    </item>
+    
+    <item>
+      <title>copyVideoURL</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/copyvideourl/depiction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/copyvideourl/depiction/</guid>
+      <description>Copies the URL of videos played in the native MPMoviePlayerController. This is useful for using CromeCast with apps that don&amp;rsquo;t support it. This does not work for videos played in WebViews, or custom video players.</description>
+    </item>
+    
+    <item>
+      <title>covert</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/covert/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/covert/changelog/</guid>
+      <description>Version 1.0 (April 10, 2019)  Fixed issue where deleting all conversations while in covert view resulted in not being able to exit covert Fixed covert list not being updated when deleting a conversation Fixed covert conversations not un-muting when unhidden Added search result filtering, covert conversations wont show up in search Added search keywords type (&amp;ldquo;show covert&amp;rdquo;, &amp;ldquo;hide covert&amp;rdquo;, &amp;ldquo;reset covert&amp;rdquo;) in the searchbar to show, hide or reset covert;  Version 0.</description>
+    </item>
+    
+    <item>
+      <title>covert</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/covert/depiction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/covert/depiction/</guid>
+      <description>Hide and mute conversations in Messages app, when you hide a conversation it will automatically mute notifications for that conversation.
+To hide messages, swipe right on the conversation and tap Hide.
+To show conversations Long press the Edit button and release, then you&amp;rsquo;ll be presented with the option to show/hide covert conversations.
+search keywords type (&amp;ldquo;show covert&amp;rdquo;, &amp;ldquo;hide covert&amp;rdquo;, &amp;ldquo;reset covert&amp;rdquo;) in the searchbar to show, hide or reset covert</description>
+    </item>
+    
+    <item>
+      <title>covert</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/covert/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/covert/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>crux</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/crux/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/crux/changelog/</guid>
+      <description> Version 1.0.0 (May 31, 2018)  initial release  </description>
+    </item>
+    
+    <item>
+      <title>crux</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/crux/depiction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/crux/depiction/</guid>
+      <description>run any command as root:
+crux /usr/bin/dpkg install com.</description>
+    </item>
+    
+    <item>
+      <title>crux</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/crux/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/crux/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cyground</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/cyground/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/cyground/changelog/</guid>
+      <description> Version 1.2.0 (August 4, 2018)  Rewrote the project Fixed an issue that would prevent the tweak from working for some users  Version 1.0.0 (July 22, 2018)  Initial Release  </description>
+    </item>
+    
+    <item>
+      <title>cyground</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/cyground/depiction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/cyground/depiction/</guid>
+      <description>Run Cydia in the background.
+sources will continue refreshing even when launching the CC/NC/Switcher or using another app, you can even lock you device.</description>
+    </item>
+    
+    <item>
+      <title>cyground</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/cyground/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/cyground/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ebullience</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/ebullience/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/ebullience/changelog/</guid>
+      <description> Version 1.0.1b (May 21, 2018)  fixed missing libCSPreferences dependency  Version 1.0.0b (May 21, 2018)  initial release  </description>
+    </item>
+    
+    <item>
+      <title>ebullience</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/ebullience/depiction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/ebullience/depiction/</guid>
+      <description>Animates the loading of table UITableViewCells system wide. Configure animations from settings.</description>
+    </item>
+    
+    <item>
+      <title>ebullience</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/ebullience/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/ebullience/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>foresight</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/foresight/depiction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/foresight/depiction/</guid>
+      <description>Replaces lockscreen hint text with the daily weather forecast</description>
+    </item>
+    
+    <item>
+      <title>foresight</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/foresight/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/foresight/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>libCSColorPicker</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/libcscolorpicker/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/libcscolorpicker/changelog/</guid>
+      <description>Version 1.0 (April 10, 2019)  Updated API to v1 and depreciated legacy API (Developers should update to v1 api for all new/updated projects) Minor refactoring of color/gradient cells Optimized color sliders to be more efficient and not require as many display updates Added more accurate brightness, saturation, and alpha slider gradient generation (the way it should have always been). Increased legibility of labels and elements throughout the entire color picker Added subtle, yet pleasing animations for all transitions Improved compatibility with eclipse for increased legibility Rewrote layout constraints, its now a lot more efficient during rotation and lighter on the layout engine Improved layout detection for notched devices  Version 0.</description>
+    </item>
+    
+    <item>
+      <title>libCSColorpicker</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/libcscolorpicker/depiction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/libcscolorpicker/depiction/</guid>
+      <description>A simplistic yet powerful color picker for use in PreferenceLoader preference bundles. Supports iOS 9 - 11, other iOS versions have not been tested.
+Best when used with libCSPreference but also works fine on it&amp;rsquo;s own. For usage info and resources, check out libCSColorPicker on GitHub, soon to be open sourced.
+v1.0 API changes libCSPreferences v1.0 has been released. in this release the API has been reworked to resolve conflicts with other projects, the legacy API has been officially marked depreciated and should not be used in new/updated projects.</description>
+    </item>
+    
+    <item>
+      <title>libCSColorpicker</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/libcscolorpicker/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/libcscolorpicker/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>libCSPreferences</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/libcspreferences/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/libcspreferences/changelog/</guid>
+      <description>Version 1.1.1 (April 8, 2019)  Fixed Color preview ‘copy to clipboard’ not copying the alpha channel  Version 1.1.0 (April 7, 2019)  Added Gradient Preview support for libCSColorPicker v0.9.1 Gradient Builder Added Gradient Gradient array support to CSPreferencesProvider colorsForKey &amp;amp; CGcolorsForKey Fixed crash when uploading tweak list to GhostBin (Upload still fails, probably need to change providers or update the api) Added support for using preference icons in the navigation bar, used icon field from the entry specifier.</description>
+    </item>
+    
+    <item>
+      <title>libCSPreferences</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/libcspreferences/depiction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/libcspreferences/depiction/</guid>
+      <description>A simple to use preference library for iOS
+ 3DTouch support integrated color picker powerful font picker with custom font support theming support change log controller fully integrated backup/restore system zero coding required to integrate in your project crazy simple to use  </description>
+    </item>
+    
+    <item>
+      <title>libCSPreferences</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/libcspreferences/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/libcspreferences/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>libCSWeather</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/libcsweather/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/libcsweather/changelog/</guid>
+      <description>Version 0.6.0b (October 22, 2018)  Project wide refactoring and optimization Proper nil condition handling Removed heavy @try @catch conditions Proper handling of iOS 11.1.2 api changes Added persistent backing store for caching weather data Fixed condition where weather would load and then return nil  Version 0.5.6b (August 27, 2018)  fix dumb mistake that may cause crashing on iOS 10 devices  Version 0.5.5b (August 27, 2018)  iOS 11 support  Version 0.</description>
+    </item>
+    
+    <item>
+      <title>libCSWeather</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/libcsweather/depiction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/libcsweather/depiction/</guid>
+      <description>A simple little library for fetching the current weather information such as:
+ current temperature (celsius/Fahrenheit) current temperature (celsius/Fahrenheit) based on weather preference setting daily high daily low current weather condition icon wether description more coming soon  </description>
+    </item>
+    
+    <item>
+      <title>libCSWeather</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/libcsweather/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/libcsweather/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>noDropSheets</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/nodropsheets/depiction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/nodropsheets/depiction/</guid>
+      <description>Removes airdrop section in share sheets. ONLY PARTIALLY WORKING AT THE MOMENT!</description>
+    </item>
+    
+    <item>
+      <title>noDropSheets</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/nodropsheets/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/nodropsheets/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>predictionStickAround</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/predictionstickaround/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/predictionstickaround/changelog/</guid>
+      <description> Version 0.0.2 (September 30, 2016)  Refactor  Version 0.0.1 (September 30, 2016)  Initial Release  </description>
+    </item>
+    
+    <item>
+      <title>reachCC</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/reachcc/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/reachcc/changelog/</guid>
+      <description> Version 1.0.0 (May 6, 2018)  Initial Release  </description>
+    </item>
+    
+    <item>
+      <title>reachCC</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/reachcc/depiction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/reachcc/depiction/</guid>
+      <description>Activate the Control Center on iPhone X using the reachability gesture.</description>
+    </item>
+    
+    <item>
+      <title>reachCC</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/reachcc/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/reachcc/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>selectiveControls</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/selectivecontrols/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/selectivecontrols/changelog/</guid>
+      <description> Version 0.0.3 (October 11, 2017)  initial release  </description>
+    </item>
+    
+    <item>
+      <title>selectiveControls</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/selectivecontrols/depiction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/selectivecontrols/depiction/</guid>
+      <description>stop LockScreen Now Playing controls from showing up for blacklisted apps, configure from settings</description>
+    </item>
+    
+    <item>
+      <title>selectiveControls</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/selectivecontrols/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/selectivecontrols/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sera</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/sera/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/sera/changelog/</guid>
+      <description>Version 0.6.7 (December 26, 2016)  Completely rewrote artwork handling, all artwork bugs are now fixed and its a lot more efficient Added option to swap the share/like buttons on the media controls with shuffle/repeat buttons Major refactor in preparation for settings redesign Proper bug reporting coming soon This update contains a lot of rewritten code, if you experience any bugs please let me know  Version 0.6.1.1 (December 23, 2016)  Fixed bug in preferences where notification positioning with media controls present would not work at all if media controls alignment was set to top  Version 0.</description>
+    </item>
+    
+    <item>
+      <title>sera</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/sera/depiction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/sera/depiction/</guid>
+      <description> is currently in beta and the feature set is not complete, you may encounter bugs. If you find any bugs please contact me via support in settings or via Cydia.
+Features Date &amp;amp; Time  Date and time positioning Date and time height Date and time size Date and time background color Date and time background alpha Date and time font Date and time font size  Media  Media controls position Media controls size Media controls compact view  Notifications  Notification area position Notification area height Notification area background color Notification area background alpha Notification area background blur  </description>
+    </item>
+    
+    <item>
+      <title>sera</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/sera/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/sera/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shuffle</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/shuffle/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/shuffle/changelog/</guid>
+      <description>Version 0.8.0b (September 8, 2018)  Added option to move shuffle group to the top of settings Added System Apps section Rewrote Force Touch support Added Advances section General optimizations and refactoring  Version 0.6.6b (May 22, 2018)  Added icons for preference bundles with missing icons Added icons for Packages and dylibs sections  Version 0.6.5b (May 22, 2018)  Hotfix for issue where packages marked as &amp;lsquo;Ignore Upgrades&amp;rsquo; would cause the settings app to crash when viewing the package info  Version 0.</description>
+    </item>
+    
+    <item>
+      <title>shuffle</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/shuffle/depiction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/shuffle/depiction/</guid>
+      <description>Mix Up your preferences!
+Features:  Tweaks Group Apps Group 3DTouch Support throughout the Settings app  lots more planned. this is a beta package.</description>
+    </item>
+    
+    <item>
+      <title>shuffle</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/shuffle/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/shuffle/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>simmerDown</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/simmerdown/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/simmerdown/changelog/</guid>
+      <description> Version 1.3.1 (August 12, 2018)  Added Support for ios 9.x + Now kills the Camera app, and then kills the mediaserverd process (should be working for everyone now)  Version 1.0.1 (May 28, 2018)  Fixed mediaserverd not actually being killed (silly sandbox)  Version 1.0.0 (May 28, 2018)  initial release  </description>
+    </item>
+    
+    <item>
+      <title>simmerDown</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/simmerdown/depiction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/simmerdown/depiction/</guid>
+      <description>kill mediaserverd when the Camera app enters background or exits.</description>
+    </item>
+    
+    <item>
+      <title>simmerDown</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/simmerdown/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/simmerdown/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>stretcher</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/stretcher/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/stretcher/changelog/</guid>
+      <description> Version 0.6.0b (September 13, 2018)  fix homebar overlapping tabbar in stretched apps (beta feature)  Version 0.5.0b (May 11, 2018)  initial release  </description>
+    </item>
+    
+    <item>
+      <title>stretcher</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/stretcher/depiction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/stretcher/depiction/</guid>
+      <description>force apps to use full screen on iPhone X</description>
+    </item>
+    
+    <item>
+      <title>stretcher</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/stretcher/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/stretcher/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>switcherRadii</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/switcherradii/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/switcherradii/changelog/</guid>
+      <description> Version 1.0.2 (October 9, 2017)  removed blurred backgrounds, that will be a seporate tweak  Version 1.0.1 (October 4, 2017)  Added blurred headers  Version 1.0.0 (October 3, 2017)  Initial Release  </description>
+    </item>
+    
+    <item>
+      <title>switcherRadii</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/switcherradii/depiction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/switcherradii/depiction/</guid>
+      <description>sets the corner radius of the app switcher cards should support ios 9 and 10, but its only tested on 10</description>
+    </item>
+    
+    <item>
+      <title>switcherRadii</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/switcherradii/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/switcherradii/screenshots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>switcherRadiiXI</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/switcherradiixi/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/switcherradiixi/changelog/</guid>
+      <description> Version 1.0.0 (May 12, 2018)  Initial Release  </description>
+    </item>
+    
+    <item>
+      <title>switcherRadiiXI</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/switcherradiixi/depiction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/switcherradiixi/depiction/</guid>
+      <description>sets the corner radius of the app switcher cards should supports iOS 11.</description>
+    </item>
+    
+    <item>
+      <title>switcherRadiiXI</title>
+      <link>https://creaturesurvive.github.io/repo/cydia/switcherradiixi/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/cydia/switcherradiixi/screenshots/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

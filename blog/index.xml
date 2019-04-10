@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on CreatureSurvive</title>
+    <link>https://creaturesurvive.github.io/repo/blog/</link>
+    <description>Recent content in Blog on CreatureSurvive</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 22 Aug 2015 06:42:21 -0700</lastBuildDate>
+    
+	<atom:link href="https://creaturesurvive.github.io/repo/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cydia Repo Update Cli</title>
+      <link>https://creaturesurvive.github.io/repo/blog/cydia-repo-update-cli/</link>
+      <pubDate>Fri, 01 Jun 2018 16:24:27 -0500</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/blog/cydia-repo-update-cli/</guid>
+      <description>Cydia Repo Update CLI ​ I decided to make a script for updating my Cydia repo in a less cumbersome way. It used to be that I would have to update my bash script every time I wanted to add/update a package on my repo. This got to be tedious and all around unnecessary. In addition to my workflow obviously needing some improvement, I also saw it as an opportunity to brush up on my near non-existent bash skills.</description>
+    </item>
+    
+    <item>
+      <title>test post</title>
+      <link>https://creaturesurvive.github.io/repo/blog/test-post/</link>
+      <pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/blog/test-post/</guid>
+      <description>Style Demo h1 Heading h2 Heading h3 Heading h4 Heading h5 Heading h6 Heading This is bold text
+This is bold text
+This is italic text
+This is italic text
+Deleted text
+This is text with inline math $\sum_{n=1}^{\infty} 2^{-n} = 1$ and with math blocks:
+$$ \sum_{n=1}^{\infty} 2^{-n} = 1 $$
+   Heading Another heading     text text   text text   text text     Block quotes are written like so.</description>
+    </item>
+    
+    <item>
+      <title>Unity Update Manager Continued</title>
+      <link>https://creaturesurvive.github.io/repo/blog/unity-update-manager-continued/</link>
+      <pubDate>Sat, 10 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/blog/unity-update-manager-continued/</guid>
+      <description>After receiving a good amount of feedback on my previous post [Update Manager](http://creaturecoding.com/update-manager/) I decided to write a followup post to fill in some of the information I left out in the original post.
+One of the major details that I left out in the original post was the stats, and thats probably the most important one to include.
+The Unity Method I decided to profile the Unity Update() method to get a benchmark for comparison.</description>
+    </item>
+    
+    <item>
+      <title>Unity Update Manager</title>
+      <link>https://creaturesurvive.github.io/repo/blog/unity-update-manager/</link>
+      <pubDate>Sun, 04 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/blog/unity-update-manager/</guid>
+      <description>What is an update manager? An update manager is a class that holds a reference to all of your MonoBehaviour&amp;rsquo;s and executes all of their Update() methods each frame.
+What is the benefit of an update manager? An update manager is very useful when you have a large amount of Monobehaviour&amp;rsquo;s using the Update() method.
+Whats wrong with using lots of Updates? MonoBehaviour&amp;rsquo;s handle all of unity&amp;rsquo;s &amp;lsquo;Magic Methods&amp;rsquo;(I&amp;rsquo;ll explain these in a minute) and though typically you wouldn&amp;rsquo;t need to worry about how unity handles these methods, when you end up with a lot of them it can start bogging down your performance.</description>
+    </item>
+    
+    <item>
+      <title>CreatureSurvive&#39;s Social Life</title>
+      <link>https://creaturesurvive.github.io/repo/blog/creaturesurvives-social-life/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/blog/creaturesurvives-social-life/</guid>
+      <description> CreatureSurvive&amp;rsquo;s Social Life Week of: 10/9/2017 - 10/15/2017    Projects: Time:     motuumls 16 hrs 6 mins   PriorityHub 11 hrs 9 mins   libcspreferences 3 hrs 53 mins   pulltoclear 3 hrs 29 mins   CreatureSurvive&amp;rsquo;s Private Repo 2 hrs 51 mins   creaturesurvive.github.io 2 hrs 40 mins   libCSWeather 1 hr 48 mins   Twitter-Signature 1 hr 38 mins   selectivecontrols 1 hr 2 mins   cscolorpicker 34 mins   alwaysplaying 23 mins   Tooth 19 mins   switcherRadii 13 mins   theos 9 mins   foresight 6 mins   flatfields 4 mins   nodropsheet 3 mins   predictionstickaround 2 mins   Total 46 hrs 29 mins    </description>
+    </item>
+    
+    <item>
+      <title>Hugo on GitHub Pages using Travis-CI for deployment</title>
+      <link>https://creaturesurvive.github.io/repo/blog/hugo-on-github-pages-using-travis-ci-for-deployment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://creaturesurvive.github.io/repo/blog/hugo-on-github-pages-using-travis-ci-for-deployment/</guid>
+      <description>Hugo on GitHub Pages using Travis-CI for deployment This post shows how to automate building and deployment of Hugo static websites to GitHub Pages using Travis CI. Builds are automatically triggered when pushing to the Git repository on the master branch, and deployment when a build on the master branch succeeds.
+Hugo is a static website generator written in Go, and only requires a single binary. The easiest way to run Hugo in the Travis CI container is by including the specific hugo binary with which to build the site as part of the repository (eg.</description>
+    </item>
+    
+  </channel>
+</rss>

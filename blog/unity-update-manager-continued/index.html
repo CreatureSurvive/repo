@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+<base target="_top">
+<link rel="stylesheet" type="text/css" href="./depictions/resources/css/style.css" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="referrer" content="no-referrer"> 
+<meta name="author" content="CreatureSurvive">
+<meta name="description" content="After receiving a good amount of feedback on my previous post [Update Manager](http://creaturecoding.com/update-manager/) I decided to write a followup post to fill in some of the information I left out in the original post.
+One of the major details that I left out in the original post was the stats, and thats probably the most important one to include.
+The Unity Method I decided to profile the Unity Update() method to get a benchmark for comparison."> <meta property="og:title" content="Unity Update Manager Continued" />
+<meta property="og:description" content="After receiving a good amount of feedback on my previous post [Update Manager](http://creaturecoding.com/update-manager/) I decided to write a followup post to fill in some of the information I left out in the original post.
+One of the major details that I left out in the original post was the stats, and thats probably the most important one to include.
+The Unity Method I decided to profile the Unity Update() method to get a benchmark for comparison." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://creaturesurvive.github.io/repo/blog/unity-update-manager-continued/" />
+
+
+
+<meta property="article:published_time" content="2016-09-10T00:00:00&#43;00:00"/>
+
+<meta property="article:modified_time" content="2016-09-10T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+    <title>
+           Unity Update Manager Continued  
+    </title>
+    <link rel="canonical" href="https://creaturesurvive.github.io/repo/blog/unity-update-manager-continued/"> 
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/ir-black.min.css"> 
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500">  
+<link rel="stylesheet" href="https://creaturesurvive.github.io/repo/css/reset.css?t=2019-04-10%2009%3a22%3a32.056682339%20%2b0000%20UTC%20m%3d%2b0.371098409">
+<link rel="stylesheet" href="https://creaturesurvive.github.io/repo/css/pygments.css?t=2019-04-10%2009%3a22%3a32.056682339%20%2b0000%20UTC%20m%3d%2b0.371098409">
+
+<link rel="stylesheet" href="https://creaturesurvive.github.io/repo/css/ios7.min.css?t=2019-04-10%2009%3a22%3a32.056682339%20%2b0000%20UTC%20m%3d%2b0.371098409">  
+
+
+<link rel="shortcut icon"  href="https://creaturesurvive.github.io/repo/img/favicon.ico" >
+
+
+
+
+
+
+
+
+
+<script src="https://creaturesurvive.github.io/repo/js/ios7.min.js"></script>
+
+</head>
+<nav>
+    <a class="title" href=" https://creaturesurvive.github.io/repo ">CreatureSurvive</a>
+    <br>
+    <span>
+        
+        <a style="margin-left: 3em; " href="https://creaturesurvive.github.io/repo/blog/ ">Blog </a>
+        
+        <a style="margin-left: 3em; " href="https://creaturesurvive.github.io/repo/about/ ">About </a>
+        
+        <a style="margin-left: 3em; " href="https://creaturesurvive.github.io/repo/packages/ ">Packages </a>
+        
+    </span>
+</nav>
+
+<body lang=" en ">
+<h2 class="heading"><div class="page-heading">
+     Unity Update Manager Continued 
+</div></h2>
+<ul>
+    <div class="initials">
+        <a href="https://creaturesurvive.github.io/repo"></a>
+    </div>
+
+    
+    <li class="date" title='Sat Sep 10 2016 00:00:00 UTC'>Sep 10, 2016</li>
+     
+    <li class="reading-time">
+        <div class="middot"></div>3 minute read</li>
+    
+</ul>
+
+<ul>
+    <li class="markdown">
+        
+
+<p>After receiving a good amount of feedback on my previous post [Update Manager](<a href="http://creaturecoding.com/update-manager/">http://creaturecoding.com/update-manager/</a>) I decided to write a followup post to fill in some of the information I left out in the original post.</p>
+
+<p>One of the major details that I left out in the original post was the stats, and thats probably the most important one to include.</p>
+
+<h4 id="the-unity-method">The Unity Method</h4>
+
+<p>I decided to profile the Unity <code>Update()</code> method to get a benchmark for comparison. For this test created two simple classes an <code>UpdateTester</code> class,</p>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public</span> <span class="k">class</span> <span class="nc">UpdateTester</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+<span class="p">{</span>
+	<span class="k">private</span> <span class="k">void</span> <span class="n">Update</span> <span class="p">()</span> <span class="p">{}</span>
+<span class="p">}</span></code></pre></div>
+<p>and an <code>UpdateSpawner</code> class for adding the UpdateTester to a gameobject during <code>Awake()</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public</span> <span class="k">class</span> <span class="nc">UpdateSpawner</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+<span class="p">{</span><span class="na">
+</span><span class="na">    [SerializeField]</span>
+    <span class="kt">int</span> <span class="n">amount</span> <span class="p">=</span> <span class="m">10000</span><span class="p">;</span>
+
+    <span class="k">private</span> <span class="k">void</span> <span class="n">Awake</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="n">amount</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span>
+        <span class="p">{</span>
+            <span class="n">gameObject</span><span class="p">.</span><span class="n">AddComponent</span> <span class="p">&lt;</span><span class="n">UpdateTester</span><span class="p">&gt;();</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+<p>Before running the test I turned off Vsync in Edit&gt;Project Setings&gt;Quality. The test was ran within the editor with “deep profiling” enabled in the profiler.</p>
+
+<p>For 10000 <code>Update()</code> calls it was averaging 8 - 9 ms per update loop and unity’s estimated FPS were at 78 - 84 fps.</p>
+
+<p><img src="https://creaturesurvive.github.io/repo/images/2016/09/Screenshot-at-Sep-09-20-12-06.png" alt="" /></p>
+
+<h4 id="the-updatemanager-method-array">The UpdateManager Method(Array)</h4>
+
+<p>For this test all I had to change was the <code>UpdateTester</code> to use <code>BaseMonoBehaviour</code>. In this test I used the same UpdateManager from the previous <a href="http://creaturecoding.com/update-manager/">post</a> using an array to store the <code>BaseMonoBehaviour</code> objects.</p>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public</span> <span class="k">class</span> <span class="nc">UpdateTester</span> <span class="p">:</span> <span class="n">BaseMonoBehaviour</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">override</span> <span class="k">void</span> <span class="n">UpdateNormal</span> <span class="p">(){}</span>
+<span class="p">}</span></code></pre></div>
+<p>In this test the results were drastically improved. For 10000 <code>Update()</code> calls it was averaging 1.5 - 2.3 ms per update loop and unity’s estimated FPS were at 240 - 250 fps.</p>
+
+<p><img src="https://creaturesurvive.github.io/repo/images/2016/09/Screenshot-at-Sep-09-20-23-17.png" alt="" /></p>
+
+<p>I did note that using the <code>UpdateManager</code> initial load times were longer due to the way the manager adds objects to the array. Im still testing methods of improving the way the arrays are handled to minimize allocation and garbage.</p>
+
+<h4 id="the-updatemanager-method-list">The UpdateManager Method(List)</h4>
+
+<p>In this test I had to modify the <code>UpdateManager</code> to use a generic List for storing the <code>BaseMonoBehaviour</code> objects.<br />
+Due to the results I came up with during this test I am not going to post the changes I made to the <code>UpdateManager</code>.</p>
+
+<p>The results in this test though still an improvement over unity’s <code>Update</code> method, they were much slower than using the arrays. For 10000 <code>Update()</code> calls it averaged 5.3 - 8.2 ms per update loop and unity’s estimated FPS were at 115 - 128 fps.</p>
+
+<p>This is due to the overhead of List passing items from the list the object querying the list.</p>
+
+<p><img src="https://creaturesurvive.github.io/repo/images/2016/09/Screenshot-at-Sep-09-22-49-12.png" alt="" /></p>
+
+<h4 id="the-comparison">The Comparison</h4>
+
+<table>
+<thead>
+<tr>
+<th>Unity Method</th>
+<th>UpdateManager (Array)</th>
+<th>UpdateManager (List)</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>8 - 9 ms</td>
+<td>1.5 - 2.3 ms</td>
+<td>5.3 - 8.2 ms</td>
+</tr>
+
+<tr>
+<td>78 - 84 fps</td>
+<td>240 - 250 fps</td>
+<td>115 - 128 fps</td>
+</tr>
+</tbody>
+</table>
+
+<p>As per the results using this update manager can greatly increase the speed of your update loop. However with its current state and how I implemented adding and removing objects from the manager I can’t recommend that you use it if you’re needing to instantiate lots of objects during gameplay as this could cause lag due to allocation and garbage collection. If your able to add and remove objects during loading then this implementation this should work fine for you.</p>
+
+<p>I am still testing a few methods of optimizing this to minimize any overhead caused by adding and removing objects.</p>
+
+        <br> 
+    </li>
+
+</ul>
+
+<ul>
+
+    <li class="back-to-posts">
+        <a href="https://creaturesurvive.github.io/repo/blog/" role="button">Back to posts</a>
+    </li>
+
+</ul>
+
+<ul>
+
+    <li class="disqus">
+        
+    </li>
+
+     <body>
+    <footer role="footer" style="text-align: center">
+        
+        <br> <div id="social" style="text-align: center; font-size: 32px;">
+     
+    <a class="symbol" href="support@creaturecoding.com">
+        <i class="fa fa-envelope-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.github.com/CreatureSurvive">
+        <i class="fa fa-github-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.reddit.com/u/CreatureSurvive">
+        <i class="fa fa-reddit-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/CreatureSurvive">
+        <i class="fa fa-twitter-square"></i>
+    </a>
+     
+</div>
+        <br>
+        <p>
+            <a class="title" href=" https://creaturesurvive.github.io/repo ">CreatureCoding</a> © Copyright 2019
+        </p>
+    </footer>
+</body>
+
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-119551439-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/go.min.js"></script>
+  
+
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+</ul>
