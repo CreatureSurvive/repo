@@ -3,6 +3,20 @@ title = "libCSColorPicker"
 slug = "changelog"
 +++
 
+### Version 1.0 (April 10, 2019)
+
+- Updated API to v1 and depreciated legacy API (Developers should update to v1 api for all new/updated projects)
+- Minor refactoring of color/gradient cells
+- Optimized color sliders to be more efficient and not require as many display updates
+- Added more accurate brightness, saturation, and alpha slider gradient generation (the way it should have always been).
+- Increased legibility of labels and elements throughout the entire color picker
+- Added subtle, yet pleasing animations for all transitions
+- Improved compatibility with eclipse for increased legibility
+- Rewrote layout constraints, its now a lot more efficient during rotation and lighter on the layout engine
+- Improved layout detection for notched devices
+
+---
+
 ### Version 0.9.3 (April 8, 2019)
 
 - Fixed alpha channel being ignored when copying colors, or opening the color picker

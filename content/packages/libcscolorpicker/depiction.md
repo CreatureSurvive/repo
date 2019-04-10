@@ -1,5 +1,5 @@
 +++
-date = "April 8, 2019"
+date = "April 10, 2019"
 title = "libCSColorpicker"
 package = "com.creaturecoding.libcscolorpicker"
 slug = "depiction"
@@ -13,3 +13,7 @@ have not been tested.
 
 Best when used with [libCSPreference](https://creaturesurvive.github.io/repo/cydia/libcspreferences/depiction/) but also works fine on it's own.
 For usage info and resources, check out libCSColorPicker on [GitHub](https://github.com/CreatureSurvive/libCSColorPicker), soon to be open sourced.
+
+## v1.0 API changes
+
+libCSPreferences v1.0 has been released. in this release the API has been reworked to resolve conflicts with other projects, the legacy API has been officially marked depreciated and should not be used in new/updated projects. Legacy API will remain operational for now to ensure no projects are broken with this update. **Please Download the new [project resources](https://github.com/CreatureSurvive/libCSColorPicker/tree/master/CSColorPicker%20Resources) for theos and update your projects.**
